@@ -1,5 +1,5 @@
 const controller = {};
-const User = require("./../models/User");
+const Users = require("../models/Users.model");
 const passport = require("passport");
 
 // Bcrypt to encrypt passwords
@@ -22,7 +22,7 @@ controller.postSignup = (req, res, next) => {
     return;
   }
 
-  User.findOne({ username }, "username", (err, user) => {
+  Users.findOne({ username }, "username", (err, user) => {
     if (user !== null) {
       res.render("auth/signup", { message: "The username already exists" });
       return;
@@ -31,7 +31,7 @@ controller.postSignup = (req, res, next) => {
     const salt = bcrypt.genSaltSync(bcryptSalt);
     const hashPass = bcrypt.hashSync(password, salt);
 
-    const newUser = new User({
+    const newUser = new Users({
       username,
       password: hashPass
     });
