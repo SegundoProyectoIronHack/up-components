@@ -1,6 +1,6 @@
 const passport      = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
-const User          = require('../models/User');
+const Users          = require('../models/Users.model');
 const bcrypt        = require('bcrypt');
 
 passport.use(new LocalStrategy({
@@ -8,7 +8,7 @@ passport.use(new LocalStrategy({
     passwordField: 'password'
   }, 
   (username, password, done) => {
-    User.findOne({ username })
+    Users.findOne({ username })
     .then(foundUser => {
       if (!foundUser) {
         done(null, false, { message: 'Incorrect username' });
