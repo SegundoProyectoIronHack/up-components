@@ -4,6 +4,7 @@ const Products = require("./../models/Products.model")
 // Import the necessary seeds
 const ramMemoriesSeed = require("./seeds/ram-memories.seeds")
 const powerSuppliesSeed = require("./seeds/power-supplies.seeds")
+const processorsSeed = require("./seeds/processors.seeds")
 
 require("./../configs/db.config")
 
@@ -12,6 +13,7 @@ const createSeeds = async () => {
   console.log("All products deleted.")
   await ramMemoriesSeed()
   await powerSuppliesSeed()
+  await processorsSeed()
 }
 
 createSeeds().then(() => {
