@@ -26,6 +26,15 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+// Enable authentication using session + passport
+app.use(session({
+  secret: 'irongenerator',
+  resave: true,
+  saveUninitialized: true,
+  store: new MongoStore( { mongooseConnection: mongoose.connection })
+}))
+app.use(flash());
+require('./passport')(app);
 
 // Express View engine setup
       
@@ -66,16 +75,7 @@ hbs.registerHelper('calculateTaxes', require("./helpers/calculate-taxes.helper")
 // default value for title local
 app.locals.title = 'UP Components';
 
-
-// Enable authentication using session + passport
-app.use(session({
-  secret: 'irongenerator',
-  resave: true,
-  saveUninitialized: true,
-  store: new MongoStore( { mongooseConnection: mongoose.connection })
-}))
-app.use(flash());
-require('./passport')(app);
+app.use(require("./locals/user.local"))
     
 // Routes
 app.use('/', require('./routes/index.routes'));
