@@ -36,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
 
 hbs.registerPartials("./views/partials")
+hbs.registerPartials("./views/partials/products")
 hbs.registerPartials("./views/partials/products/cases")
 hbs.registerPartials("./views/partials/products/coolings")
 hbs.registerPartials("./views/partials/products/graphic-cards")
