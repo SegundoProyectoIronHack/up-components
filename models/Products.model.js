@@ -127,7 +127,9 @@ const productSchema = new Schema({
       depth: Number
     },
     design: {
-      type: String,
+      type: {
+        type: String
+      },
       ilumination: Boolean,
       cableManagment: Boolean,
       numberOfPorts35: Number,
@@ -166,7 +168,9 @@ const productSchema = new Schema({
       hdmi: Number
     },
     characteristics: {
-      type: String,
+      type: {
+        type: String
+      },
       chipset: String,
       m2Slots: Number,
       pciExpress3Slots: Number,

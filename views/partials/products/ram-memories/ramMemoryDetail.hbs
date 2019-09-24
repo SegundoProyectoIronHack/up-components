@@ -1,11 +1,50 @@
 {{#with product}}
 <div class="product">
 
-  {{#with productInfo}}
-    <h2 class="product-model">{{model}}</h2>
-    <p class="product-brand">{{brand}}</p>
-    <p class="product-family">{{productFamily}}</p>
-  {{/with}}
+  {{!-- Product title (model) --}}
+  <div class="product-header">
+    <h1 class="product-model">{{productInfo.model}}</h1>
+    <p class="product-category">{{productInfo.category}}</p>
+  </div>
+
+  <div class="product-general-info">
+
+    {{!-- Product gallery. The first image will be displayed in the preview-image element --}}
+    <div class="gallery">
+      <img src="{{images.gallery.[0].path}}" alt="{{productInfo.model}} image" class="gallery-image-preview">
+
+      {{!-- Container with all the images of the product --}}
+      <ul class="gallery-images">
+      {{#each images.gallery}}
+        <img src="{{this.path}}" alt="{{../productInfo.model}} image" class="gallery-image">
+      {{/each}}
+      </ul>
+    </div>
+
+    {{!-- General information of the product --}}
+    <section class="product-section product-info">
+      <img src="{{images.brand.path}}" alt="{{images.brand.name}} image" class="brand">
+      <ul class="product-info-list">
+        <li class="product-info-list-item"><strong>Model:</strong> {{productInfo.model}}</li>
+        <li class="product-info-list-item"><strong>Family:</strong> {{productInfo.productFamily}}</li>
+        <li class="product-info-list-item"><strong>Type:</strong> {{productInfo.type}}</li>
+
+        {{!-- Check if the product has discount --}}
+        {{#if price.discountInfo}}
+          <a href="/products/add-to-chart/{{_id}}" class="button button-primary">Add to chart<span><strike>{{price.amount}}€</strike>{{{calculateDiscount price.amount price.discountInfo.discount}}}</span></a>
+        {{else}}
+          <a href="/products/add-to-chart/{{_id}}" class="button button-primary">Add to chart<span>{{price.amount}}€</span></a>
+        {{/if}}
+      </ul>
+    </section>
+
+  </div>
+
+  <div class="product-especs">
+    <section class="product-section">
+
+    </section>
+  </div>
   
 </div>
 {{/with}}
