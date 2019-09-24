@@ -1,0 +1,45 @@
+[
+  {
+    "productInfo": {
+      "brand": "Corsair",
+      "model": "Series RM850i RESPAWN",
+      "productFamily": "Power supply",
+      "type": "Component",
+      "category": "Featured"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/6-FUENTE/rmi-850-80-plus-gold/galeria/fuente-corsair-rmi-850-80-plus.gold-modular-galeria-1.jpg",
+          "name": "Series RM850i RESPAWN"
+        }
+      ]
+    },
+    "price": {
+      "amount": 146.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 20,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "powerSupply": {
+      "energy": {
+        "voltage": 850
+      },
+      "cooling": {
+        "fanSize": 135 
+      },
+      "weightAndDimension": {
+        "width": 150,
+        "height": 86,
+        "depth": 180,
+        "weight": 1980
+      }
+    }
+  }
+]
