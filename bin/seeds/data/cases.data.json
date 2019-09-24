@@ -1,0 +1,65 @@
+[
+  {
+    "productInfo": {
+      "brand": "NZXT",
+      "model": "H510 Elite Blanco Mate/Negro",
+      "productFamily": "Case",
+      "type": "Component",
+      "category": "Just in"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-21.jpeg",
+          "name": "NZXT H510 Elite Blanco Mate/Negro"
+        },
+        {
+          "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-20.jpeg",
+          "name": "NZXT H510 Elite Blanco Mate/Negro"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-5.jpeg",
+          "name": "NZXT H510 Elite Blanco Mate/Negro"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-26.jpeg",
+          "name": "NZXT H510 Elite Blanco Mate/Negro"
+        }
+      ]
+    },
+    "price": {
+      "amount": 159.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 5,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "case": {
+      "weightAndDimensions": {
+        "width": 210,
+        "height": 435,
+        "weight": 7500,
+        "depth": 428
+      },
+      "design": {
+        "type": "Midi ATX Tower",
+        "ilumination": true,
+        "cableManagment": true,
+        "numberOfPorts35": 3,
+        "numberOfPorts25": 3,
+        "sideWindow": true,
+        "numberOfPortsUSB2": 1,
+        "numberOfPortsUSB3": 1
+      },
+      "cooling": {
+        "numberOfFans": 4,
+        "waterCooling": false 
+      }
+    }
+  }
+]
