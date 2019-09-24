@@ -58,6 +58,9 @@ hbs.registerHelper('ifUndefined', (value, options) => {
   }
 });
 
+// Helpers
+hbs.registerHelper('calculateDiscount', require("./helpers/calculate-discount.helper"))
+
 // default value for title local
 app.locals.title = 'UP Components';
 
