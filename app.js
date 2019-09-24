@@ -34,8 +34,19 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname, 'public', 'images', 'favicon.ico')));
-hbs.registerPartials("./views/partials")
 
+hbs.registerPartials("./views/partials")
+hbs.registerPartials("./views/partials/products/cases")
+hbs.registerPartials("./views/partials/products/coolings")
+hbs.registerPartials("./views/partials/products/graphic-cards")
+hbs.registerPartials("./views/partials/products/hard-drives")
+hbs.registerPartials("./views/partials/products/keyboards")
+hbs.registerPartials("./views/partials/products/monitors")
+hbs.registerPartials("./views/partials/products/motherboards")
+hbs.registerPartials("./views/partials/products/mouses")
+hbs.registerPartials("./views/partials/products/power-supplies")
+hbs.registerPartials("./views/partials/products/processors")
+hbs.registerPartials("./views/partials/products/ram-memories")
 
 hbs.registerHelper('ifUndefined', (value, options) => {
   if (arguments.length < 2)
