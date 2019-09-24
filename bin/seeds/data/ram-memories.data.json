@@ -1,0 +1,48 @@
+[
+  {
+    "productInfo": {
+      "brand": "Corsair",
+      "model": "DDR4 VENGANCE® RGB PRO 3200MHZ 23GB C16",
+      "productFamily": "RAM",
+      "type": "Component",
+      "category": "Just in"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/memoria-ram/memoria-kit-ddr4--16gb2x8gb-pc4-24000-3000mhz-corsair-vengeance-rgb-pro-c15/galeria/memoria-corsair-ddr4-16gb-2x8gb-pc-3200-vengeance-rgb-pro-black-galeria.jpg",
+          "name": "DDR4 VENGANCE® RGB PRO 3200MHZ 23GB C16"
+        }
+      ]
+    },
+    "price": {
+      "amount": 184.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 10,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "ram": {
+      "characteristics": {
+        "capacity": 32,
+        "speed": 3200,
+        "modules": 2,
+        "type": "ddr4"
+      },
+      "energy": {
+        "voltage": 1.2
+      },
+      "weightAndDimensions": {
+        "width": 13.82,
+        "height": 5.08,
+        "depth": 0.76,
+        "weight": 124
+      }
+    }
+  }
+]
