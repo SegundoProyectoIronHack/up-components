@@ -31,7 +31,11 @@ const productSchema = new Schema({
       path: String,
       name: String,
       imageID: String
-    }]
+    }],
+    brand: {
+      path: String,
+      name: String
+    }
   },
 
   price: {
@@ -69,7 +73,9 @@ const productSchema = new Schema({
       velociy: Number
     },
     typeAndPorts: {
-      type: String,
+      type: {
+        type: String
+      },
       hdmi: {
         type: Number
       },
