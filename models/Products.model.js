@@ -324,6 +324,27 @@ const productSchema = new Schema({
       depth: Number,
       weight: Number
     }
+  },
+
+  ram: {
+    characteristics: {
+      capacity: Number,
+      speed: Number,
+      modules: Number,
+      type: {
+        type: String,
+        enum: ["ddr", "ddr2", "ddr3", "ddr4"]
+      }
+    },
+    energy: {
+      voltage: Number
+    },
+    weightAndDimensions: {
+      width: Number,
+      height: Number,
+      depth: Number,
+      weight: Number
+    }
   }
 })
 
