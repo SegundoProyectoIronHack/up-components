@@ -33,7 +33,7 @@
         {{#if price.discountInfo}}
           <a href="/products/add-to-chart/{{_id}}" class="button button-primary">Add to chart<span><strike>{{price.amount}}€</strike>{{{calculateDiscount price.amount price.discountInfo.discount}}}</span></a>
         {{else}}
-          <a href="/products/add-to-chart/{{_id}}" class="button button-primary">Add to chart<span>{{price.amount}}€</span></a>
+          <a href="/products/add-to-chart/{{_id}}" class="button button-primary">Add to chart<span>{{{calculateTaxes price.amount price.taxes}}}€</span></a>
         {{/if}}
       </ul>
     </section>
