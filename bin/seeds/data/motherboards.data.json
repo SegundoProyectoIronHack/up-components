@@ -1,0 +1,83 @@
+[
+  {
+    "productInfo": {
+      "brand": "FATAL1TY",
+      "model": "X370 Gaming K4",
+      "productFamily": "Case",
+      "type": "Component",
+      "category": "On sale"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asrock/placas-base/X370-GAMING-K4/galeria/placa-base-asrock-x370-gaming-k4-am4-galeria.jpg",
+          "name": "FATAL1TY X370 Gaming K4"
+        },
+        {
+          "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asrock/placas-base/X370-GAMING-K4/galeria/placa-base-asrock-x370-gaming-k4-am4-galeria-1.jpg",
+          "name": "FATAL1TY X370 Gaming K4"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asrock/placas-base/X370-GAMING-K4/galeria/placa-base-asrock-x370-gaming-k4-am4-galeria-2.jpg",
+          "name": "FATAL1TY X370 Gaming K4"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asrock/placas-base/X370-GAMING-K4/galeria/placa-base-asrock-x370-gaming-k4-am4-galeria-3.jpg",
+          "name": "FATAL1TY X370 Gaming K4"
+        }
+      ]
+    },
+    "price": {
+      "amount": 139.90,
+      "discountInfo": {
+        "discount": 0.10,
+        "dateFrom": "2019-09-23",
+        "dateTo": "2019-11-23"
+      },
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 5,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "motherBoard": {
+      "processor": {
+        "socket": "AM4",
+        "maxProcessors": 1
+      },
+      "memory": {
+        "maxCapacity":2,
+        "numberOfSlots": 4
+      },
+      "internalConnectors": {
+        "usb2": 2,
+        "usb3": 2,
+        "sata": 6
+      },
+      "energy": {
+        "numberOfPins": 24
+      },
+      "backports": {
+        "usb2": 1,
+        "usb3": 1,
+        "ethernet": 1,
+        "hdmi": 1
+      },
+      "characteristics": {
+        "type": "ATX",
+        "chipset": "AMD Promontory X370",
+        "m2Slots": 1,
+        "pciExpress3Slots": 4,
+        "pciExpress2Slots": 2
+      },
+      "weightAndDimensions": {
+        "width": 305.000,
+        "depth": 244.000
+      }
+    }
+  }
+]
