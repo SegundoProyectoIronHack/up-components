@@ -1,0 +1,63 @@
+[
+  {
+    "productInfo": {
+      "brand": "GEFORCE",
+      "model": "RTX 2080 Super Ventus XS OC 8GB",
+      "productFamily": "Graphic card",
+      "type": "Component",
+      "category": "Featured"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-geforce-rtx-2080-super-ventus-xs-oc-8gb-gddr6/galeria/tarjeta-grafica-msi-rtx-2080-super-ventus-xs-oc-8gb-gddr6-5.jpg",
+          "name": "Gefore RTX 2080 Super Ventus XS OC 8GB"
+        }
+      ]
+    },
+    "price": {
+      "amount": 774.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 10,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "graphicCard": {
+      "characteristics": {
+        "family": "Nvidia",
+        "graphicProcessor": "GeForce RTX 2080 SUPER",
+        "maximumResolution": "7680 x 4320 px"
+      },
+      "memory": {
+        "capacity": 8,
+        "type": "DDR6",
+        "velociy": 1550
+      },
+      "typeAndPorts": {
+        "type": "PCI Express x16 3.0",
+        "hdmi": 1,
+        "displayPort": 3,
+        "vga": 0,
+        "dvi": 0
+      },
+      "cooling": {
+        "fanSize": 2,
+        "type": "Air"
+      }
+    },
+    "energy": {
+      "voltage": 650
+    },
+    "weightAndDimensions": {
+      "width": 268,
+      "height": 114,
+      "depth": 50,
+      "weight": 1050
+    }
+  }
+]

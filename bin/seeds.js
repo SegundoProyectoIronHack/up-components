@@ -5,6 +5,7 @@ const Products = require("./../models/Products.model")
 const ramMemoriesSeed = require("./seeds/ram-memories.seeds")
 const powerSuppliesSeed = require("./seeds/power-supplies.seeds")
 const processorsSeed = require("./seeds/processors.seeds")
+const graphicsCardsSeed = require("./seeds/graphics-cards.seeds")
 
 require("./../configs/db.config")
 
@@ -14,6 +15,7 @@ const createSeeds = async () => {
   await ramMemoriesSeed()
   await powerSuppliesSeed()
   await processorsSeed()
+  await graphicsCardsSeed()
 }
 
 createSeeds().then(() => {
