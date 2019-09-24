@@ -1,0 +1,39 @@
+[
+  {
+    "productInfo": {
+      "brand": "AMD",
+      "model": "RYZEN 7 3700X 3.6GHZ WRAITH PRISM",
+      "productFamily": "Processor",
+      "type": "Component",
+      "category": "Recommended"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/amd/procesadores/procesador-amd-am4-ryzen-7-3700x-8x44ghz-36mb-box/ryzen-7-3600x/galeria/procesador-amd-am4-ryzen-7-3700x-galeria-1.jpg",
+          "name": "AMD RYZEN 7 3700X 3.6GHZ WRAITH PRISM"
+        }
+      ]
+    },
+    "price": {
+      "amount": 361.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 15,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "processor": {
+      "features": {
+        "family": "AMD Ryzen 7",
+        "frequency": 3.6,
+        "socket": "AM4",
+        "cores": 8
+      }
+    }
+  }
+]
