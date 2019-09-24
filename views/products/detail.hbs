@@ -1,5 +1,7 @@
+{{> commonProductDetail product=product}}
+
 {{#if product.ram}}
-{{> ramMemoryDetail product=product}}
+  <h2>RAM</h2>
 {{/if}}
 
 {{#if product.powerSupply}}
@@ -8,4 +10,12 @@
 
 {{#if product.processor}}
   <h2>Processor</h2>
+{{/if}}
+
+{{#if product.case}}
+  <h2>Case</h2>
+{{/if}}
+
+{{#if product.graphicCard}}
+  <h2>Graphic card</h2>
 {{/if}}
