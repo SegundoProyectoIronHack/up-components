@@ -27,11 +27,11 @@ const productSchema = new Schema({
   },
 
   images: {
-    gallery: {
+    gallery: [{
       path: String,
       name: String,
       imageID: String
-    }
+    }]
   },
 
   price: {
