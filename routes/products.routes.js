@@ -4,6 +4,7 @@ const controller = require("./../controllers/products.controller")
 router.use("/graphic-cards", require("./graphic-cards.routes"))
 router.use("/processors", require("./processors.routes"))
 router.use("/ram-memories", require("./ram-memories.routes"))
+router.use("/power-supplies", require ("./power-supplies.routes"))
 
 router.get("/", (req, res, next) => {
   
