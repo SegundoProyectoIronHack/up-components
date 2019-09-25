@@ -40,6 +40,7 @@ const userSchema = new Schema({
     }
   },
   address: {
+    name: String,
     address: String,
     buildingNumber: Number,
     zipCode: Number,

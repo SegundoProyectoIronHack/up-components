@@ -71,6 +71,7 @@ hbs.registerHelper('ifUndefined', (value, options) => {
 // Helpers
 hbs.registerHelper('calculateDiscount', require("./helpers/calculate-discount.helper"))
 hbs.registerHelper('calculateTaxes', require("./helpers/calculate-taxes.helper"))
+hbs.registerHelper('ifNot', require("./helpers/if-not.helper"))
 
 // default value for title local
 app.locals.title = 'UP Components';

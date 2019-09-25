@@ -4,6 +4,7 @@ const router  = express.Router();
 
 router.use('/auth', require('./auth.routes'));
 router.use("/products", require("./products.routes"))
+router.use("/profile", require("./profile.routes"))
 
 /* GET home page */
 router.get('/', (req, res, next) => {
