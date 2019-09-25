@@ -16,4 +16,8 @@ router.get('/', (req, res, next) => {
   res.render('index');
 });
 
+router.get("/account-activated", (req, res, next) => {
+  res.render("account/account-activated")
+})
+
 module.exports = router;

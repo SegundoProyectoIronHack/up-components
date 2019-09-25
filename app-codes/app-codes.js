@@ -8,6 +8,7 @@ let appCodes = {
   5: process.env.CODE_MESSAGE_5,
   6: process.env.CODE_MESSAGE_6,
   7: process.env.CODE_MESSAGE_7,
+  8: process.env.CODE_MESSAGE_8,
 }
 
 module.exports = appCodes

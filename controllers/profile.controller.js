@@ -67,4 +67,19 @@ controller.updateProfile = (req, res, next) => {
   });
 };
 
+controller.activateAccount = (req, res, next) => {
+  console.log("TOKEN:", req.params.token)
+  Users.findOneAndUpdate({"profile.token": req.params.token}, {
+    "profile.status": "ACTIVE"
+  }, {
+    new: true
+  })
+  .then(profileActivated => {
+    console.log("PROFILE ACTIVATED:",profileActivated)
+    if (profileActivated) {
+      res.redirect("/account-activated")
+    }
+  })
+}
+
 module.exports = controller;
