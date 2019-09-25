@@ -1,6 +1,82 @@
 [
   {
     "productInfo": {
+      "brand": "MEG",
+      "model": "X399 CREATION",
+      "productFamily": "Mother board",
+      "type": "Component",
+      "category": "Recommended"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/placas-base/placa-msi-gaming-meg-x399-creation/galeria/placa-msi-gaming-meg-x399-creation-5.jpg",
+          "name": "MEG X399 CREATION Three Quarter View"
+        },
+        {
+          "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/placas-base/placa-msi-gaming-meg-x399-creation/galeria/placa-msi-gaming-meg-x399-creation-1.jpg",
+          "name": "MEG X399 CREATION Top View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/placas-base/placa-msi-gaming-meg-x399-creation/galeria/placa-msi-gaming-meg-x399-creation-2.jpg",
+          "name": "MEG X399 CREATION Side View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/placas-base/placa-msi-gaming-meg-x399-creation/galeria/placa-msi-gaming-meg-x399-creation-4.jpg",
+          "name": "MEG X399 CREATION Outputs View"
+        }
+      ]
+    },
+    "price": {
+      "amount": 524.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 7,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "motherBoard": {
+      "processor": {
+        "socket": "TR4",
+        "maxProcessors": 1
+      },
+      "memory": {
+        "maxCapacity":128,
+        "numberOfSlots": 8
+      },
+      "internalConnectors": {
+        "usb2": 6,
+        "usb3": 6,
+        "sata": 8
+      },
+      "energy": {
+        "numberOfPins": 24
+      },
+      "backports": {
+        "usb2": 1,
+        "usb3": 9,
+        "ethernet": 1,
+        "hdmi": 1
+      },
+      "characteristics": {
+        "type": "ATX",
+        "chipset": "AMD X399",
+        "m2Slots": 3,
+        "pciExpress3Slots": 4,
+        "pciExpress2Slots": 1
+      },
+      "weightAndDimensions": {
+        "width": 304,
+        "depth": 272
+      }
+    }
+  },
+  {
+    "productInfo": {
       "brand": "FATAL1TY",
       "model": "X370 Gaming K4",
       "productFamily": "Mother board",
@@ -75,8 +151,8 @@
         "pciExpress2Slots": 2
       },
       "weightAndDimensions": {
-        "width": 305.000,
-        "depth": 244.000
+        "width": 305,
+        "depth": 244
       }
     }
   }

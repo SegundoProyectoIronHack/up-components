@@ -5,18 +5,30 @@
       "model": "RTX 2080 Super Ventus XS OC 8GB",
       "productFamily": "Graphic card",
       "type": "Component",
-      "category": "Featured"
+      "category": "On sale"
     },
     "images": {
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-geforce-rtx-2080-super-ventus-xs-oc-8gb-gddr6/galeria/tarjeta-grafica-msi-rtx-2080-super-ventus-xs-oc-8gb-gddr6-5.jpg",
-          "name": "Gefore RTX 2080 Super Ventus XS OC 8GB"
+          "name": "Gefore RTX 2080 Super Ventus XS OC 8GB Presentation View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-geforce-rtx-2080-super-ventus-xs-oc-8gb-gddr6/galeria/tarjeta-grafica-msi-rtx-2080-super-ventus-xs-oc-8gb-gddr6-2.jpg",
+          "name": "Gefore RTX 2080 Super Ventus XS OC 8GB Top View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-geforce-rtx-2080-super-ventus-xs-oc-8gb-gddr6/galeria/tarjeta-grafica-msi-rtx-2080-super-ventus-xs-oc-8gb-gddr6-3.jpg",
+          "name": "Gefore RTX 2080 Super Ventus XS OC 8GB Bottom View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-geforce-rtx-2080-super-ventus-xs-oc-8gb-gddr6/galeria/tarjeta-grafica-msi-rtx-2080-super-ventus-xs-oc-8gb-gddr6-4.jpg",
+          "name": "Gefore RTX 2080 Super Ventus XS OC 8GB Outputs View"
         }
       ]
     },
     "price": {
-      "amount": 774.90,
+      "amount": 759.90,
       "taxes": 0.21
     },
     "sales": {
@@ -58,6 +70,83 @@
       "height": 114,
       "depth": 50,
       "weight": 1050
+    }
+  },
+  {
+    "productInfo": {
+      "brand": "RADEON",
+      "model": "RX590 ARMOR OC 8GB GDDR5",
+      "productFamily": "Graphic card",
+      "type": "Component",
+      "category": "Featured"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5-main.jpg",
+          "name": "RX590 ARMOR OC 8GB GDDR5 Presentation View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5/galeria/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5-1.jpg",
+          "name": "RX590 ARMOR OC 8GB GDDR5 Top View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5/galeria/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5-3.jpg",
+          "name": "RX590 ARMOR OC 8GB GDDR5 Three Quarter View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5/galeria/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5-4.jpg",
+          "name": "RX590 ARMOR OC 8GB GDDR5 Outputs View"
+        }
+      ]
+    },
+    "price": {
+      "amount": 239.90,
+      "discountInfo": {
+        "discount": 0.20,
+        "dateFrom": "2019-09-23",
+        "dateTo": "2019-10-23"
+      },
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 10,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "graphicCard": {
+      "characteristics": {
+        "family": "Radeon",
+        "graphicProcessor": "RX590 ARMOR OC 8GB DDR5"
+      },
+      "memory": {
+        "capacity": 8,
+        "type": "DDR5",
+        "velociy": 8000
+      },
+      "typeAndPorts": {
+        "type": "PCI Express x16 3.0",
+        "hdmi": 2,
+        "displayPort": 2,
+        "vga": 0,
+        "dvi": 1
+      },
+      "cooling": {
+        "fanSize": 2,
+        "type": "Air"
+      }
+    },
+    "energy": {
+      "voltage": 220
+    },
+    "weightAndDimensions": {
+      "width": 143,
+      "height": 40,
+      "depth": 278,
+      "weight": 873
     }
   }
 ]

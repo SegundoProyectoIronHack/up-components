@@ -5,7 +5,7 @@
       "model": "Essential",
       "productFamily": "Mouse",
       "type": "Peripheral",
-      "category": "Just in"
+      "category": "On sale"
     },
     "images": {
       "gallery": [
@@ -29,6 +29,11 @@
     },
     "price": {
       "amount": 45.90,
+      "discountInfo": {
+        "discount": 0.12,
+        "dateFrom": "2019-09-23",
+        "dateTo": "2019-10-23"
+      },
       "taxes": 0.21
     },
     "sales": {
@@ -60,6 +65,70 @@
         "height": 43,
         "depth": 124,
         "weight": 107
+      }
+    }
+  },
+  {
+    "productInfo": {
+      "brand": "MAMBA",
+      "model": "Elite",
+      "productFamily": "Mouse",
+      "type": "Peripheral",
+      "category": "Just in"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/RATONES/mamba-elite-new/galeria/rat%C3%B3n-gaming-mamba-elite-galeria.jpg",
+          "name": "Mamba Elite Top View"
+        },
+        {
+          "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/RATONES/mamba-elite-new/galeria/rat%C3%B3n-gaming-mamba-elite-galeria-2.jpg",
+          "name": "Mamba Elite Three Quarter View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/RATONES/mamba-elite-new/galeria/rat%C3%B3n-gaming-mamba-elite-galeria-3.jpg",
+          "name": "Mamba Elite Side View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/RATONES/mamba-elite-new/galeria/rat%C3%B3n-gaming-mamba-elite-galeria-4.jpg",
+          "name": "Mamba Elite Back View"
+        }
+      ]
+    },
+    "price": {
+      "amount": 92.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 20,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "mouse": {
+      "characteristics": {
+        "type": "Optical",
+        "interface": "USB",
+        "numberOfButtons": 8,
+        "movementResolution": 16000,
+        "wireless": false
+      },
+      "design": {
+        "formFactor": "Right handed",
+        "ilumination": true,
+        "iluminationRGB": true
+      },
+      "ergonomics": {
+        "cableLength": 200
+      },
+      "weightAndDimensions": {
+        "width": 70,
+        "height": 43,
+        "depth": 125,
+        "weight": 96
       }
     }
   }

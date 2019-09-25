@@ -1,6 +1,68 @@
 [
   {
     "productInfo": {
+      "brand": "ACER",
+      "model": "ED273A 27",
+      "productFamily": "Monitor",
+      "type": "Peripheral",
+      "category": "Featured"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/acer/monitores/monitor-gaming-acer-27-ed273awidpx-curvo/galeria/monitor-gaming-acer-27-ed273awidpx-curvo-8.jpg",
+          "name": "ACER ED273A 27 Front View"
+        },
+        {
+          "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/acer/monitores/monitor-gaming-acer-27-ed273awidpx-curvo/galeria/monitor-gaming-acer-27-ed273awidpx-curvo-6.jpg",
+          "name": "ACER ED273A 27 Back View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/acer/monitores/monitor-gaming-acer-27-ed273awidpx-curvo/galeria/monitor-gaming-acer-27-ed273awidpx-curvo-9.jpg",
+          "name": "ACER ED273A 27 Three Quarter View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/acer/monitores/monitor-gaming-acer-27-ed273awidpx-curvo/galeria/monitor-gaming-acer-27-ed273awidpx-curvo-2.jpg",
+          "name": "ACER ED273A 27 Top View"
+        }
+      ]
+    },
+    "price": {
+      "amount": 265.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 15,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "monitor": {
+      "screen": {
+        "resolution": "1920 x 1080",
+        "refreshRate": 4,
+        "threeD": false,
+        "technology": "LED",
+        "inches": 27,
+        "screenType": "VA",
+        "speakers": false,
+        "camera": false
+      },
+      "portsAndInterfaces": {
+        "hdmi": 1,
+        "displayPort": 1,
+        "vga": 0,
+        "dvi": 1
+      },
+      "ergonomics": {
+        "vesa": true
+      }
+    }
+  },
+  {
+    "productInfo": {
       "brand": "BENQ",
       "model": "GW2480 23.8 EYE-CARE",
       "productFamily": "Monitor",
@@ -11,7 +73,7 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/benq/monitores/gw2280/monitor-benq-gw2280-215-galeria.jpg",
-          "name": "BENQ GW2480 23.8 EYE-CARE"
+          "name": "BENQ GW2480 23.8 EYE-CARE Front View"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/benq/monitores/monitor-benq-gw2480-238/galeria/monitor-benq-gw2480-238-1.jpg",
