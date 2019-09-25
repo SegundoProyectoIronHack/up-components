@@ -1,8 +1,28 @@
 {{#with ram}}
   <div class="product-specs">
-    <div class="product-specs-section">
+    <section class="product-specs-section">
       <h2 class="product-specs-title">Characteristics</h2>
-      
-    </div>
+      <ul class="product-specs-list">
+        <li class="product-specs-list-item"><strong>Capacity: </strong>{{ram.characteristics.capacity}}GB</li>
+        <li class="product-specs-list-item"><strong>Speed: </strong>{{ram.characteristics.speed}}</li>
+        <li class="product-specs-list-item"><strong>Modules: </strong>{{ram.characteristics.modules}}</li>
+        <li class="product-specs-list-item"><strong>Type: </strong>{{ram.characteristics.type}}</li>
+      </ul>
+    </section>
+    <section class="product-specs-section">
+      <h2 class="product-specs-title">Energy</h2>
+      <ul class="product-specs-list">
+        <li class="product-specs-list-item"><strong>Voltage: </strong>{{ram.energy.voltage}}</li>
+      </ul>
+    </section>
+    <section class="product-specs-section">
+      <h2 class="product-specs-title">Weight and dimensions</h2>
+      <ul class="product-specs-list">
+        <li class="product-specs-list-item"><strong>Width: </strong>{{ram.weightAndDimensions.width}}</li>
+        <li class="product-specs-list-item"><strong>Height: </strong>{{ram.weightAndDimensions.height}}</li>
+        <li class="product-specs-list-item"><strong>Depth: </strong>{{ram.weightAndDimensions.depth}}</li>
+        <li class="product-specs-list-item"><strong>Weight: </strong>{{ram.weightAndDimensions.weight}}</li>
+      </ul>
+    </section>
   </div>
 {{/with}}
