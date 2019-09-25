@@ -11,19 +11,19 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/ozone/4_TECLADOS/strikeback/galeria/teclado-gaming-ozone-strikeback-rgb-galeria-6.jpg",
-          "name": "Strikeback RGB Frontal"
+          "name": "Strikeback RGB Top View"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/ozone/4_TECLADOS/strikeback/galeria/teclado-gaming-ozone-strikeback-rgb-galeria-5.jpg",
-          "name": "Strikeback RGB buttons"
+          "name": "Strikeback RGB Buttons View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/ozone/4_TECLADOS/strikeback/galeria/teclado-gaming-ozone-strikeback-rgb-galeria.jpg",
-          "name": "Strikeback RGB side"
+          "name": "Strikeback RGB Side View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/ozone/4_TECLADOS/strikeback/galeria/teclado-gaming-ozone-strikeback-rgb-galeria-7.jpg",
-          "name": "Strikeback RGB table"
+          "name": "Strikeback RGB Table View"
         }
       ]
     },
@@ -55,6 +55,70 @@
         "height": 147,
         "depth": 35,
         "weight": 1170
+      }
+    }
+  },
+  {
+    "productInfo": {
+      "brand": "KEMPO",
+      "model": "RGB",
+      "productFamily": "Keyboard",
+      "type": "Peripheral",
+      "category": "On sale"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/krom/TECLADOS/kempo-switch-red/galeria/teclado-gaming-krom-kempo-rgb-switch-red-galeria.jpg",
+          "name": "Kempo RGB Top View"
+        },
+        {
+          "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/krom/TECLADOS/kempo-switch-red/galeria/teclado-gaming-krom-kempo-rgb-switch-red-galeria-1.jpg",
+          "name": "Kempo RGB Top View 2"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/krom/TECLADOS/kempo-switch-red/galeria/teclado-gaming-krom-kempo-rgb-switch-red-galeria-4.jpg",
+          "name": "Kempo RGB Three Quarter View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/krom/TECLADOS/kempo-switch-red/galeria/teclado-gaming-krom-kempo-rgb-switch-red-galeria-5.jpg",
+          "name": "Kempo RGB Unboxed View"
+        }
+      ]
+    },
+    "price": {
+      "amount": 79.90,
+      "discountInfo": {
+        "discount": 0.18,
+        "dateFrom": "2019-09-23",
+        "dateTo": "2019-10-23"
+      },
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 15,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "keyboard": {
+      "characteristics": {
+        "type": "Mechanical",
+        "numberOfKeys": 105,
+        "typeOfSwitch": "MX red",
+      "design": "Spanish",
+        "iluminationRGB": true
+      },
+      "ergonomics": {
+        "cableLength": 180
+      },
+      "weightAndDimensions": {
+        "width": 465,
+        "height": 197,
+        "depth": 38,
+        "weight": 1112
       }
     }
   }

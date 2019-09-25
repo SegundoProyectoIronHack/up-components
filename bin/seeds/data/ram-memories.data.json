@@ -11,7 +11,19 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/memoria-ram/memoria-kit-ddr4--16gb2x8gb-pc4-24000-3000mhz-corsair-vengeance-rgb-pro-c15/galeria/memoria-corsair-ddr4-16gb-2x8gb-pc-3200-vengeance-rgb-pro-black-galeria.jpg",
-          "name": "DDR4 VENGANCE® RGB PRO 3200MHZ 23GB C16"
+          "name": "DDR4 VENGANCE® RGB PRO 3200MHZ 23GB C16 Three Quarter View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/memoria-ram/memoria-kit-ddr4--16gb2x8gb-pc4-24000-3000mhz-corsair-vengeance-rgb-pro-c15/memoria-corsair-vengeance-rgb-ddr4-3000mhz-16gb-c15-main.jpg",
+          "name": "DDR4 VENGANCE® RGB PRO 3200MHZ 23GB C16 Side View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/memoria-ram/memoria-corsair-ddr4-32gb-2x16gb-pc3200-vengeance-rgb-pro-bl/galeria/memoria-corsair-ddr4-32gb-2x16gb-pc3200-vengeance-rgb-pro-bl-4.jpg",
+          "name": "DDR4 VENGANCE® RGB PRO 3200MHZ 23GB C16 Insides View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/memoria-ram/memoria-corsair-ddr4-32gb-2x16gb-pc3200-vengeance-rgb-pro-bl/galeria/memoria-corsair-ddr4-32gb-2x16gb-pc3200-vengeance-rgb-pro-bl-6.jpg",
+          "name": "DDR4 VENGANCE® RGB PRO 3200MHZ 23GB C16 Insides View 2"
         }
       ]
     },
@@ -42,6 +54,69 @@
         "height": 5.08,
         "depth": 0.76,
         "weight": 124
+      }
+    }
+  },
+  {
+    "productInfo": {
+      "brand": "TFORCE",
+      "model": "VULCAN Z DDR4 16GB 2666MHZ CL18",
+      "productFamily": "RAM",
+      "type": "Component",
+      "category": "On sale"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/team-memory/memoria-ram/modulo-memoria-ram-teamgroup-tforce-vulcan-z-ddr4-16gb-2666mhz-cl18/galeria/modulo-memoria-ram-teamgroup-tforce-vulcan-z-ddr4-16gb-2666mhz-cl18-1.jpg",
+          "name": "TFORCE VULCAN Z DDR4 16GB 2666MHZ CL18 Front View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/team-memory/memoria-ram/modulo-memoria-ram-teamgroup-tforce-vulcan-z-ddr4-16gb-2666mhz-cl18/galeria/modulo-memoria-ram-teamgroup-tforce-vulcan-z-ddr4-16gb-2666mhz-cl18-3.jpg",
+          "name": "TFORCE VULCAN Z DDR4 16GB 2666MHZ CL18 Top View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/team-memory/memoria-ram/modulo-memoria-ram-teamgroup-tforce-vulcan-z-ddr4-16gb-2666mhz-cl18/galeria/modulo-memoria-ram-teamgroup-tforce-vulcan-z-ddr4-16gb-2666mhz-cl18-4.jpg",
+          "name": "TFORCE VULCAN Z DDR4 16GB 2666MHZ CL18 Insides View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/team-memory/memoria-ram/modulo-memoria-ram-teamgroup-tforce-vulcan-z-ddr4-16gb-2666mhz-cl18/galeria/modulo-memoria-ram-teamgroup-tforce-vulcan-z-ddr4-16gb-2666mhz-cl18-6.jpg",
+          "name": "TFORCE VULCAN Z DDR4 16GB 2666MHZ CL18 Breakdown View"
+        }
+      ]
+    },
+    "price": {
+      "amount": 73.90,
+      "discountInfo": {
+        "discount": 0.15,
+        "dateFrom": "2019-09-23",
+        "dateTo": "2019-10-23"
+      },
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 10,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "ram": {
+      "characteristics": {
+        "capacity": 16,
+        "speed": 2666,
+        "modules": 2,
+        "type": "ddr4"
+      },
+      "energy": {
+        "voltage": 1.2
+      },
+      "weightAndDimensions": {
+        "width": 7,
+        "height": 140,
+        "depth": 32,
+        "weight": 110
       }
     }
   }
