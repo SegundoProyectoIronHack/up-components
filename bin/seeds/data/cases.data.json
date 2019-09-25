@@ -2,7 +2,7 @@
   {
     "productInfo": {
       "brand": "NZXT",
-      "model": "H510 Elite Blanco Mate/Negro",
+      "model": "H510 Elite Matte White/Black",
       "productFamily": "Case",
       "type": "Component",
       "category": "Just in"
@@ -11,19 +11,19 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-21.jpeg",
-          "name": "NZXT H510 Elite Blanco Mate/Negro"
+          "name": "NZXT H510 Elite Matte White/Black"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-20.jpeg",
-          "name": "NZXT H510 Elite Blanco Mate/Negro"
+          "name": "NZXT H510 Elite Matte White/Black"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-5.jpeg",
-          "name": "NZXT H510 Elite Blanco Mate/Negro"
+          "name": "NZXT H510 Elite Matte White/Black"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-26.jpeg",
-          "name": "NZXT H510 Elite Blanco Mate/Negro"
+          "name": "NZXT H510 Elite Matte White/Black"
         }
       ]
     },
@@ -58,6 +58,74 @@
       },
       "cooling": {
         "numberOfFans": 4,
+        "waterCooling": false 
+      }
+    }
+  },
+  {
+    "productInfo": {
+      "brand": "Fusion",
+      "model": "S ARGB",
+      "productFamily": "Case",
+      "type": "Component",
+      "category": "On sale"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nox/cajas/hummer-fusion-s-argb/semitorre-atx-gaming-nox-hummer-fusion-s-argb-main.jpg",
+          "name": "Fusion S ARGB Three Quarter View"
+        },
+        {
+          "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-20.jpeg",
+          "name": "Fusion S ARGB Top View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-5.jpeg",
+          "name": "Fusion S ARGB Side View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/nzxt/cajas/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro/galeria/nzxt-caja-semitorre-atx-h510-elite-lateral-y-frontal-cristal-templado-blanco-negro-26.jpeg",
+          "name": "Fusion S ARGB Insides View"
+        }
+      ]
+    },
+    "price": {
+      "amount": 52.90,
+      "discountInfo": {
+        "discount": 0.11,
+        "dateFrom": "2019-09-23",
+        "dateTo": "2019-10-23"
+      },
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 15,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "case": {
+      "weightAndDimensions": {
+        "width": 210,
+        "height": 393,
+        "weight": 5300,
+        "depth": 437
+      },
+      "design": {
+        "type": "ATX",
+        "ilumination": true,
+        "cableManagment": true,
+        "numberOfPorts35": 2,
+        "numberOfPorts25": 2,
+        "sideWindow": true,
+        "numberOfPortsUSB2": 2,
+        "numberOfPortsUSB3": 2
+      },
+      "cooling": {
+        "numberOfFans": 2,
         "waterCooling": false 
       }
     }
