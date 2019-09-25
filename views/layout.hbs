@@ -9,18 +9,44 @@
 </head>
 <body>
 
-  <nav>
-    <a href="/">Home</a>
+  <nav class="nav">
+    <ul class="main-menu">
+      <li class="main-menu-item"><a href="/">Home</a></li>
 
-    {{#if user}}
-    <a href="/auth/logout">Logout</a>
-
-    {{else}}
-    <a href="/auth/login">Login</a>
-    <a href="/auth/google">Login with Google</a>
-    <a href="/auth/signup">Signup</a>
-    {{/if}}
+      {{#if user}}
+        <li class="main-menu-item"><a href="/auth/logout">Logout</a></li>
+      {{else}}
+        <li class="main-menu-item"><a href="#">Login</a></li>
+        <li class="main-menu-item"><a href="/auth/signup">Signup</a></li>
+      {{/if}}
+    </ul>
   </nav>
+
+  {{#unless user}}
+    <div class="lightbox">
+      <div class="modal">
+        <div class="modal-header">
+          <h2 class="modal-title">Login</h2>
+        </div>
+        <div class="modal-content">
+          <form action="/auth/login" class="form" method="post">
+            <div class="form-field">
+              <input type="text" name="username" id="username" placeholder="Username">
+              <label for="username">Username</label>
+            </div>
+            <div class="form-field">
+              <input type="password" name="password" id="password" placeholder="Password">
+              <label for="password">Password</label>
+            </div>
+            <div class="form-actions">
+              <input type="submit" value="Login" class="button submit-button">
+              <a href="/auth/google" class="button google-button">Login with Google</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  {{/unless}}
 
   {{{body}}}
 
