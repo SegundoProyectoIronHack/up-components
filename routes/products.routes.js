@@ -1,6 +1,7 @@
 const router = require("express").Router()
 const controller = require("./../controllers/products.controller")
 
+router.use("/components", require("./components.routes"))
 router.use("/peripherals", require("./peripherals.routes"))
 router.use("/graphics-cards", require("./graphics-cards.routes"))
 router.use("/processors", require("./processors.routes"))
