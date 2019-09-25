@@ -5,7 +5,7 @@ router.use("/graphics-cards", require("./graphics-cards.routes"))
 router.use("/processors", require("./processors.routes"))
 router.use("/ram-memories", require("./ram-memories.routes"))
 router.use("/power-supplies", require ("./power-supplies.routes"))
-
+router.use("/cases", require ("./cases.routes"))
 router.get("/", (req, res, next) => {
   
 })
