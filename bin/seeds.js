@@ -8,6 +8,7 @@ const processorsSeed = require("./seeds/processors.seeds")
 const graphicsCardsSeed = require("./seeds/graphics-cards.seeds")
 const casesSeed = require("./seeds/cases.seeds")
 const motherboardsSeed = require("./seeds/motherboards.seeds")
+const coolingSystemsSeed = require("./seeds/cooling-systems.seeds")
 
 require("./../configs/db.config")
 
@@ -20,6 +21,7 @@ const createSeeds = async () => {
   await graphicsCardsSeed()
   await casesSeed()
   await motherboardsSeed()
+  await coolingSystemsSeed()
 }
 
 createSeeds().then(() => {

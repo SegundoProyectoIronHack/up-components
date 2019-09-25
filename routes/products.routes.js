@@ -7,6 +7,7 @@ router.use("/ram-memories", require("./ram-memories.routes"))
 router.use("/power-supplies", require ("./power-supplies.routes"))
 router.use("/cases", require ("./cases.routes"))
 router.use("/motherboards", require("./motherboards.routes"))
+router.use("/cooling-systems", require("./cooling-systems.routes"))
 
 router.get("/", (req, res, next) => {
   

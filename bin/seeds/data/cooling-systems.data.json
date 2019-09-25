@@ -1,0 +1,61 @@
+[
+  {
+    "productInfo": {
+      "brand": "Hydro Series",
+      "model": "H75 Led White",
+      "productFamily": "Cooling system",
+      "type": "Component",
+      "category": "Just in"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/refrigeracion/corsair-h75-refrigeracion-agua-y-freon-procesador/galeria/corsair-h75-refrigeracion-agua-y-freon-procesador-1.jpg",
+          "name": "Hydro Series H75 Led White"
+        },
+        {
+          "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/7-REFRIGERACION/rl-h75-performance/h75/raton-optico-gaming-corsair-glaive-rgb-pro-galeria-15.jpg",
+          "name": "Hydro Series H75 Led White"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/7-REFRIGERACION/rl-h75-performance/h75/raton-optico-gaming-corsair-glaive-rgb-pro-galeria-14.jpg",
+          "name": "Hydro Series H75 Led White"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/7-REFRIGERACION/rl-h75-performance/h75/raton-optico-gaming-corsair-glaive-rgb-pro-galeria-13.jpg",
+          "name": "Hydro Series H75 Led White"
+        }
+      ]
+    },
+    "price": {
+      "amount": 82.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 10,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "coolingSystem": {
+      "characteristics": {
+        "type": "Liquid",
+        "speed": 1900,
+        "airflow": 64,
+        "spl": 31
+      },
+      "energy": {
+        "voltage": 12,
+        "numberOfPins": 8
+      },
+      "weightAndDimensions": {
+        "width": 155,
+        "height": 25,
+        "depth": 120,
+        "weight": 500
+      }
+    }
+  }
+]
