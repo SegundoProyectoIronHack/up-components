@@ -1,12 +1,5 @@
-<ul>
+<ul class="product-list">
   {{#each cases}}
-  <li>
-    <div>
-      <h2>
-        <img src="{{this.images.gallery.[0].path}}" alt="{{this.productInfo.model}}">
-        <a href="/products/detail/{{this._id}}">View</a>
-      </h2>
-    </div>
-  </li>
+  {{> commonProductListDetail product=this}}
   {{/each}}
 </ul>

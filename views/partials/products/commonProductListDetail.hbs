@@ -1,0 +1,10 @@
+{{#with product}}
+<li class="product-list-li">
+  <div class="product-list-item">
+    <h2 class="product-list-item-title">{{this.productInfo.model}}</h2>
+    <img src="{{this.images.gallery.[0].path}}"
+      alt="{{this.productInfo.model}}" class="product-list-item-image">
+    <a href="/products/detail/{{this._id}}" class="button primary-button">View</a>
+  </div>
+</li>
+{{/with}}
