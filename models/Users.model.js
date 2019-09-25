@@ -10,6 +10,7 @@ const userSchema = new Schema({
     password: String,
     name: String,
     surname: String,
+    googleId: String,
     token: {
       type: String,
       unique: true
