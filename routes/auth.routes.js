@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const passport = require("passport");
-
+const userMid = require("./../middlewares/user.mid")
 const controller = require("./../controllers/auth.controller");
 
 router.get("/login", (req, res, next) => {
@@ -10,12 +10,15 @@ router.get("/login", (req, res, next) => {
 
 router.post(
   "/login",
-  passport.authenticate("local", {
+  [
+    userMid.isAccountActivated,
+    passport.authenticate("local", {
     successRedirect: "/?message=6",
     failureRedirect: "/?message=2",
     failureFlash: true,
     passReqToCallback: true
   })
+  ]
 );
 
 router.get("/signup", (req, res, next) => {

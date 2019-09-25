@@ -20,4 +20,8 @@ router.get("/account-activated", (req, res, next) => {
   res.render("account/account-activated")
 })
 
+router.get("/activate-account", (req, res, next) => {
+  res.render("account/activate-account")
+})
+
 module.exports = router;
