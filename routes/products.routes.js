@@ -11,6 +11,7 @@ router.use("/cooling-systems", require("./cooling-systems.routes"))
 router.use("/hard-drives", require("./hard-drives.routes"))
 router.use("/monitors", require("./monitors.routes"))
 router.use("/mouses", require("./mouses.routes"))
+router.use("/keyboards", require("./keyboards.routes"))
 
 router.get("/", (req, res, next) => {
   
