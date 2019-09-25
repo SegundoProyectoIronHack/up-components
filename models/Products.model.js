@@ -182,7 +182,7 @@ const productSchema = new Schema({
     }
   },
 
-  monitors: {
+  monitor: {
     screen: {
       resolution: String,
       refreshRate: Number,

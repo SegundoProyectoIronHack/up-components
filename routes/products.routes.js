@@ -9,6 +9,7 @@ router.use("/cases", require ("./cases.routes"))
 router.use("/motherboards", require("./motherboards.routes"))
 router.use("/cooling-systems", require("./cooling-systems.routes"))
 router.use("/hard-drives", require("./hard-drives.routes"))
+router.use("/monitors", require("./monitors.routes"))
 
 router.get("/", (req, res, next) => {
   

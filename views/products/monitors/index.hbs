@@ -1,0 +1,11 @@
+<ul>
+{{#each monitors}}
+  <li>
+    <div>
+      <h2>{{this.productInfo.model}}</h2>
+      <img src="{{this.images.gallery.[0].path}}" alt="{{this.productInfo.model}}">
+      <a href="/products/detail/{{this._id}}">View</a>
+    </div>
+  </li>
+{{/each}}
+</ul>
