@@ -11,19 +11,19 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/refrigeracion/corsair-h75-refrigeracion-agua-y-freon-procesador/galeria/corsair-h75-refrigeracion-agua-y-freon-procesador-1.jpg",
-          "name": "Hydro Series H75 Led White"
+          "name": "Hydro Series H75 Led White Three Quarter View"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/7-REFRIGERACION/rl-h75-performance/h75/raton-optico-gaming-corsair-glaive-rgb-pro-galeria-15.jpg",
-          "name": "Hydro Series H75 Led White"
+          "name": "Hydro Series H75 Led White Insides View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/7-REFRIGERACION/rl-h75-performance/h75/raton-optico-gaming-corsair-glaive-rgb-pro-galeria-14.jpg",
-          "name": "Hydro Series H75 Led White"
+          "name": "Hydro Series H75 Led White Top View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/7-REFRIGERACION/rl-h75-performance/h75/raton-optico-gaming-corsair-glaive-rgb-pro-galeria-13.jpg",
-          "name": "Hydro Series H75 Led White"
+          "name": "Hydro Series H75 Led White Back View"
         }
       ]
     },
@@ -43,7 +43,7 @@
       "characteristics": {
         "type": "Liquid",
         "speed": 1900,
-        "airflow": 64,
+        "airflow": 55,
         "spl": 31
       },
       "energy": {
@@ -55,6 +55,65 @@
         "height": 25,
         "depth": 120,
         "weight": 500
+      }
+    }
+  },
+  {
+    "productInfo": {
+      "brand": "ROG",
+      "model": "RYUO 120 RGB",
+      "productFamily": "Cooling system",
+      "type": "Component",
+      "category": "On sale"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asus/refrigeracion/refrigeracion-liquida-asus-rog-ryuo-120-rgb/galeria/refrigeracion-liquida-asus-rog-ryuo-120-rgb-galeria.jpg",
+          "name": "ROG RYUO 120 RGB Three Quarter View"
+        },
+        {
+          "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asus/refrigeracion/refrigeracion-liquida-asus-rog-ryuo-120-rgb/galeria/refrigeracion-liquida-asus-rog-ryuo-120-rgb-galeria-2.jpg",
+          "name": "ROG RYUO 120 RGB Diagram View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asus/refrigeracion/asus-rog-ryuo-240-refrigeracion-agua-y-freon-procesador/240/galeria/refrigeracion-liquida-asus-rog-ryuo-240-rgb-galeria-1.jpg",
+          "name": "ROG RYUO 120 RGB Stats View"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asus/refrigeracion/refrigeracion-liquida-asus-rog-ryuo-120-rgb/galeria/refrigeracion-liquida-asus-rog-ryuo-120-rgb-galeria-1.jpg",
+          "name": "ROG RYUO 120 RGB Unboxing View"
+        }
+      ]
+    },
+    "price": {
+      "amount": 82.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 10,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "coolingSystem": {
+      "characteristics": {
+        "type": "Liquid",
+        "speed": 1900,
+        "airflow": 81,
+        "spl": 31
+      },
+      "energy": {
+        "voltage": 12,
+        "numberOfPins": 8
+      },
+      "weightAndDimensions": {
+        "width": 120,
+        "height": 120,
+        "depth": 25,
+        "weight": 400
       }
     }
   }
