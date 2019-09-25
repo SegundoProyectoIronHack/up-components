@@ -1,7 +1,26 @@
 <h2>Signup</h2>
 
 <form action="/auth/signup" method="POST" id="form-container" class="form">
-  <div class="form-field">
+  <div class="form-section">
+    <h2 class="form-title">Profile info</h2>
+    <div class="form-layout">
+      <div class="form-field">
+        <input type="text" name="username" id="signup-username"
+          placeholder="Username">
+        <label for="signup-username">Username</label>
+      </div>
+      <div class="form-field">
+        <input type="password" name="password" id="signup-password"
+          placeholder="Password">
+        <label for="signup-password">Password</label>
+      </div>
+      <div class="form-field">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <label for="email">Email</label>
+      </div>
+    </div>
+  </div>
+  {{!-- <div class="form-field">
     <label for="username">Username</label>
     <input id="username" type="text" name="username" placeholder="JonSnow">
   </div>
@@ -25,5 +44,5 @@
   <p class="account-message">
     Do you already have an account?
     <a href="/auth/login">Login</a>
-  </p>
+  </p> --}}
 </form>

@@ -36,8 +36,7 @@ const userSchema = new Schema({
       unique: true
     },
     phone: {
-      type: String,
-      unique: true
+      type: String
     }
   },
   address: {

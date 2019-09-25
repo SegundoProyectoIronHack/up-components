@@ -2,6 +2,7 @@ const controller = {};
 const Users = require("../models/Users.model");
 const passport = require("passport");
 const randToken = require("rand-token")
+const appCodes = require("./../app-codes/app-codes")
 
 // Bcrypt to encrypt passwords
 const bcrypt = require("bcrypt");
@@ -16,19 +17,16 @@ controller.getSignup = (req, res, next) => {
 };
 
 controller.postSignup = (req, res, next) => {
-  const username = req.body.username;
-  const password = req.body.password;
-  const email = req.body.email;
-  console.log("EMAIL", email);
-  if (username === "" || password === "" || email === "") {
-    res.render("auth/signup", { message: "Indicate username and password" });
+  let {username, password, email} = req.body
+
+  if (!username|| !password || !email) {
+    res.redirect("/?message=3");
     return;
   }
 
-  Users.findOne({ profile: { username } }, (err, user) => {
-    if (user) console.log("Algo raro pasa");
+  Users.findOne({ "profile.username": username }, (err, user) => {
     if (user) {
-      res.render("auth/signup", { message: "The username already exists" });
+      res.redirect("/?message=1");
       return;
     }
 
@@ -46,10 +44,9 @@ controller.postSignup = (req, res, next) => {
       }
     })
       .then(userCreated => {
-        res.redirect("/");
+        res.redirect("/?message=5");
       })
       .catch(err => {
-        console.log(err);
         res.render("auth/signup", { message: "Something went wrong" });
       });
   });
@@ -57,7 +54,7 @@ controller.postSignup = (req, res, next) => {
 
 controller.getLogout = (req, res, next) => {
   req.logout();
-  res.redirect("/");
+  res.redirect("/?message=4");
 };
 
 module.exports = controller;
