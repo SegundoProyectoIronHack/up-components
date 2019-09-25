@@ -1,0 +1,66 @@
+[
+  {
+    "productInfo": {
+      "brand": "BASILISK",
+      "model": "Essential",
+      "productFamily": "Mouse",
+      "type": "Peripheral",
+      "category": "Just in"
+    },
+    "images": {
+      "gallery": [
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/ratones/raton-razer-basilisk-essential-rz01-02650100-r3m1/raton-razer-basilisk-essential-rz01-02650100-r3m1-main.jpeg",
+          "name": "BASILISK Essential"
+        },
+        {
+          "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/ratones/raton-razer-basilisk-essential-rz01-02650100-r3m1/galeria/raton-razer-basilisk-essential-rz01-02650100-r3m1-7.jpeg",
+          "name": "BASILISK Essential"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/ratones/raton-razer-basilisk-essential-rz01-02650100-r3m1/galeria/raton-razer-basilisk-essential-rz01-02650100-r3m1-2.jpeg",
+          "name": "BASILISK Essential"
+        },
+        {
+          "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/ratones/raton-razer-basilisk-essential-rz01-02650100-r3m1/galeria/raton-razer-basilisk-essential-rz01-02650100-r3m1-5.jpeg",
+          "name": "BASILISK Essential"
+        }
+      ]
+    },
+    "price": {
+      "amount": 45.90,
+      "taxes": 0.21
+    },
+    "sales": {
+      "unitsSold": 0
+    },
+    "stock": {
+      "quantity": 10,
+      "minQuantity": 2,
+      "releaseDate": "2019-09-23"
+    },
+    "mouse": {
+      "characteristics": {
+        "type": "Optical",
+        "interface": "USB",
+        "numberOfButtons": 8,
+        "movementResolution": 16000,
+        "wireless": false
+      },
+      "design": {
+        "formFactor": "Right handed",
+        "ilumination": true,
+        "iluminationRGB": true
+      },
+      "ergonomics": {
+        "cableLength": 200
+      },
+      "weightAndDimensions": {
+        "width": 75,
+        "height": 43,
+        "depth": 124,
+        "weight": 107
+      }
+    }
+  }
+]

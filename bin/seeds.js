@@ -11,6 +11,7 @@ const motherboardsSeed = require("./seeds/motherboards.seeds")
 const coolingSystemsSeed = require("./seeds/cooling-systems.seeds")
 const hardDrivesSeed = require("./seeds/hard-drives.seeds")
 const monitorsSeed = require("./seeds/monitors.seeds")
+const mouseSeed = require("./seeds/mouse.seeds")
 
 require("./../configs/db.config")
 
@@ -26,6 +27,7 @@ const createSeeds = async () => {
   await coolingSystemsSeed()
   await hardDrivesSeed()
   await monitorsSeed()
+  await mouseSeed()
 }
 
 createSeeds().then(() => {
