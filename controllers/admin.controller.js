@@ -94,33 +94,27 @@ controller.updateProduct = (req, res, next) => {
 
         break;
 
-      // case 'RAM': {
-      //   updatedProduct = {
-      //     "ram.characteristics.family": family,
-      //     "ram.characteristics.graphicProcessor": graphicProcessor,
-      //     "ram.characteristics.maximumResolution": maximumResolution,
+      case 'RAM': {
+        let {
+          capacity, speed, modules,
+          ramType, voltage, width,
+          height, depth, weight
+        } = req.body
+        
+        updatedProduct = {
+          "ram.characteristics.capacity": capacity,
+          "ram.characteristics.speed": speed,
+          "ram.characteristics.modules": modules,
+          "ram.characteristics.type": ramType,
       
-      //     "ram.memory.capacity": capacity,
-      //     "ram.memory.type": type,
-      //     "ram.memory.velocity": velocity,
+          "ram.energy.voltage": voltage,
       
-      //     "ram.typeAndPorts.type": portType,
-      //     "ram.typeAndPorts.hdmi": hdmi,
-      //     "ram.typeAndPorts.displayPort": displayPort,
-      //     "ram.typeAndPorts.vga": vga,
-      //     "ram.typeAndPorts.dvi": dvi,
-      
-      //     "ram.cooling.fanSize": fanSize,
-      //     "ram.cooling.type": coolingType,
-      
-      //     "ram.energy.voltage": voltage,
-      
-      //     "ram.weightAndDimensions.width": width,
-      //     "ram.weightAndDimensions.height": height,
-      //     "ram.weightAndDimensions.depth": depth,
-      //     "ram.weightAndDimensions.weight": weight
-      //   }
-      // }
+          "ram.weightAndDimensions.width": width,
+          "ram.weightAndDimensions.height": height,
+          "ram.weightAndDimensions.depth": depth,
+          "ram.weightAndDimensions.weight": weight
+        }
+      }
     }
 
     let totalProductUpdated = Object.assign(commonProductInfo, updatedProduct)
