@@ -119,7 +119,7 @@ controller.updateProduct = (req, res, next) => {
         break
       }
 
-      case 'Processor':
+      case 'Processor': {
         let {
           family, frequency, socket,
           cores, maxCapacity
@@ -134,7 +134,50 @@ controller.updateProduct = (req, res, next) => {
           "processor.memory.maxCapacity": maxCapacity,
         }
 
-      break
+        break
+      }
+
+      case 'Mother board': {
+        let {
+          socket, maxProcessors, maxCapacity,
+          numberOfSlots, usb2, usb3,
+          sata, numberOfPins, backportsUsb2,
+          backportsUsb3, ethernet, hdmi,
+          motherBoardType, chipset, m2Slots,
+          pciExpress3Slots, pciExpress2Slots, width,
+          depth
+        } = req.body
+        
+        updatedProduct = {
+          "motherBoard.processor.socket": socket,
+          "motherBoard.processor.maxProcessors": maxProcessors,
+
+          "motherBoard.memory.maxCapacity": maxCapacity,
+          "motherBoard.memory.numberOfSlots": numberOfSlots,
+          
+          "motherBoard.internalConnectors.usb2": usb2,
+          "motherBoard.internalConnectors.usb3": usb3,
+          "motherBoard.internalConnectors.sata": sata,
+
+          "motherBoard.energy.numberOfPins": numberOfPins,
+      
+          "motherBoard.backports.usb2": backportsUsb2,
+          "motherBoard.backports.usb3": backportsUsb3,
+          "motherBoard.backports.ethernet": ethernet,
+          "motherBoard.backports.hdmi": hdmi,
+
+          "motherBoard.characteristics.type": motherBoardType,
+          "motherBoard.characteristics.chipset": chipset,
+          "motherBoard.characteristics.m2Slots": m2Slots,
+          "motherBoard.characteristics.pciExpress3Slots": pciExpress3Slots,
+          "motherBoard.characteristics.pciExpress2Slots": pciExpress2Slots,
+      
+          "motherBoard.weightAndDimensions.width": width,
+          "motherBoard.weightAndDimensions.depth": depth,
+        }
+
+        break
+      }
     }
 
     let totalProductUpdated = Object.assign(commonProductInfo, updatedProduct)
