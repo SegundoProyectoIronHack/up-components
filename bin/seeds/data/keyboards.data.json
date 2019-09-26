@@ -43,12 +43,14 @@
       "characteristics": {
         "type": "Mechanical",
         "numberOfKeys": 105,
-        "typeOfSwitch": "Kaihl red",
-      "design": "Spanish",
+        "typeOfSwitch": "Kaihl red"
+      },
+      "design": {
+        "layout": "Spanish",
         "iluminationRGB": true
       },
       "ergonomics": {
-        "cableLength": 180
+        "cableLength": 1800
       },
       "weightAndDimensions": {
         "width": 450,
@@ -112,7 +114,7 @@
         "iluminationRGB": true
       },
       "ergonomics": {
-        "cableLength": 180
+        "cableLength": 1800
       },
       "weightAndDimensions": {
         "width": 465,
