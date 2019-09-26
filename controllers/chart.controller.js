@@ -16,4 +16,15 @@ controller.addToChart = (req, res, next) => {
   })
 }
 
+controller.removeProduct = (req, res, next) => {
+  console.log(req.params.productId)
+  console.log("------")
+
+  Users.findByIdAndUpdate(req.user._id, { $pull: {chart: req.params.productId} }, { new: true }).then(productDeleted => {
+    res.redirect("/chart")
+  })
+  
+  console.log(req.user.chart)
+}
+
 module.exports = controller

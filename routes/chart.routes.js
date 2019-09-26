@@ -9,4 +9,8 @@ router.get("/add/:productId", (req, res, next) => {
   controller.addToChart(req, res, next)
 })
 
+router.get("/remove/:productId", (req, res, next) => {
+  controller.removeProduct(req, res, next)
+})
+
 module.exports = router
