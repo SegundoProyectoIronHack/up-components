@@ -14,6 +14,10 @@
   {{> editPowerSupply powerSupply=product.powerSupply}}
 {{/if}}
 
+{{#if product.processor}}
+  {{> editProcessor processor=product.processor}}
+{{/if}}
+
     <div class="form-actions">
       <input type="submit" value="Update" class="button submit-button">
     </div>

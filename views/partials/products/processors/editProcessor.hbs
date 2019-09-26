@@ -1,0 +1,28 @@
+{{#with processor}}
+<div class="form-section">
+  <h2 class="form-title">Features</h2>
+  <div class="form-field">
+    <input type="text" name="family" id="family" placeholder="Empty" value="{{this.features.family}}">
+    <label for="family">Family</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="frequency" id="frequency" placeholder="Empty" value="{{this.features.frequency}}">
+    <label for="frequency">Frequency</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="socket" id="socket" placeholder="Empty" value="{{this.features.socket}}">
+    <label for="socket">Socket</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="cores" id="cores" placeholder="Empty" value="{{this.features.cores}}">
+    <label for="cores">Cores</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Memory</h2>
+  <div class="form-field">
+    <input type="text" name="maxCapacity" id="maxCapacity" placeholder="Empty" value="{{this.memory.maxCapacity}}">
+    <label for="maxCapacity">Maximum capacity</label>
+  </div>
+</div>
+{{/with}}
