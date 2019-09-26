@@ -363,5 +363,11 @@ const productSchema = new Schema({
   }
 })
 
+productSchema.index({
+  "productInfo.brand": "text",
+  "productInfo.model": "text",
+  "productInfo.productFamily": "text"
+})
+
 const Products = mongoose.model("Products", productSchema)
 module.exports = Products

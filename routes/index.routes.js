@@ -1,6 +1,7 @@
 const appCodes = require("./../app-codes/app-codes")
 const express = require('express');
 const router  = express.Router();
+const controller = require("./../controllers/index.controller")
 
 router.use('/auth', require('./auth.routes'));
 router.use("/products", require("./products.routes"))
@@ -24,6 +25,14 @@ router.get("/account-activated", (req, res, next) => {
 
 router.get("/activate-account", (req, res, next) => {
   res.render("account/activate-account")
+})
+
+router.post("/search", (req, res, next) => {
+  controller.search(req, res, next)
+})
+
+router.get("/search-results", (req, res, next) => {
+  
 })
 
 module.exports = router;
