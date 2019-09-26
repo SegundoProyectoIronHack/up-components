@@ -28,7 +28,7 @@
       ]
     },
     "price": {
-      "amount": 759.90,
+      "amount": 759.9,
       "taxes": 0.21
     },
     "sales": {
@@ -60,16 +60,16 @@
       "cooling": {
         "fanSize": 2,
         "type": "Air"
+      },
+      "energy": {
+        "voltage": 650
+      },
+      "weightAndDimensions": {
+        "width": 268,
+        "height": 114,
+        "depth": 50,
+        "weight": 1050
       }
-    },
-    "energy": {
-      "voltage": 650
-    },
-    "weightAndDimensions": {
-      "width": 268,
-      "height": 114,
-      "depth": 50,
-      "weight": 1050
     }
   },
   {
@@ -101,9 +101,9 @@
       ]
     },
     "price": {
-      "amount": 239.90,
+      "amount": 239.9,
       "discountInfo": {
-        "discount": 0.20,
+        "discount": 0.2,
         "dateFrom": "2019-09-23",
         "dateTo": "2019-10-23"
       },
@@ -137,16 +137,16 @@
       "cooling": {
         "fanSize": 2,
         "type": "Air"
+      },
+      "energy": {
+        "voltage": 220
+      },
+      "weightAndDimensions": {
+        "width": 143,
+        "height": 40,
+        "depth": 278,
+        "weight": 873
       }
-    },
-    "energy": {
-      "voltage": 220
-    },
-    "weightAndDimensions": {
-      "width": 143,
-      "height": 40,
-      "depth": 278,
-      "weight": 873
     }
   }
 ]
