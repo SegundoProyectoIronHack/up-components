@@ -445,19 +445,19 @@ controller.updateProduct = (req, res, next) => {
           } = req.body;
 
           updatedProduct = {
-            "mouse.characteristics.type": keyboardType,
-            "mouse.characteristics.numberOfButtons": numberOfButtons,
-            "mouse.characteristics.typeOfSwitch": typeOfSwitch,
+            "keyboard.characteristics.type": keyboardType,
+            "keyboard.characteristics.numberOfButtons": numberOfButtons,
+            "keyboard.characteristics.typeOfSwitch": typeOfSwitch,
 
-            "mouse.design.layout": layout,
-            "mouse.design.iluminationRGB": iluminationRGB,
+            "keyboard.design.layout": layout,
+            "keyboard.design.iluminationRGB": iluminationRGB,
 
-            "mouse.ergonomics.cableLength": cableLength,
+            "keyboard.ergonomics.cableLength": cableLength,
 
-            "mouse.weightAndDimensions.width": width,
-            "mouse.weightAndDimensions.height": height,
-            "mouse.weightAndDimensions.depth": depth,
-            "mouse.weightAndDimensions.weight": weight
+            "keyboard.weightAndDimensions.width": width,
+            "keyboard.weightAndDimensions.height": height,
+            "keyboard.weightAndDimensions.depth": depth,
+            "keyboard.weightAndDimensions.weight": weight
           };
 
           break;

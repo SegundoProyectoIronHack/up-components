@@ -117,12 +117,14 @@
       "characteristics": {
         "type": "Mechanical",
         "numberOfKeys": 105,
-        "typeOfSwitch": "MX red",
-      "design": "Spanish",
-        "iluminationRGB": true
+        "typeOfSwitch": "MX red"
       },
       "ergonomics": {
         "cableLength": 1800
+      },
+      "design": {
+        "layout": "Spanish",
+        "iluminationRGB": true
       },
       "weightAndDimensions": {
         "width": 465,
