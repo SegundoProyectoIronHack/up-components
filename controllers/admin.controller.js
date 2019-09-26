@@ -56,7 +56,7 @@ controller.updateProduct = (req, res, next) => {
 
   Products.findById(id).lean().then(product => {
     switch (req.body.productFamily) {
-      case 'Graphic card':
+      case 'Graphic card': {
         let {
           family, graphicProcessor, maximumResolution,
           capacity, type, velocity,
@@ -93,6 +93,7 @@ controller.updateProduct = (req, res, next) => {
         }
 
         break;
+      }
 
       case 'RAM': {
         let {
@@ -114,7 +115,26 @@ controller.updateProduct = (req, res, next) => {
           "ram.weightAndDimensions.depth": depth,
           "ram.weightAndDimensions.weight": weight
         }
+
+        break
       }
+
+      case 'Processor':
+        let {
+          family, frequency, socket,
+          cores, maxCapacity
+        } = req.body
+        
+        updatedProduct = {
+          "processor.features.family": family,
+          "processor.features.frequency": frequency,
+          "processor.features.socket": socket,
+          "processor.features.cores": cores,
+      
+          "processor.memory.maxCapacity": maxCapacity,
+        }
+
+      break
     }
 
     let totalProductUpdated = Object.assign(commonProductInfo, updatedProduct)
