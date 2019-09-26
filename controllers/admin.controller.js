@@ -255,6 +255,32 @@ controller.updateProduct = (req, res, next) => {
 
         break
       }
+
+      case 'Cooling system': {
+        let {
+          coolingSystemType, speed, airflow,
+          spl, voltage, numberOfPins,
+          width, height, depth,
+          weight,
+        } = req.body
+
+        updatedProduct = {
+          "coolingSystem.characteristics.type": coolingSystemType,
+          "coolingSystem.characteristics.speed": speed,
+          "coolingSystem.characteristics.airflow": airflow,
+          "coolingSystem.characteristics.spl": spl,
+
+          "coolingSystem.energy.voltage": voltage,
+          "coolingSystem.energy.numberOfPins": numberOfPins,
+      
+          "coolingSystem.weightAndDimensions.width": width,
+          "coolingSystem.weightAndDimensions.height": height,
+          "coolingSystem.weightAndDimensions.depth": depth,
+          "coolingSystem.weightAndDimensions.weight": weight,
+        }
+        
+        break
+      }
     }
 
     let totalProductUpdated = Object.assign(commonProductInfo, updatedProduct)

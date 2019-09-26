@@ -1,9 +1,12 @@
 {{#with cooling}}
 <div class="form-section">
   <h2 class="form-title">Characteristics</h2>
-  <div class="form-field">
-    <input type="text" name="coolingType" id="cooling-type" placeholder="Empty" value="{{this.characteristics.type}}">
-    <label for="cooling-type">Type</label>
+  <div class="form-field-radio">
+    <label class="form-label">Type</label>
+    <input type="radio" name="coolingSystemType" {{{isChecked this.characteristics.type "Air"}}} id="cooling-system-type-air" value="Air" class="form-radio">
+    <label for="cooling-system-type-air">Air</label>
+    <input type="radio" name="coolingSystemType" {{{isChecked this.characteristics.type "Liquid"}}} id="cooling-system-type-liquid" value="Liquid" class="form-radio">
+    <label for="cooling-system-type-liquid">Liquid</label>
   </div>
   <div class="form-field">
     <input type="text" name="speed" id="speed" placeholder="Empty" value="{{this.characteristics.speed}}">
