@@ -223,7 +223,12 @@ const productSchema = new Schema({
       wireless: Boolean
     },
     design: {
-      formFactor: String,
+      formFactor: {
+        type: {
+          type: String,
+          enum: ["Right handed", "Left handed"]
+        }
+      },
       ilumination: Boolean,
       iluminationRGB: Boolean
     },
