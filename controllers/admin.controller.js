@@ -235,6 +235,26 @@ controller.updateProduct = (req, res, next) => {
 
         break
       }
+
+      case 'Power supply': {
+        let {
+          voltage, fanSize, width,
+          height, depth, weight,
+        } = req.body
+
+        updatedProduct = {
+          "powerSupply.energy.voltage": voltage,
+
+          "powerSupply.cooling.fanSize": fanSize,
+      
+          "powerSupply.weightAndDimensions.width": width,
+          "powerSupply.weightAndDimensions.height": height,
+          "powerSupply.weightAndDimensions.depth": depth,
+          "powerSupply.weightAndDimensions.weight": weight,
+        }
+
+        break
+      }
     }
 
     let totalProductUpdated = Object.assign(commonProductInfo, updatedProduct)
