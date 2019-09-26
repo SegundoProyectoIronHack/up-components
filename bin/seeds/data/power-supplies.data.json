@@ -46,7 +46,7 @@
       "cooling": {
         "fanSize": 135 
       },
-      "weightAndDimension": {
+      "weightAndDimensions": {
         "width": 150,
         "height": 86,
         "depth": 180,
@@ -106,7 +106,7 @@
       "cooling": {
         "fanSize": 135 
       },
-      "weightAndDimension": {
+      "weightAndDimensions": {
         "width": 150,
         "height": 86,
         "depth": 140,

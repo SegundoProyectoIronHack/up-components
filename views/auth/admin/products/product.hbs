@@ -10,6 +10,10 @@
   {{> editRamMemory ramMemory=product.ram}}
 {{/if}}
 
+{{#if product.powerSupply}}
+  {{> editPowerSupply powerSupply=product.powerSupply}}
+{{/if}}
+
     <div class="form-actions">
       <input type="submit" value="Update" class="button submit-button">
     </div>
