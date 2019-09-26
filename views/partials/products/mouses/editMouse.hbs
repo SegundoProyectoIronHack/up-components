@@ -1,0 +1,64 @@
+{{#with mouse}}
+<div class="form-section">
+  <h2 class="form-title">Characteristics</h2>
+  <div class="form-field-radio">
+    <label class="form-label">Type</label>
+    <input type="radio" name="mouseType" {{{isChecked this.characteristics.type "Laser"}}} id="mouse-type-laser" value="Laser" class="form-radio">
+    <label for="mouse-type-laser">Laser</label>
+    <input type="radio" name="mouseType" {{{isChecked this.characteristics.type "Optical"}}} id="mouse-type-optical" value="Optical" class="form-radio">
+    <label for="mouse-type-optical">Optical</label>
+    <input type="radio" name="mouseType" {{{isChecked this.characteristics.type "Hybrid"}}} id="mouse-type-hybrid" value="Hybrid" class="form-radio">
+    <label for="mouse-type-hybrid">Hybrid</label>
+  </div>
+  <div class="form-field-radio">
+    <label class="form-label">Type</label>
+    <input type="radio" name="interface" {{{isChecked this.characteristics.interface "PS2"}}} id="interface-ps2" value="PS2" class="form-radio">
+    <label for="interface-ps2">PS2</label>
+    <input type="radio" name="interface" {{{isChecked this.characteristics.interface "USB"}}} id="interface-usb" value="USB" class="form-radio">
+    <label for="interface-usb">USB</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="numberOfButtons" id="number-of-buttons" placeholder="Empty" value="{{this.characteristics.numberOfButtons}}">
+    <label for="number-of-buttons">Number of buttons</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="movementResolution" id="movement-resolution" placeholder="Empty" value="{{this.characteristics.movementResolution}}">
+    <label for="movement-resolution">Movement resolution</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">Wireless</label>
+    <input type="radio" name="wireless" {{{isCheckedBoolean this.characteristics.wireless true}}} id="wireless-yes" value="true" class="form-radio">
+    <label for="wireless-yes">Yes</label>
+    <input type="radio" name="wireless" {{{isCheckedBoolean this.characteristics.wireless false}}} id="wireless-no" value="false" class="form-radio">
+    <label for="wireless-no">No</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Design</h2>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">Ilumination</label>
+    <input type="radio" name="ilumination" {{{isCheckedBoolean this.design.ilumination true}}} id="ilumination-yes" value="true" class="form-radio">
+    <label for="ilumination-yes">Yes</label>
+    <input type="radio" name="ilumination" {{{isCheckedBoolean this.design.ilumination false}}} id="ilumination-no" value="false" class="form-radio">
+    <label for="ilumination-no">No</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">Wireless</label>
+    <input type="radio" name="iluminationRGB" {{{isCheckedBoolean this.design.iluminationRGB true}}} id="ilumination-rgb-yes" value="true" class="form-radio">
+    <label for="ilumination-rgb-yes">Yes</label>
+    <input type="radio" name="iluminationRGB" {{{isCheckedBoolean this.design.iluminationRGB false}}} id="ilumination-rgb-no" value="false" class="form-radio">
+    <label for="ilumination-rgb-no">No</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Ergonomics</h2>
+  <div class="form-field">
+    <input type="text" name="cableLength" id="cable-length" placeholder="Empty" value="{{this.ergonomics.cableLength}}">
+    <label for="cable-length">Cable length</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="buttonResistance" id="button-resistance" placeholder="Empty" value="{{this.ergonomics.buttonResistance}}">
+    <label for="button-resistance">Button resistance</label>
+  </div>
+</div>
+{{/with}}
