@@ -178,6 +178,32 @@ controller.updateProduct = (req, res, next) => {
 
         break
       }
+
+      case 'Hard drive': {
+        let {
+          format, capacity, interface,
+          readingSpeed, writingSpeed, voltage,
+          width, height, depth,
+          weight
+        } = req.body
+        
+        updatedProduct = {
+          "hardDrive.characteristics.format": format,
+          "hardDrive.characteristics.capacity": capacity,
+          "hardDrive.characteristics.interface": interface,
+          "hardDrive.characteristics.readingSpeed": readingSpeed,
+          "hardDrive.characteristics.writingSpeed": writingSpeed,
+
+          "hardDrive.energy.voltage": voltage,
+      
+          "hardDrive.weightAndDimensions.width": width,
+          "hardDrive.weightAndDimensions.height": height,
+          "hardDrive.weightAndDimensions.depth": depth,
+          "hardDrive.weightAndDimensions.weight": weight,
+        }
+
+        break
+      }
     }
 
     let totalProductUpdated = Object.assign(commonProductInfo, updatedProduct)
