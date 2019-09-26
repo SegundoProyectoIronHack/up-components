@@ -28,14 +28,17 @@
         <li class="product-info-list-item"><strong>Model:</strong> {{productInfo.model}}</li>
         <li class="product-info-list-item"><strong>Family:</strong> {{productInfo.productFamily}}</li>
         <li class="product-info-list-item"><strong>Type:</strong> {{productInfo.type}}</li>
-
+      </ul>
+      {{#if ../user}}
         {{!-- Check if the product has discount --}}
         {{#if price.discountInfo}}
-          <a href="/products/add-to-chart/{{_id}}" class="button button-primary">Add to chart<span><strike>{{price.amount}}€</strike>{{{calculateDiscount price.amount price.discountInfo.discount}}}</span></a>
+          <a href="/chart/add/{{_id}}" class="button button-primary">Add to chart<span><strike>{{price.amount}}€</strike>{{{calculateDiscount price.amount price.discountInfo.discount}}}</span></a>
         {{else}}
-          <a href="/products/add-to-chart/{{_id}}" class="button button-primary">Add to chart<span>{{{calculateTaxes price.amount price.taxes}}}€</span></a>
+          <a href="/chart/add/{{_id}}" class="button button-primary">Add to chart<span>{{{calculateTaxes price.amount price.taxes}}}€</span></a>
         {{/if}}
-      </ul>
+      {{else}}
+        <p>You must be logged in to add this product to the chart</p>
+      {{/if}}
     </section>
 
   </div>
