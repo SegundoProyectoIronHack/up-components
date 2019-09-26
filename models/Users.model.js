@@ -48,7 +48,11 @@ const userSchema = new Schema({
     country: String,
     stateProvince: String,
     city: String
-  }
+  },
+  chart: [{
+    type: Schema.Types.ObjectId,
+    ref: "Products"
+  }]
 }, {
   timestamps: true,
   toJSON: {
