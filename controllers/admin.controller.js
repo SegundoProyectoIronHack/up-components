@@ -1,42 +1,62 @@
-const controller = {}
-const Users = require("./../models/Users.model")
-const Products = require("./../models/Products.model")
+const controller = {};
+const Users = require("./../models/Users.model");
+const Products = require("./../models/Products.model");
 
 controller.index = (req, res, next) => {
-  res.render("auth/admin/index")
-}
+  res.render("auth/admin/index");
+};
 
 controller.getProducts = (req, res, next) => {
   Products.find().then(products => {
-    res.render("auth/admin/products", {products})
-  })
-}
+    res.render("auth/admin/products", { products });
+  });
+};
 
 controller.listProducts = (req, res, next) => {
-  Products.find({"productInfo.productFamily": `${req.query.category}`}).lean().then(products => {
-    res.render("auth/admin/products/list", {products})
-  })
-}
+  Products.find({ "productInfo.productFamily": `${req.query.category}` })
+    .lean()
+    .then(products => {
+      res.render("auth/admin/products/list", { products });
+    });
+};
 
 controller.updateProduct = (req, res, next) => {
-  let id = req.body.id
+  let id = req.body.id;
 
   let {
-    productFamily, model, brand,
-    category, price, discount,
-    taxes, quantity, minQuantity
-  } = req.body
+    productFamily,
+    model,
+    brand,
+    category,
+    price,
+    discount,
+    taxes,
+    quantity,
+    minQuantity
+  } = req.body;
 
   let {
-    family, graphicProcessor, maximumResolution,
-    capacity, type, velocity,
-    portType, hdmi, displayPort,
-    vga, dvi, fanSize,
-    coolingType, voltage, width,
-    height, depth, weight
-  } = req.body
+    family,
+    graphicProcessor,
+    maximumResolution,
+    capacity,
+    type,
+    velocity,
+    portType,
+    hdmi,
+    displayPort,
+    vga,
+    dvi,
+    fanSize,
+    coolingType,
+    voltage,
+    width,
+    height,
+    depth,
+    weight
+  } = req.body;
 
-  let updatedProduct = {}
+  let updatedProduct = {};
 
   let commonProductInfo = {
     "productInfo.characteristics.family": family,
@@ -51,250 +71,384 @@ controller.updateProduct = (req, res, next) => {
     "price.discountInfo.discount": discount,
 
     "stock.quantity": quantity,
-    "stock.minQuantity": minQuantity,
-  }
+    "stock.minQuantity": minQuantity
+  };
 
-  Products.findById(id).lean().then(product => {
-    switch (req.body.productFamily) {
-      case 'Graphic card': {
-        let {
-          family, graphicProcessor, maximumResolution,
-          capacity, type, velocity,
-          portType, hdmi, displayPort,
-          vga, dvi, fanSize,
-          coolingType, voltage, width,
-          height, depth, weight
-        } = req.body
+  Products.findById(id)
+    .lean()
+    .then(product => {
+      switch (req.body.productFamily) {
+        case "Graphic card": {
+          let {
+            family,
+            graphicProcessor,
+            maximumResolution,
+            capacity,
+            type,
+            velocity,
+            portType,
+            hdmi,
+            displayPort,
+            vga,
+            dvi,
+            fanSize,
+            coolingType,
+            voltage,
+            width,
+            height,
+            depth,
+            weight
+          } = req.body;
 
-        updatedProduct = {
-          "graphicCard.characteristics.family": family,
-          "graphicCard.characteristics.graphicProcessor": graphicProcessor,
-          "graphicCard.characteristics.maximumResolution": maximumResolution,
-      
-          "graphicCard.memory.capacity": capacity,
-          "graphicCard.memory.type": type,
-          "graphicCard.memory.velocity": velocity,
-      
-          "graphicCard.typeAndPorts.type": portType,
-          "graphicCard.typeAndPorts.hdmi": hdmi,
-          "graphicCard.typeAndPorts.displayPort": displayPort,
-          "graphicCard.typeAndPorts.vga": vga,
-          "graphicCard.typeAndPorts.dvi": dvi,
-      
-          "graphicCard.cooling.fanSize": fanSize,
-          "graphicCard.cooling.type": coolingType,
-      
-          "graphicCard.energy.voltage": voltage,
-      
-          "graphicCard.weightAndDimensions.width": width,
-          "graphicCard.weightAndDimensions.height": height,
-          "graphicCard.weightAndDimensions.depth": depth,
-          "graphicCard.weightAndDimensions.weight": weight
+          updatedProduct = {
+            "graphicCard.characteristics.family": family,
+            "graphicCard.characteristics.graphicProcessor": graphicProcessor,
+            "graphicCard.characteristics.maximumResolution": maximumResolution,
+
+            "graphicCard.memory.capacity": capacity,
+            "graphicCard.memory.type": type,
+            "graphicCard.memory.velocity": velocity,
+
+            "graphicCard.typeAndPorts.type": portType,
+            "graphicCard.typeAndPorts.hdmi": hdmi,
+            "graphicCard.typeAndPorts.displayPort": displayPort,
+            "graphicCard.typeAndPorts.vga": vga,
+            "graphicCard.typeAndPorts.dvi": dvi,
+
+            "graphicCard.cooling.fanSize": fanSize,
+            "graphicCard.cooling.type": coolingType,
+
+            "graphicCard.energy.voltage": voltage,
+
+            "graphicCard.weightAndDimensions.width": width,
+            "graphicCard.weightAndDimensions.height": height,
+            "graphicCard.weightAndDimensions.depth": depth,
+            "graphicCard.weightAndDimensions.weight": weight
+          };
+
+          break;
         }
 
-        break;
-      }
+        case "RAM": {
+          let {
+            capacity,
+            speed,
+            modules,
+            ramType,
+            voltage,
+            width,
+            height,
+            depth,
+            weight
+          } = req.body;
 
-      case 'RAM': {
-        let {
-          capacity, speed, modules,
-          ramType, voltage, width,
-          height, depth, weight
-        } = req.body
+          updatedProduct = {
+            "ram.characteristics.capacity": capacity,
+            "ram.characteristics.speed": speed,
+            "ram.characteristics.modules": modules,
+            "ram.characteristics.type": ramType,
+
+            "ram.energy.voltage": voltage,
+
+            "ram.weightAndDimensions.width": width,
+            "ram.weightAndDimensions.height": height,
+            "ram.weightAndDimensions.depth": depth,
+            "ram.weightAndDimensions.weight": weight
+          };
+
+          break;
+        }
+
+        case "Processor": {
+          let { family, frequency, socket, cores, maxCapacity } = req.body;
+
+          updatedProduct = {
+            "processor.features.family": family,
+            "processor.features.frequency": frequency,
+            "processor.features.socket": socket,
+            "processor.features.cores": cores,
+
+            "processor.memory.maxCapacity": maxCapacity
+          };
+
+          break;
+        }
+
+        case "Mother board": {
+          let {
+            socket,
+            maxProcessors,
+            maxCapacity,
+            numberOfSlots,
+            usb2,
+            usb3,
+            sata,
+            numberOfPins,
+            backportsUsb2,
+            backportsUsb3,
+            ethernet,
+            hdmi,
+            motherBoardType,
+            chipset,
+            m2Slots,
+            pciExpress3Slots,
+            pciExpress2Slots,
+            width,
+            depth
+          } = req.body;
+
+          updatedProduct = {
+            "motherBoard.processor.socket": socket,
+            "motherBoard.processor.maxProcessors": maxProcessors,
+
+            "motherBoard.memory.maxCapacity": maxCapacity,
+            "motherBoard.memory.numberOfSlots": numberOfSlots,
+
+            "motherBoard.internalConnectors.usb2": usb2,
+            "motherBoard.internalConnectors.usb3": usb3,
+            "motherBoard.internalConnectors.sata": sata,
+
+            "motherBoard.energy.numberOfPins": numberOfPins,
+
+            "motherBoard.backports.usb2": backportsUsb2,
+            "motherBoard.backports.usb3": backportsUsb3,
+            "motherBoard.backports.ethernet": ethernet,
+            "motherBoard.backports.hdmi": hdmi,
+
+            "motherBoard.characteristics.type": motherBoardType,
+            "motherBoard.characteristics.chipset": chipset,
+            "motherBoard.characteristics.m2Slots": m2Slots,
+            "motherBoard.characteristics.pciExpress3Slots": pciExpress3Slots,
+            "motherBoard.characteristics.pciExpress2Slots": pciExpress2Slots,
+
+            "motherBoard.weightAndDimensions.width": width,
+            "motherBoard.weightAndDimensions.depth": depth
+          };
+
+          break;
+        }
+
+        case "Hard drive": {
+          let {
+            format,
+            capacity,
+            interface,
+            readingSpeed,
+            writingSpeed,
+            voltage,
+            width,
+            height,
+            depth,
+            weight
+          } = req.body;
+
+          updatedProduct = {
+            "hardDrive.characteristics.format": format,
+            "hardDrive.characteristics.capacity": capacity,
+            "hardDrive.characteristics.interface": interface,
+            "hardDrive.characteristics.readingSpeed": readingSpeed,
+            "hardDrive.characteristics.writingSpeed": writingSpeed,
+
+            "hardDrive.energy.voltage": voltage,
+
+            "hardDrive.weightAndDimensions.width": width,
+            "hardDrive.weightAndDimensions.height": height,
+            "hardDrive.weightAndDimensions.depth": depth,
+            "hardDrive.weightAndDimensions.weight": weight
+          };
+
+          break;
+        }
+
+        case "Case": {
+          let {
+            designType,
+            ilumination,
+            cableManagment,
+            numberOfPorts35,
+            numberOfPorts25,
+            sideWindow,
+            numberOfPortsUSB2,
+            numberOfPortsUSB3,
+            numberOfFans,
+            waterCooling,
+            width,
+            height,
+            depth,
+            weight
+          } = req.body;
+
+          updatedProduct = {
+            "case.design.type": designType,
+            "case.design.ilumination": ilumination,
+            "case.design.cableManagment": cableManagment,
+            "case.design.numberOfPorts35": numberOfPorts35,
+            "case.design.numberOfPorts25": numberOfPorts25,
+            "case.design.sideWindow": sideWindow,
+            "case.design.numberOfPortsUSB2": numberOfPortsUSB2,
+            "case.design.numberOfPortsUSB3": numberOfPortsUSB3,
+
+            "case.cooling.numberOfFans": numberOfFans,
+            "case.cooling.waterCooling": waterCooling,
+
+            "case.weightAndDimensions.width": width,
+            "case.weightAndDimensions.height": height,
+            "case.weightAndDimensions.depth": depth,
+            "case.weightAndDimensions.weight": weight
+          };
+
+          break;
+        }
+
+        case "Power supply": {
+          let { voltage, fanSize, width, height, depth, weight } = req.body;
+
+          updatedProduct = {
+            "powerSupply.energy.voltage": voltage,
+
+            "powerSupply.cooling.fanSize": fanSize,
+
+            "powerSupply.weightAndDimensions.width": width,
+            "powerSupply.weightAndDimensions.height": height,
+            "powerSupply.weightAndDimensions.depth": depth,
+            "powerSupply.weightAndDimensions.weight": weight
+          };
+
+          break;
+        }
+
+        case "Cooling system": {
+          let {
+            coolingSystemType,
+            speed,
+            airflow,
+            spl,
+            voltage,
+            numberOfPins,
+            width,
+            height,
+            depth,
+            weight
+          } = req.body;
+
+          updatedProduct = {
+            "coolingSystem.characteristics.type": coolingSystemType,
+            "coolingSystem.characteristics.speed": speed,
+            "coolingSystem.characteristics.airflow": airflow,
+            "coolingSystem.characteristics.spl": spl,
+
+            "coolingSystem.energy.voltage": voltage,
+            "coolingSystem.energy.numberOfPins": numberOfPins,
+
+            "coolingSystem.weightAndDimensions.width": width,
+            "coolingSystem.weightAndDimensions.height": height,
+            "coolingSystem.weightAndDimensions.depth": depth,
+            "coolingSystem.weightAndDimensions.weight": weight
+          };
+
+          break;
+        }
         
-        updatedProduct = {
-          "ram.characteristics.capacity": capacity,
-          "ram.characteristics.speed": speed,
-          "ram.characteristics.modules": modules,
-          "ram.characteristics.type": ramType,
-      
-          "ram.energy.voltage": voltage,
-      
-          "ram.weightAndDimensions.width": width,
-          "ram.weightAndDimensions.height": height,
-          "ram.weightAndDimensions.depth": depth,
-          "ram.weightAndDimensions.weight": weight
-        }
+        case "Monitor": {
+          let {
+            resolution,
+            refreshRate,
+            threeD,
+            technology,
+            inches,
+            screenType,
+            speakers,
+            camera,
+            hdmi,
+            displayPort,
+            vga,
+            dvi,
+            vesa,
+            vesaSize  
+          } = req.body;
 
-        break
-      }
+          updatedProduct = {
+            "monitor.screen.resolution": resolution,
+            "monitor.screen.refreshRate": refreshRate,
+            "monitor.screen.threeD": threeD,
+            "monitor.screen.technology": technology,
 
-      case 'Processor': {
-        let {
-          family, frequency, socket,
-          cores, maxCapacity
-        } = req.body
-        
-        updatedProduct = {
-          "processor.features.family": family,
-          "processor.features.frequency": frequency,
-          "processor.features.socket": socket,
-          "processor.features.cores": cores,
-      
-          "processor.memory.maxCapacity": maxCapacity,
-        }
+            "monitor.screen.inches": inches,
+            "monitor.screen.screenType": screenType,
 
-        break
-      }
+            "monitor.screen.speakers": speakers,
+            "monitor.screen.camera": camera,
+            "monitor.portsAndInterfaces.hdmi": hdmi,
+            "monitor.portsAndInterfaces.displayPort": displayPort,
+            "monitor.portsAndInterfaces.vga": vga,
+            "monitor.portsAndInterfaces.dvi": dvi,
+            "monitor.ergonomics.vesa": vesa,
+            "monitor.ergonomics.vesaSize": vesaSize
+          };
 
-      case 'Mother board': {
-        let {
-          socket, maxProcessors, maxCapacity,
-          numberOfSlots, usb2, usb3,
-          sata, numberOfPins, backportsUsb2,
-          backportsUsb3, ethernet, hdmi,
-          motherBoardType, chipset, m2Slots,
-          pciExpress3Slots, pciExpress2Slots, width,
-          depth
-        } = req.body
-        
-        updatedProduct = {
-          "motherBoard.processor.socket": socket,
-          "motherBoard.processor.maxProcessors": maxProcessors,
-
-          "motherBoard.memory.maxCapacity": maxCapacity,
-          "motherBoard.memory.numberOfSlots": numberOfSlots,
-          
-          "motherBoard.internalConnectors.usb2": usb2,
-          "motherBoard.internalConnectors.usb3": usb3,
-          "motherBoard.internalConnectors.sata": sata,
-
-          "motherBoard.energy.numberOfPins": numberOfPins,
-      
-          "motherBoard.backports.usb2": backportsUsb2,
-          "motherBoard.backports.usb3": backportsUsb3,
-          "motherBoard.backports.ethernet": ethernet,
-          "motherBoard.backports.hdmi": hdmi,
-
-          "motherBoard.characteristics.type": motherBoardType,
-          "motherBoard.characteristics.chipset": chipset,
-          "motherBoard.characteristics.m2Slots": m2Slots,
-          "motherBoard.characteristics.pciExpress3Slots": pciExpress3Slots,
-          "motherBoard.characteristics.pciExpress2Slots": pciExpress2Slots,
-      
-          "motherBoard.weightAndDimensions.width": width,
-          "motherBoard.weightAndDimensions.depth": depth,
-        }
-
-        break
-      }
-
-      case 'Hard drive': {
-        let {
-          format, capacity, interface,
-          readingSpeed, writingSpeed, voltage,
-          width, height, depth,
-          weight
-        } = req.body
-        
-        updatedProduct = {
-          "hardDrive.characteristics.format": format,
-          "hardDrive.characteristics.capacity": capacity,
-          "hardDrive.characteristics.interface": interface,
-          "hardDrive.characteristics.readingSpeed": readingSpeed,
-          "hardDrive.characteristics.writingSpeed": writingSpeed,
-
-          "hardDrive.energy.voltage": voltage,
-      
-          "hardDrive.weightAndDimensions.width": width,
-          "hardDrive.weightAndDimensions.height": height,
-          "hardDrive.weightAndDimensions.depth": depth,
-          "hardDrive.weightAndDimensions.weight": weight,
-        }
-
-        break
-      }
-
-      case 'Case': {
-        let {
-          designType, ilumination, cableManagment,
-          numberOfPorts35, numberOfPorts25, sideWindow,
-          numberOfPortsUSB2, numberOfPortsUSB3, numberOfFans,
-          waterCooling, width, height,
-          depth, weight
-        } = req.body
-
-        updatedProduct = {
-          "case.design.type": designType,
-          "case.design.ilumination": ilumination,
-          "case.design.cableManagment": cableManagment,
-          "case.design.numberOfPorts35": numberOfPorts35,
-          "case.design.numberOfPorts25": numberOfPorts25,
-          "case.design.sideWindow": sideWindow,
-          "case.design.numberOfPortsUSB2": numberOfPortsUSB2,
-          "case.design.numberOfPortsUSB3": numberOfPortsUSB3,
-
-          "case.cooling.numberOfFans": numberOfFans,
-          "case.cooling.waterCooling": waterCooling,
-      
-          "case.weightAndDimensions.width": width,
-          "case.weightAndDimensions.height": height,
-          "case.weightAndDimensions.depth": depth,
-          "case.weightAndDimensions.weight": weight,
-        }
-
-        break
-      }
-
-      case 'Power supply': {
-        let {
-          voltage, fanSize, width,
-          height, depth, weight,
-        } = req.body
-
-        updatedProduct = {
-          "powerSupply.energy.voltage": voltage,
-
-          "powerSupply.cooling.fanSize": fanSize,
-      
-          "powerSupply.weightAndDimensions.width": width,
-          "powerSupply.weightAndDimensions.height": height,
-          "powerSupply.weightAndDimensions.depth": depth,
-          "powerSupply.weightAndDimensions.weight": weight,
-        }
-
-        break
-      }
-
-      case 'Cooling system': {
-        let {
-          coolingSystemType, speed, airflow,
-          spl, voltage, numberOfPins,
-          width, height, depth,
-          weight,
-        } = req.body
-
-        updatedProduct = {
-          "coolingSystem.characteristics.type": coolingSystemType,
-          "coolingSystem.characteristics.speed": speed,
-          "coolingSystem.characteristics.airflow": airflow,
-          "coolingSystem.characteristics.spl": spl,
-
-          "coolingSystem.energy.voltage": voltage,
-          "coolingSystem.energy.numberOfPins": numberOfPins,
-      
-          "coolingSystem.weightAndDimensions.width": width,
-          "coolingSystem.weightAndDimensions.height": height,
-          "coolingSystem.weightAndDimensions.depth": depth,
-          "coolingSystem.weightAndDimensions.weight": weight,
+          break;
         }
         
-        break
+        case "Mouse": {
+          let {
+            mouseType,
+            interface,
+            numberOfButtons,
+            movementResolution,
+            wireless,
+            ilumination,
+            iluminationRGB,
+            cableLength,
+            buttonResistance,
+            displayPort,
+            vga,
+            dvi,
+            vesa,
+            vesaSize  
+          } = req.body;
+
+          updatedProduct = {
+            "mouse.characteristics.mouseType": mouseType,
+            "mouse.characteristics.interface": interface,
+            "mouse.characteristics.numberOfButtons": numberOfButtons,
+            "mouse.characteristics.movementResolution": movementResolution,
+
+            "mouse.characteristics.wireless": wireless,
+            "mouse.design.ilumination": ilumination,
+
+            "mouse.design.iluminationRGB": iluminationRGB,
+            "mouse.ergonomics.cableLength": cableLength,
+            "mouse.portsAndInterfaces.buttonResistance": buttonResistance,
+            "mouse.portsAndInterfaces.displayPort": displayPort,
+            "mouse.portsAndInterfaces.vga": vga,
+            "mouse.portsAndInterfaces.dvi": dvi,
+            "mouse.ergonomics.vesa": vesa,
+            "mouse.ergonomics.vesaSize": vesaSize
+          };
+
+          break;
+        }
       }
-    }
 
-    let totalProductUpdated = Object.assign(commonProductInfo, updatedProduct)
+      let totalProductUpdated = Object.assign(
+        commonProductInfo,
+        updatedProduct
+      );
 
-    Products.findByIdAndUpdate(req.body.id, totalProductUpdated).then(productUpdated => {
-      res.redirect(`/admin/products/${id}`)
-    })
-  })
-}
+      Products.findByIdAndUpdate(req.body.id, totalProductUpdated).then(
+        productUpdated => {
+          res.redirect(`/admin/products/${id}`);
+        }
+      );
+    });
+};
 
 controller.editProduct = (req, res, next) => {
-  Products.findById(req.params.productId).lean().then(product => {
-    res.render("auth/admin/products/product", {product})
-  })
-}
+  Products.findById(req.params.productId)
+    .lean()
+    .then(product => {
+      res.render("auth/admin/products/product", { product });
+    });
+};
 
-module.exports = controller
+module.exports = controller;
