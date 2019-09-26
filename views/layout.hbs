@@ -84,6 +84,22 @@
         </ul>
       </nav>
 
+      <div id="search-container" class="search-container">
+        <header class="search-container-header">
+          <h2 class="search-title">Search</h2>
+        </header>
+        <div class="search-container-content">
+          <form action="/search" method="post">
+            <div class="search-field">
+              <input type="search" name="search" id="search" placeholder="Brand, peripherals, components..." class="search-input">
+            </div>
+            <div class="search-actions">
+              <input type="submit" value="Search" class="button search-button">
+            </div>
+          </form>
+        </div>
+      </div>
+      
       {{#unless user}}
       <div class="lightbox" id="login-lightbox">
         <div class="modal">
