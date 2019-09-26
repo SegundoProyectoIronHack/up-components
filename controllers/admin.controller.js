@@ -204,6 +204,37 @@ controller.updateProduct = (req, res, next) => {
 
         break
       }
+
+      case 'Case': {
+        let {
+          designType, ilumination, cableManagment,
+          numberOfPorts35, numberOfPorts25, sideWindow,
+          numberOfPortsUSB2, numberOfPortsUSB3, numberOfFans,
+          waterCooling, width, height,
+          depth, weight
+        } = req.body
+
+        updatedProduct = {
+          "case.design.type": designType,
+          "case.design.ilumination": ilumination,
+          "case.design.cableManagment": cableManagment,
+          "case.design.numberOfPorts35": numberOfPorts35,
+          "case.design.numberOfPorts25": numberOfPorts25,
+          "case.design.sideWindow": sideWindow,
+          "case.design.numberOfPortsUSB2": numberOfPortsUSB2,
+          "case.design.numberOfPortsUSB3": numberOfPortsUSB3,
+
+          "case.cooling.numberOfFans": numberOfFans,
+          "case.cooling.waterCooling": waterCooling,
+      
+          "case.weightAndDimensions.width": width,
+          "case.weightAndDimensions.height": height,
+          "case.weightAndDimensions.depth": depth,
+          "case.weightAndDimensions.weight": weight,
+        }
+
+        break
+      }
     }
 
     let totalProductUpdated = Object.assign(commonProductInfo, updatedProduct)
