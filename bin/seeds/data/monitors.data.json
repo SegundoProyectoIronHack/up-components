@@ -25,7 +25,11 @@
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/acer/monitores/monitor-gaming-acer-27-ed273awidpx-curvo/galeria/monitor-gaming-acer-27-ed273awidpx-curvo-2.jpg",
           "name": "ACER ED273A 27 Top View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4zHwiFH0rit1ve6haaWkuhTqUnz6vun-HUZ1SXQqEvoub7ar-",
+        "name": "ACER Logo"
+      }
     },
     "price": {
       "amount": 265.90,
@@ -87,7 +91,11 @@
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/benq/monitores/monitor-benq-gw2480-238/galeria/monitor-benq-gw2480-238-5.jpg",
           "name": "BENQ GW2480 23.8 EYE-CARE"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://static.wixstatic.com/media/d3e59f_bf0fc3b5ca4d4ab2949e3a13351063f0~mv2.jpg/v1/fill/w_800,h_500,al_c,q_90/file.jpg",
+        "name": "BENQ Logo"
+      }
     },
     "price": {
       "amount": 127.90,

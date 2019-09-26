@@ -1,8 +1,8 @@
 [
   {
     "productInfo": {
-      "brand": "AMD",
-      "model": "RYZEN 7 3700X 3.6GHZ WRAITH PRISM",
+      "brand": "RYZEN",
+      "model": "AMD 7 3700X 3.6GHZ WRAITH PRISM",
       "productFamily": "Processor",
       "type": "Component",
       "category": "Recommended"
@@ -11,19 +11,19 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/amd/procesadores/procesador-amd-am4-ryzen-7-3700x-8x44ghz-36mb-box/ryzen-7-3600x/galeria/procesador-amd-am4-ryzen-7-3700x-galeria-1.jpg",
-          "name": "AMD RYZEN 7 3700X 3.6GHZ WRAITH PRISM Box Front"
+          "name": "RYZEN AMD 7 3700X 3.6GHZ WRAITH PRISM Box Front"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/amd/procesadores/procesador-amd-am4-ryzen-7-3700x-8x44ghz-36mb-box/ryzen-7-3600x/galeria/procesador-amd-am4-ryzen-7-3700x-galeria-2.jpg",
-          "name": "AMD RYZEN 7 3700X 3.6GHZ WRAITH PRISM Box Back"
+          "name": "RYZEN AMD 7 3700X 3.6GHZ WRAITH PRISM Box Back"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/amd/procesadores/procesador-amd-am4-ryzen-7-3700x-8x44ghz-36mb-box/ryzen-7-3600x/galeria/procesador-amd-am4-ryzen-7-3700x-galeria.jpg",
-          "name": "AMD RYZEN 7 3700X 3.6GHZ WRAITH PRISM Box Front Dark"
+          "name": "RYZEN AMD 7 3700X 3.6GHZ WRAITH PRISM Box Front Dark"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/amd/procesadores/procesador-amd-am4-ryzen-7-3700x-8x44ghz-36mb-box/ryzen-7-3600x/galeria/procesador-amd-am4-ryzen-7-3700x-galeria-3.jpg",
-          "name": "AMD RYZEN 7 3700X 3.6GHZ WRAITH PRISM unit render"
+          "name": "RYZEN AMD 7 3700X 3.6GHZ WRAITH PRISM unit render"
         }
       ]
     },
@@ -50,8 +50,8 @@
   },
   {
     "productInfo": {
-      "brand": "AMD",
-      "model": "RYZEN 5 3400 3.7GHZ",
+      "brand": "RYZEN",
+      "model": "AMD 5 3400 3.7GHZ",
       "productFamily": "Processor",
       "type": "Component",
       "category": "On sale"
@@ -60,21 +60,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/amd/procesadores/procesador-amd-ryzen-5-3400g-37ghz-box/galeria/procesador-amd-ryzen-5-3400g-37ghz-box-2.jpg",
-          "name": "AMD RYZEN 5 3400 3.7GHZ Box Front"
+          "name": "RYZEN AMD 5 3400 3.7GHZ Box Front"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/amd/procesadores/procesador-amd-ryzen-5-3400g-37ghz-box/galeria/procesador-amd-ryzen-5-3400g-37ghz-box-4.jpg",
-          "name": "AMD RYZEN 5 3400 3.7GHZ Box Back"
+          "name": "RYZEN AMD 5 3400 3.7GHZ Box Back"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/amd/procesadores/procesador-amd-ryzen-5-3400g-37ghz-box/galeria/procesador-amd-ryzen-5-3400g-37ghz-box-5.jpg",
-          "name": "AMD RYZEN 5 3400 3.7GHZ Chip"
+          "name": "RYZEN AMD 5 3400 3.7GHZ Chip"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/amd/procesadores/procesador-amd-ryzen-5-3400g-37ghz-box/galeria/procesador-amd-ryzen-5-3400g-37ghz-box-6.jpg",
-          "name": "AMD RYZEN 5 3400 3.7GHZ Heat Sink"
+          "name": "RYZEN AMD 5 3400 3.7GHZ Heat Sink"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://logowik.com/content/uploads/images/ryzen.jpg",
+        "name": "RYZEN Logo"
+      }
     },
     "price": {
       "amount": 163.90,

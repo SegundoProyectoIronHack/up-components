@@ -1,8 +1,8 @@
 [
   {
     "productInfo": {
-      "brand": "MEG",
-      "model": "X399 CREATION",
+      "brand": "MSI",
+      "model": "MEG X399 CREATION",
       "productFamily": "Mother board",
       "type": "Component",
       "category": "Recommended"
@@ -11,21 +11,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/placas-base/placa-msi-gaming-meg-x399-creation/galeria/placa-msi-gaming-meg-x399-creation-5.jpg",
-          "name": "MEG X399 CREATION Three Quarter View"
+          "name": "MSI MEG X399 CREATION Three Quarter View"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/placas-base/placa-msi-gaming-meg-x399-creation/galeria/placa-msi-gaming-meg-x399-creation-1.jpg",
-          "name": "MEG X399 CREATION Top View"
+          "name": "MSI MEG X399 CREATION Top View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/placas-base/placa-msi-gaming-meg-x399-creation/galeria/placa-msi-gaming-meg-x399-creation-2.jpg",
-          "name": "MEG X399 CREATION Side View"
+          "name": "MSI MEG X399 CREATION Side View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/placas-base/placa-msi-gaming-meg-x399-creation/galeria/placa-msi-gaming-meg-x399-creation-4.jpg",
-          "name": "MEG X399 CREATION Outputs View"
+          "name": "MSI MEG X399 CREATION Outputs View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://www.fortress.com.hk/medias/MSI.png?context=bWFzdGVyfHJvb3R8NjMzOTF8aW1hZ2UvcG5nfGgyOS9oOTkvODkyNzUwMzcxMjI4Ni5wbmd8YTU2YTZmNTI0ZGE5ZWI1NzM0YjNiZjFkMTI5M2UxYWMwYjNlZTI4MDk0Zjk3YzJkMDBmOTYzMDI1MzZjZmUzOA",
+        "name": "MSI Logo"
+      }
     },
     "price": {
       "amount": 524.90,
@@ -77,8 +81,8 @@
   },
   {
     "productInfo": {
-      "brand": "FATAL1TY",
-      "model": "X370 Gaming K4",
+      "brand": "ASROCK",
+      "model": "FATAL1TY X370 Gaming K4",
       "productFamily": "Mother board",
       "type": "Component",
       "category": "On sale"
@@ -87,21 +91,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asrock/placas-base/X370-GAMING-K4/galeria/placa-base-asrock-x370-gaming-k4-am4-galeria.jpg",
-          "name": "FATAL1TY X370 Gaming K4"
+          "name": "ASrock FATAL1TY X370 Gaming K4"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asrock/placas-base/X370-GAMING-K4/galeria/placa-base-asrock-x370-gaming-k4-am4-galeria-1.jpg",
-          "name": "FATAL1TY X370 Gaming K4"
+          "name": "ASrock FATAL1TY X370 Gaming K4"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asrock/placas-base/X370-GAMING-K4/galeria/placa-base-asrock-x370-gaming-k4-am4-galeria-2.jpg",
-          "name": "FATAL1TY X370 Gaming K4"
+          "name": "ASrock FATAL1TY X370 Gaming K4"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asrock/placas-base/X370-GAMING-K4/galeria/placa-base-asrock-x370-gaming-k4-am4-galeria-3.jpg",
-          "name": "FATAL1TY X370 Gaming K4"
+          "name": "ASrock FATAL1TY X370 Gaming K4"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://www.coldzero.eu/1032-large_default/m2-ssd-cover-asrock-black.jpg",
+        "name": "ASrock Logo"
+      }
     },
     "price": {
       "amount": 139.90,

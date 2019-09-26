@@ -1,7 +1,7 @@
 [
   {
     "productInfo": {
-      "brand": "STRIKEBACK",
+      "brand": "OZONE",
       "model": "Strikeback RGB",
       "productFamily": "Keyboard",
       "type": "Peripheral",
@@ -11,21 +11,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/ozone/4_TECLADOS/strikeback/galeria/teclado-gaming-ozone-strikeback-rgb-galeria-6.jpg",
-          "name": "Strikeback RGB Top View"
+          "name": "OZONE Strikeback RGB Top View"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/ozone/4_TECLADOS/strikeback/galeria/teclado-gaming-ozone-strikeback-rgb-galeria-5.jpg",
-          "name": "Strikeback RGB Buttons View"
+          "name": "OZONE Strikeback RGB Buttons View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/ozone/4_TECLADOS/strikeback/galeria/teclado-gaming-ozone-strikeback-rgb-galeria.jpg",
-          "name": "Strikeback RGB Side View"
+          "name": "OZONE Strikeback RGB Side View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/ozone/4_TECLADOS/strikeback/galeria/teclado-gaming-ozone-strikeback-rgb-galeria-7.jpg",
-          "name": "Strikeback RGB Table View"
+          "name": "OZONE Strikeback RGB Table View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://pbs.twimg.com/profile_images/506775064767766529/NMOfOH2q_400x400.jpeg",
+        "name": "OZONE Logo"
+      }
     },
     "price": {
       "amount": 89.90,
@@ -62,8 +66,8 @@
   },
   {
     "productInfo": {
-      "brand": "KEMPO",
-      "model": "RGB",
+      "brand": "KROM GAMING",
+      "model": "KEMPO RGB",
       "productFamily": "Keyboard",
       "type": "Peripheral",
       "category": "On sale"
@@ -72,21 +76,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/krom/TECLADOS/kempo-switch-red/galeria/teclado-gaming-krom-kempo-rgb-switch-red-galeria.jpg",
-          "name": "Kempo RGB Top View"
+          "name": "Krom Gaming Kempo RGB Top View"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/krom/TECLADOS/kempo-switch-red/galeria/teclado-gaming-krom-kempo-rgb-switch-red-galeria-1.jpg",
-          "name": "Kempo RGB Top View 2"
+          "name": "Krom Gaming Kempo RGB Top View 2"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/krom/TECLADOS/kempo-switch-red/galeria/teclado-gaming-krom-kempo-rgb-switch-red-galeria-4.jpg",
-          "name": "Kempo RGB Three Quarter View"
+          "name": "Krom Gaming Kempo RGB Three Quarter View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/krom/TECLADOS/kempo-switch-red/galeria/teclado-gaming-krom-kempo-rgb-switch-red-galeria-5.jpg",
-          "name": "Kempo RGB Unboxed View"
+          "name": "Krom Gaming Kempo RGB Unboxed View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://hardzone.es/app/uploads/2017/09/krom_logo_1.jpg",
+        "name": "KROM GAMING Logo"
+      }
     },
     "price": {
       "amount": 79.90,

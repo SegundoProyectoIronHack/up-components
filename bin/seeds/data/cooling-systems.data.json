@@ -1,8 +1,8 @@
 [
   {
     "productInfo": {
-      "brand": "Hydro Series",
-      "model": "H75 Led White",
+      "brand": "Corsair",
+      "model": "Hydro Series H75 Led White",
       "productFamily": "Cooling system",
       "type": "Component",
       "category": "Just in"
@@ -11,21 +11,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/refrigeracion/corsair-h75-refrigeracion-agua-y-freon-procesador/galeria/corsair-h75-refrigeracion-agua-y-freon-procesador-1.jpg",
-          "name": "Hydro Series H75 Led White Three Quarter View"
+          "name": "Corsair Hydro Series H75 Led White Three Quarter View"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/7-REFRIGERACION/rl-h75-performance/h75/raton-optico-gaming-corsair-glaive-rgb-pro-galeria-15.jpg",
-          "name": "Hydro Series H75 Led White Insides View"
+          "name": "Corsair Hydro Series H75 Led White Insides View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/7-REFRIGERACION/rl-h75-performance/h75/raton-optico-gaming-corsair-glaive-rgb-pro-galeria-14.jpg",
-          "name": "Hydro Series H75 Led White Top View"
+          "name": "Corsair Hydro Series H75 Led White Top View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/7-REFRIGERACION/rl-h75-performance/h75/raton-optico-gaming-corsair-glaive-rgb-pro-galeria-13.jpg",
-          "name": "Hydro Series H75 Led White Back View"
+          "name": "Corsair Hydro Series H75 Led White Back View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://i.ebayimg.com/images/g/v8wAAOSwZula31D5/s-l300.jpg",
+        "name": "CORSAIR Logo"
+      }
     },
     "price": {
       "amount": 82.90,
@@ -60,8 +64,8 @@
   },
   {
     "productInfo": {
-      "brand": "ROG",
-      "model": "RYUO 120 RGB",
+      "brand": "ASUS",
+      "model": "ROG RYUO 120 RGB",
       "productFamily": "Cooling system",
       "type": "Component",
       "category": "On sale"
@@ -70,21 +74,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asus/refrigeracion/refrigeracion-liquida-asus-rog-ryuo-120-rgb/galeria/refrigeracion-liquida-asus-rog-ryuo-120-rgb-galeria.jpg",
-          "name": "ROG RYUO 120 RGB Three Quarter View"
+          "name": "ASUS ROG RYUO 120 RGB Three Quarter View"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asus/refrigeracion/refrigeracion-liquida-asus-rog-ryuo-120-rgb/galeria/refrigeracion-liquida-asus-rog-ryuo-120-rgb-galeria-2.jpg",
-          "name": "ROG RYUO 120 RGB Diagram View"
+          "name": "ASUS ROG RYUO 120 RGB Diagram View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asus/refrigeracion/asus-rog-ryuo-240-refrigeracion-agua-y-freon-procesador/240/galeria/refrigeracion-liquida-asus-rog-ryuo-240-rgb-galeria-1.jpg",
-          "name": "ROG RYUO 120 RGB Stats View"
+          "name": "ASUS ROG RYUO 120 RGB Stats View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/asus/refrigeracion/refrigeracion-liquida-asus-rog-ryuo-120-rgb/galeria/refrigeracion-liquida-asus-rog-ryuo-120-rgb-galeria-1.jpg",
-          "name": "ROG RYUO 120 RGB Unboxing View"
+          "name": "ASUS ROG RYUO 120 RGB Unboxing View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://i.pinimg.com/originals/e9/b8/0e/e9b80eabb7d3dd517a1e3b77c5d54ed0.png",
+        "name": "ASUS Logo"
+      }
     },
     "price": {
       "amount": 82.90,
