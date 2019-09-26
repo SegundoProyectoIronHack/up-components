@@ -1,0 +1,56 @@
+{{#with ramMemory}}
+<div class="form-section">
+  <h2 class="form-title">Characteristics</h2>
+  <div class="form-field">
+    <div class="form-field">
+      <input type="text" name="capacity" id="capacity" placeholder="Empty" value="{{this.characteristics.capacity}}">
+      <label for="capacity">Capacity</label>
+    </div>
+    <div class="form-field">
+      <input type="text" name="speed" id="speed" placeholder="Empty" value="{{this.characteristics.speed}}">
+      <label for="speed">Speed</label>
+    </div>
+    <div class="form-field">
+      <input type="text" name="modules" id="modules" placeholder="Empty" value="{{this.characteristics.modules}}">
+      <label for="modules">Modules</label>
+    </div>
+    <div class="form-field-radio">
+      <label for="type" class="form-label">Category</label>
+      <input type="radio" name="ramType" {{{isChecked this.characteristics.type "ddr"}}} id="ram-type-ddr" value="ddr" class="form-radio">
+      <label for="ram-type-ddr">DDR</label>
+      <input type="radio" name="ramType" {{{isChecked this.characteristics.type "ddr2"}}} id="ram-type-ddr2" value="ddr2" class="form-radio">
+      <label for="ram-type-ddr2">ddr2</label>
+      <input type="radio" name="ramType" {{{isChecked this.characteristics.type "ddr3"}}} id="ram-type-ddr3" value="ddr3" class="form-radio">
+      <label for="ram-type-ddr3">DDR3</label>
+      <input type="radio" name="ramType" {{{isChecked this.characteristics.type "ddr4"}}} id="ram-type-ddr4" value="ddr4" class="form-radio">
+      <label for="ram-type-ddr4">DDR4</label>
+    </div>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Energy</h2>
+  <div class="form-field">
+    <input type="text" name="voltage" id="voltage" placeholder="Empty" value="{{this.energy.voltage}}">
+    <label for="voltage">Voltage</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Weight and dimensions</h2>
+  <div class="form-field">
+    <input type="text" name="width" id="width" placeholder="Empty" value="{{this.weightAndDimensions.width}}">
+    <label for="width">Width</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="height" id="height" placeholder="Empty" value="{{this.weightAndDimensions.height}}">
+    <label for="height">Hidth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="depth" id="depth" placeholder="Empty" value="{{this.weightAndDimensions.depth}}">
+    <label for="depth">Depth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="weight" id="weight" placeholder="Empty" value="{{this.weightAndDimensions.weight}}">
+    <label for="weight">Weight</label>
+  </div>
+</div>
+{{/with}}
