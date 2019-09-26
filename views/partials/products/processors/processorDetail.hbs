@@ -1,0 +1,19 @@
+{{#with processor}}
+<div class="product-specs">
+  <section class="products-specs-list">
+    <h2 class="products-specs-title">features</h2>
+    <ul class="products-specs-list">
+      <li class="products-spects-list-item"><strong>Family: </strong>{{processor.features.family}}</li>
+      <li class="products-spects-list-item"><strong>Frequency: </strong>{{processor.features.frequency}}</li>
+      <li class="products-spects-list-item"><strong>Socket: </strong>{{processor.features.socket}}</li>
+      <li class="products-spects-list-item"><strong>Cores: </strong>{{processor.features.cores}}</li>
+    </ul>
+  </section>
+  <section class="product-specs-section">
+    <h2 class="product-specs-title">Memory</h2>
+    <ul class="product-specs-list">
+      <li class="product-specs-list-item"><strong>Max Capacity: </strong>{{processor.memory.maxCapacity}}</li>
+    </ul>
+  </section>
+</div>
+{{/with}}
