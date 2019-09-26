@@ -9,7 +9,11 @@
   <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 
+{{#isAdmin user}}
+<body class="admin">
+{{else}}
 <body>
+{{/isAdmin}}
 
   {{#if message}}
   <div class="toast">
@@ -18,10 +22,32 @@
   {{/if}}
 
     {{#isAdmin user}}
-    <p>Es Admin</p>
-    <a href="/auth/logout">Logout</a>
+    <nav class="admin-nav">
+      <span class="toggle-admin-sidebar" id="toggle-admin-sidebar">🍔</span>
+      <h1 class="logo">UPC</h1>
+      <a href="/auth/logout">⌽</a>
+    </nav>
+    <aside class="sidebar">
+      <ul class="admin-menu">
+        <li class="admin-menu-item"><a href="#" class="admin-menu-link">Products</a>
+          <ul class="admin-sub-menu">
+            <li class="admin-sub-menu-item"><a href="/admin/products" class="admin-sub-menu-link">All products</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Processor" class="admin-sub-menu-link">Processors</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=RAM" class="admin-sub-menu-link">RAM memories</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Mother board" class="admin-sub-menu-link">Motherboards</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Hard drive" class="admin-sub-menu-link">Hard drives</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Case" class="admin-sub-menu-link">Cases</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Graphic card" class="admin-sub-menu-link">Graphics cards</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Power supply" class="admin-sub-menu-link">Power supplies</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Cooling system" class="admin-sub-menu-link">Cooling systems</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Monitor" class="admin-sub-menu-link">Monitors</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Keyboard" class="admin-sub-menu-link">Keyboards</a></li>
+            <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Mouse" class="admin-sub-menu-link">Mouses</a></li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
     {{else}}
-
       <nav class="nav">
         <ul class="main-menu">
           <li class="main-menu-item"><a href="/">Home</a></li>

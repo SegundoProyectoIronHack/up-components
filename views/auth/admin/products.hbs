@@ -1,0 +1,8 @@
+<h2>Admin products</h2>
+<ul>
+{{#each products}}
+  {{> commonProductListDetail
+    product=this
+    user=../user}}
+{{/each}}
+</ul>

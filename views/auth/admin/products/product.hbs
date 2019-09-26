@@ -1,0 +1,10 @@
+<h1>Edit product</h1>
+
+{{> product product=product}}
+
+{{#if product.graphicCard}}
+  {{> editGraphicCard graphicCard=product.graphicCard}}
+{{/if}}
+
+</form>
+</div>

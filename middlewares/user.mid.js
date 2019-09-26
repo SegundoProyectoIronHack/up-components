@@ -33,7 +33,6 @@ module.exports.isAccountActivated = (req, res, next) => {
 };
 
 module.exports.isSessionActive = (req, res, next) => {
-  console.log("USER LOGIN:", req.user);
   if (req.isAuthenticated()) {
     next();
   } else {

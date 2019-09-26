@@ -1,0 +1,105 @@
+{{#with graphicCard}}
+<div class="form-section">
+  <h2 class="form-title">Characteristics</h2>
+  <div class="form-field">
+    <input type="text" name="family" id="family" placeholder="Empty" value="{{this.characteristics.family}}">
+    <label for="family">Family</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="graphicProcessor" id="graphic-processor" placeholder="Empty" value="{{this.characteristics.graphicProcessor}}">
+    <label for="graphic-processor">Graphic processor</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="maximumResolution" id="maximum-resolution" placeholder="Empty" value="{{this.characteristics.maximumResolution}}">
+    <label for="maximum-resolution">Maximum resolution</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Memory</h2>
+  <div class="form-field">
+    <input type="text" name="capacity" id="capacity" placeholder="Empty" value="{{this.characteristics.capacity}}">
+    <label for="capacity">Capacity</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">Category</label>
+    <input type="radio" name="type" {{{isChecked this.memory.type "DDR4"}}} id="type-ddr4" value="DDR4" class="form-radio">
+    <label for="type-ddr4">DDR4</label>
+    <input type="radio" name="type" {{{isChecked this.memory.type "DDR5"}}} id="type-ddr5" value="DDR5" class="form-radio">
+    <label for="type-ddr5">DDR5</label>
+    <input type="radio" name="type" {{{isChecked this.memory.type "DDR6"}}} id="type-ddr6" value="DDR6" class="form-radio">
+    <label for="type-ddr6">DDR6</label>
+    <input type="radio" name="type" {{{isChecked this.memory.type "HBM"}}} id="type-hbm" value="HBM" class="form-radio">
+    <label for="type-hbm">HBM</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="velocity" id="velocity" placeholder="Empty" value="{{this.characteristics.velocity}}">
+    <label for="velocity">Velocity</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Type and ports</h2>
+  <div class="form-field">
+    <input type="text" name="portType" id="port-type" placeholder="Empty" value="{{this.typeAndPorts.type}}">
+    <label for="port-type">Type</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="hdmi" id="hdmi" placeholder="Empty" value="{{this.typeAndPorts.hdmi}}">
+    <label for="hdmi">HDMI</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="displayPort" id="display-port" placeholder="Empty" value="{{this.typeAndPorts.displayPort}}">
+    <label for="port-type">Display port</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="vga" id="vga" placeholder="Empty" value="{{this.typeAndPorts.vga}}">
+    <label for="vga">VGA</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="dvi" id="dvi" placeholder="Empty" value="{{this.typeAndPorts.dvi}}">
+    <label for="dvi">DVI</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Cooling</h2>
+  <div class="form-field">
+    <input type="text" name="fanSize" id="fan-size" placeholder="Empty" value="{{this.cooling.fanSize}}">
+    <label for="fan-size">Fan size</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="cooling" class="form-label">Type</label>
+    <input type="radio" name="coolingType" {{{isChecked this.cooling.type "Air"}}} id="cooling-type-air" value="Liquid" class="form-radio">
+    <label for="cooling-type-air">Air</label>
+    <input type="radio" name="coolingType" {{{isChecked this.cooling.type "Liquid"}}} id="cooling-type-liquid" value="Liquid" class="form-radio">
+    <label for="cooling-type-liquid" class="form-label">Liquid</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Energy</h2>
+  <div class="form-field">
+    <input type="text" name="voltage" id="voltage" placeholder="Empty" value="{{this.energy.voltage}}">
+    <label for="voltage">Voltage</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Weight and dimensions</h2>
+  <div class="form-field">
+    <input type="text" name="width" id="width" placeholder="Empty" value="{{this.weightAndDimensions.width}}">
+    <label for="width">Width</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="height" id="height" placeholder="Empty" value="{{this.weightAndDimensions.height}}">
+    <label for="height">Hidth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="depth" id="depth" placeholder="Empty" value="{{this.weightAndDimensions.depth}}">
+    <label for="depth">Depth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="weight" id="weight" placeholder="Empty" value="{{this.weightAndDimensions.weight}}">
+    <label for="weight">Weight</label>
+  </div>
+  <div class="form-actions">
+    <input type="submit" value="Update" class="button submit-button">
+  </div>
+</div>
+{{/with}}

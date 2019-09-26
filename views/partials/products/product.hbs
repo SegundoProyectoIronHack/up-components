@@ -1,0 +1,64 @@
+{{#with product}}
+<div class="edit-product">
+  <h2 class="edit-product-title">{{this.productInfo.model}}</h2>
+  <img src="{{this.images.gallery.[0].path}}" alt="{{this.productInfo.model}}">
+  <form action="/admin/products/edit" class="edit-product-form" method="post">
+    <input type="hidden" name="id" value="{{this._id}}">
+    <div class="form-section">
+      <h2 class="form-title">General information</h2>
+      <div class="form-field">
+        <input type="text" name="model" id="model" value="{{this.productInfo.model}}" placeholder="Empty" class="form-input">
+        <label for="model" class="form-label">Model</label>
+      </div>
+      <div class="form-field">
+        <input type="text" name="brand" id="brand" value="{{this.productInfo.brand}}" placeholder="Empty" class="form-input">
+        <label for="brand" class="form-label">Brand</label>
+      </div>
+      <div class="form-field-radio">
+        <label for="category" class="form-label">Category</label>
+        <input type="radio" name="category" {{{isChecked this.productInfo.category "Featured"}}} id="category-featured" value="Featured" class="form-radio">
+        <label for="category-featured">Featured</label>
+        <input type="radio" name="category" {{{isChecked this.productInfo.category "On sale"}}} id="category-on-sale" value="On sale" class="form-radio">
+        <label for="category-on-sale">On sale</label>
+        <input type="radio" name="category" {{{isChecked this.productInfo.category "Recommended"}}} id="category-recommended" value="Recommended" class="form-radio">
+        <label for="category-recommended">Recommended</label>
+        <input type="radio" name="category" {{{isChecked this.productInfo.category "Just in"}}} id="category-just-in" value="Just in" class="form-radio">
+        <label for="category-just-in">Just in</label>
+      </div>
+    </div>
+    <div class="form-section">
+      <h2 class="form-title">Price</h2>
+      <div class="form-field">
+        <input type="number" name="price" id="price" placeholder="Empty" value="{{this.price.amount}}">
+        <label for="price" class="form-label">Price</label>
+      </div>
+      <div class="form-field">
+        <input type="number" name="discount" id="discount" placeholder="Empty" value="{{this.price.discountInfo.discount}}">
+        <label for="discount" class="form-label">Discount</label>
+      </div>
+      <div class="form-field">
+        <input type="number" name="taxes" id="taxes" placeholder="Empty" value="{{this.price.taxes}}">
+        <label for="taxes" class="form-label">Taxes</label>
+      </div>
+    </div>
+    <div class="form-section">
+      <h2 class="form-title">Sales</h2>
+      <div class="form-field">
+        <input type="number" name="unitsSold" disabled id="units-sold" placeholder="Empty" value="{{this.sales.unitsSold}}">
+        <label for="units-sold" class="form-label">Units sold</label>
+      </div>
+    </div>
+    <div class="form-section">
+      <h2 class="form-title">Stock</h2>
+      <div class="form-field">
+        <input type="number" name="quantity" id="quantity" placeholder="Empty" value="{{this.stock.quantity}}">
+        <label for="quantity" class="form-label">Quantity</label>
+      </div>
+      <div class="form-field">
+        <input type="number" name="minQuantity" id="min-quantity" placeholder="Empty" value="{{this.stock.minQuantity}}">
+        <label for="min-quantity" class="form-label">Minimun quantity</label>
+      </div>
+    </div>
+  {{!-- </form>
+</div> --}}
+{{/with}}
