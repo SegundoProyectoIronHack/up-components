@@ -4,6 +4,7 @@
   <img src="{{this.images.gallery.[0].path}}" alt="{{this.productInfo.model}}">
   <form action="/admin/products/edit" class="edit-product-form" method="post">
     <input type="hidden" name="id" value="{{this._id}}">
+    <input type="hidden" name="productFamily" value="{{this.productInfo.productFamily}}">
     <div class="form-section">
       <h2 class="form-title">General information</h2>
       <div class="form-field">
@@ -29,33 +30,33 @@
     <div class="form-section">
       <h2 class="form-title">Price</h2>
       <div class="form-field">
-        <input type="number" name="price" id="price" placeholder="Empty" value="{{this.price.amount}}">
+        <input type="text" name="price" id="price" placeholder="Empty" value="{{this.price.amount}}">
         <label for="price" class="form-label">Price</label>
       </div>
       <div class="form-field">
-        <input type="number" name="discount" id="discount" placeholder="Empty" value="{{this.price.discountInfo.discount}}">
+        <input type="text" name="discount" id="discount" placeholder="Empty" value="{{this.price.discountInfo.discount}}">
         <label for="discount" class="form-label">Discount</label>
       </div>
       <div class="form-field">
-        <input type="number" name="taxes" id="taxes" placeholder="Empty" value="{{this.price.taxes}}">
+        <input type="text" name="taxes" id="taxes" placeholder="Empty" value="{{this.price.taxes}}">
         <label for="taxes" class="form-label">Taxes</label>
       </div>
     </div>
     <div class="form-section">
       <h2 class="form-title">Sales</h2>
       <div class="form-field">
-        <input type="number" name="unitsSold" disabled id="units-sold" placeholder="Empty" value="{{this.sales.unitsSold}}">
+        <input type="text" name="unitsSold" disabled id="units-sold" placeholder="Empty" value="{{this.sales.unitsSold}}">
         <label for="units-sold" class="form-label">Units sold</label>
       </div>
     </div>
     <div class="form-section">
       <h2 class="form-title">Stock</h2>
       <div class="form-field">
-        <input type="number" name="quantity" id="quantity" placeholder="Empty" value="{{this.stock.quantity}}">
+        <input type="text" name="quantity" id="quantity" placeholder="Empty" value="{{this.stock.quantity}}">
         <label for="quantity" class="form-label">Quantity</label>
       </div>
       <div class="form-field">
-        <input type="number" name="minQuantity" id="min-quantity" placeholder="Empty" value="{{this.stock.minQuantity}}">
+        <input type="text" name="minQuantity" id="min-quantity" placeholder="Empty" value="{{this.stock.minQuantity}}">
         <label for="min-quantity" class="form-label">Minimun quantity</label>
       </div>
     </div>

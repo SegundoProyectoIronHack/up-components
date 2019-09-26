@@ -10,6 +10,10 @@ router.get("/products", (req, res, next) => {
   controller.getProducts(req, res, next)
 })
 
+router.post("/products/edit", (req, res, next) => {
+  controller.updateProduct(req, res, next)
+})
+
 router.get("/products/list", (req, res, next) => {
   controller.listProducts(req, res, next)
 })

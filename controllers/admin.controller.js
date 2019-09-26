@@ -18,6 +18,10 @@ controller.listProducts = (req, res, next) => {
   })
 }
 
+controller.updateProduct = (req, res, next) => {
+  console.log(req.body)
+}
+
 controller.editProduct = (req, res, next) => {
   Products.findById(req.params.productId).lean().then(product => {
     res.render("auth/admin/products/product", {product})
