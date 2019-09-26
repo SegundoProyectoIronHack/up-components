@@ -30,6 +30,10 @@
   {{> editMotherBoard motherBoard=product.motherBoard}}
 {{/if}}
 
+{{#if product.hardDrive}}
+  {{> editHardDrive hardDrive=product.hardDrive}}
+{{/if}}
+
     <div class="form-actions">
       <input type="submit" value="Update" class="button submit-button">
     </div>

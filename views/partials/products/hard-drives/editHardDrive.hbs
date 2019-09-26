@@ -1,0 +1,56 @@
+{{#with hardDrive}}
+<div class="form-section">
+  <h2 class="form-title">Characteristics</h2>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">Category</label>
+    <input type="radio" name="format" {{{isChecked this.characteristics.format "SSD"}}} id="format-ssd" value="SSD" class="form-radio">
+    <label for="format-ssd">SSD</label>
+    <input type="radio" name="format" {{{isChecked this.characteristics.format "Mechanical"}}} id="format-mechanical" value="Mechanical" class="form-radio">
+    <label for="format-mechanical">Mechanical</label>
+    <input type="radio" name="format" {{{isChecked this.characteristics.format "M2"}}} id="format-m2" value="M2" class="form-radio">
+    <label for="format-m2">M2</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="capacity" id="capacity" placeholder="Empty" value="{{this.characteristics.capacity}}">
+    <label for="capacity">Capacity</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="interface" id="interface" placeholder="Empty" value="{{this.characteristics.interface}}">
+    <label for="interface">Interface</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="readingSpeed" id="reading-speed" placeholder="Empty" value="{{this.characteristics.readingSpeed}}">
+    <label for="reading-speed">Reading speed</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="writingSpeed" id="writing-speed" placeholder="Empty" value="{{this.characteristics.writingSpeed}}">
+    <label for="writing-speed">Writing speed</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Energy</h2>
+  <div class="form-field">
+    <input type="text" name="voltage" id="voltage" placeholder="Empty" value="{{this.energy.voltage}}">
+    <label for="voltage">Voltage</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Weight and dimensions</h2>
+  <div class="form-field">
+    <input type="text" name="width" id="width" placeholder="Empty" value="{{this.weightAndDimensions.width}}">
+    <label for="width">Width</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="height" id="height" placeholder="Empty" value="{{this.weightAndDimensions.height}}">
+    <label for="height">Height</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="depth" id="depth" placeholder="Empty" value="{{this.weightAndDimensions.depth}}">
+    <label for="depth">Depth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="weight" id="weight" placeholder="Empty" value="{{this.weightAndDimensions.weight}}">
+    <label for="weight">Weight</label>
+  </div>
+</div>
+{{/with}}
