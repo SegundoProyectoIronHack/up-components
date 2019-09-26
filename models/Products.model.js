@@ -70,7 +70,7 @@ const productSchema = new Schema({
         type: String,
         enum: ["DDR4", "DDR5", "DDR6", "HBM"]
       },
-      velociy: Number
+      velocity: Number
     },
     typeAndPorts: {
       type: {

@@ -48,7 +48,7 @@
       "memory": {
         "capacity": 8,
         "type": "DDR6",
-        "velociy": 1550
+        "velocity": 1550
       },
       "typeAndPorts": {
         "type": "PCI Express x16 3.0",
@@ -60,16 +60,16 @@
       "cooling": {
         "fanSize": 2,
         "type": "Air"
+      },
+      "energy": {
+        "voltage": 650
+      },
+      "weightAndDimensions": {
+        "width": 268,
+        "height": 114,
+        "depth": 50,
+        "weight": 1050
       }
-    },
-    "energy": {
-      "voltage": 650
-    },
-    "weightAndDimensions": {
-      "width": 268,
-      "height": 114,
-      "depth": 50,
-      "weight": 1050
     }
   },
   {
@@ -125,7 +125,7 @@
       "memory": {
         "capacity": 8,
         "type": "DDR5",
-        "velociy": 8000
+        "velocity": 8000
       },
       "typeAndPorts": {
         "type": "PCI Express x16 3.0",
@@ -137,16 +137,16 @@
       "cooling": {
         "fanSize": 2,
         "type": "Air"
+      },
+      "energy": {
+        "voltage": 220
+      },
+      "weightAndDimensions": {
+        "width": 143,
+        "height": 40,
+        "depth": 278,
+        "weight": 873
       }
-    },
-    "energy": {
-      "voltage": 220
-    },
-    "weightAndDimensions": {
-      "width": 143,
-      "height": 40,
-      "depth": 278,
-      "weight": 873
     }
   }
 ]
