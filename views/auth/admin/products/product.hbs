@@ -34,6 +34,10 @@
   {{> editHardDrive hardDrive=product.hardDrive}}
 {{/if}}
 
+{{#if product.keyboard}}
+  {{> editKeyboard keyboard=product.keyboard}}
+{{/if}}
+
     <div class="form-actions">
       <input type="submit" value="Update" class="button submit-button">
     </div>

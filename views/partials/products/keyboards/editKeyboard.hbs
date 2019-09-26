@@ -1,0 +1,80 @@
+{{#with keyboard}}
+<div class="form-section">
+  <h2 class="form-title">Characteristics</h2>
+  <div class="form-field-radio">
+    <label class="form-label">Type</label>
+    <input type="radio" name="keyboardType" {{{isChecked this.characteristics.type "Mechanical"}}} id="keyboard-type-mechanical" value="Mechanical" class="form-radio">
+    <label for="keyboard-type-mechanical">Mechanical</label>
+    <input type="radio" name="keyboardType" {{{isChecked this.characteristics.type "Membrane"}}} id="keyboard-type-membrane" value="Membrane" class="form-radio">
+    <label for="keyboard-type-membrane">Membrane</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="numberOfKeys" id="number-of-keys" placeholder="Empty" value="{{this.characteristics.numberOfKeys}}">
+    <label for="number-of-keys">Number of keys</label>
+  </div>
+  <div class="form-field-radio">
+    <label class="form-label" for="type-of-switch">Type of switch</label>
+    <select name="typeOfSwitch" id="type-of-switch">
+      <option {{{isSelected this.characteristics.typeOfSwitch "MX red"}}} value="MX red">MX red</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "MX brown"}}} value="MX brown">MX brown</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "MX blue"}}} value="MX blue">MX blue</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "MX black"}}} value="MX black">MX black</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "MX Silver"}}} value="MX Silver">MX Silver</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "MX white"}}} value="MX white">MX white</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "Razer green"}}} value="Razer green">Razer green</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "Romer-G"}}} value="Romer-G">Romer-G</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "Kaihl blue"}}} value="Kaihl blue">Kaihl blue</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "Kaihl red"}}} value="Kaihl red">Kaihl red</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "Kaihl brown"}}} value="Kaihl brown">Kaihl brown</option>
+      <option {{{isSelected this.characteristics.typeOfSwitch "Kaihl green"}}} value="Kaihl green">Kaihl green</option>
+    </select>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Design</h2>
+  <div class="form-field-radio">
+    <label class="form-label">Type</label>
+    <input type="radio" name="layout" {{{isChecked this.characteristics.type "Spanish"}}} id="layout-spanish" value="Spanish" class="form-radio">
+    <label for="layout-spanish">Spanish</label>
+    <input type="radio" name="layout" {{{isChecked this.characteristics.type "English"}}} id="layout-english" value="English" class="form-radio">
+    <label for="layout-english">English</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">RGB ilumination</label>
+    <input type="radio" name="iluminationRGB" {{{isCheckedBoolean this.design.iluminationRGB true}}} id="ilumination-rgb-yes" value="true" class="form-radio">
+    <label for="ilumination-rgb-yes">Yes</label>
+    <input type="radio" name="ilumination" {{{isCheckedBoolean this.design.iluminationRGB false}}} id="ilumination-rgb-no" value="false" class="form-radio">
+    <label for="ilumination-rgb-no">No</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Ergonomics</h2>
+  <div class="form-field">
+    <input type="text" name="cableLength" id="cable-length" placeholder="Empty" value="{{this.ergonomics.cableLength}}">
+    <label for="cable-length">Cable length</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="keyResistance" id="key-resistance" placeholder="Empty" value="{{this.ergonomics.keyResistance}}">
+    <label for="key-resistance">Key resistance</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Weight and dimensions</h2>
+  <div class="form-field">
+    <input type="text" name="width" id="width" placeholder="Empty" value="{{this.weightAndDimensions.width}}">
+    <label for="width">Width</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="height" id="height" placeholder="Empty" value="{{this.weightAndDimensions.height}}">
+    <label for="height">Hidth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="depth" id="depth" placeholder="Empty" value="{{this.weightAndDimensions.depth}}">
+    <label for="depth">Depth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="weight" id="weight" placeholder="Empty" value="{{this.weightAndDimensions.weight}}">
+    <label for="weight">Weight</label>
+  </div>
+</div>
+{{/with}}
