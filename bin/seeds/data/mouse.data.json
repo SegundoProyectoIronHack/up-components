@@ -1,8 +1,8 @@
 [
   {
     "productInfo": {
-      "brand": "BASILISK",
-      "model": "Essential",
+      "brand": "RAZER",
+      "model": "BASILISK Essential",
       "productFamily": "Mouse",
       "type": "Peripheral",
       "category": "On sale"
@@ -11,21 +11,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/ratones/raton-razer-basilisk-essential-rz01-02650100-r3m1/raton-razer-basilisk-essential-rz01-02650100-r3m1-main.jpeg",
-          "name": "BASILISK Essential"
+          "name": "RAZER BASILISK Essential"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/ratones/raton-razer-basilisk-essential-rz01-02650100-r3m1/galeria/raton-razer-basilisk-essential-rz01-02650100-r3m1-7.jpeg",
-          "name": "BASILISK Essential"
+          "name": "RAZER BASILISK Essential"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/ratones/raton-razer-basilisk-essential-rz01-02650100-r3m1/galeria/raton-razer-basilisk-essential-rz01-02650100-r3m1-2.jpeg",
-          "name": "BASILISK Essential"
+          "name": "RAZER BASILISK Essential"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/ratones/raton-razer-basilisk-essential-rz01-02650100-r3m1/galeria/raton-razer-basilisk-essential-rz01-02650100-r3m1-5.jpeg",
-          "name": "BASILISK Essential"
+          "name": "RAZER BASILISK Essential"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://ih0.redbubble.net/image.588229169.9519/mp,550x550,matte,ffffff,t.u1.jpg",
+        "name": "RAZER Logo"
+      }
     },
     "price": {
       "amount": 45.90,
@@ -70,8 +74,8 @@
   },
   {
     "productInfo": {
-      "brand": "MAMBA",
-      "model": "Elite",
+      "brand": "RAZER",
+      "model": "MAMBA Elite",
       "productFamily": "Mouse",
       "type": "Peripheral",
       "category": "Just in"
@@ -80,21 +84,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/RATONES/mamba-elite-new/galeria/rat%C3%B3n-gaming-mamba-elite-galeria.jpg",
-          "name": "Mamba Elite Top View"
+          "name": "RAZER Mamba Elite Top View"
         },
         {
           "path":"https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/RATONES/mamba-elite-new/galeria/rat%C3%B3n-gaming-mamba-elite-galeria-2.jpg",
-          "name": "Mamba Elite Three Quarter View"
+          "name": "RAZER Mamba Elite Three Quarter View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/RATONES/mamba-elite-new/galeria/rat%C3%B3n-gaming-mamba-elite-galeria-3.jpg",
-          "name": "Mamba Elite Side View"
+          "name": "RAZER Mamba Elite Side View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/razer/RATONES/mamba-elite-new/galeria/rat%C3%B3n-gaming-mamba-elite-galeria-4.jpg",
-          "name": "Mamba Elite Back View"
+          "name": "RAZER Mamba Elite Back View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://ih0.redbubble.net/image.588229169.9519/mp,550x550,matte,ffffff,t.u1.jpg",
+        "name": "RAZER Logo"
+      }
     },
     "price": {
       "amount": 92.90,

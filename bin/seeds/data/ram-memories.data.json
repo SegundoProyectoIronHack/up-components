@@ -25,7 +25,11 @@
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/memoria-ram/memoria-corsair-ddr4-32gb-2x16gb-pc3200-vengeance-rgb-pro-bl/galeria/memoria-corsair-ddr4-32gb-2x16gb-pc3200-vengeance-rgb-pro-bl-6.jpg",
           "name": "DDR4 VENGANCE® RGB PRO 3200MHZ 23GB C16 Insides View 2"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://i.ebayimg.com/images/g/v8wAAOSwZula31D5/s-l300.jpg",
+        "name": "CORSAIR Logo"
+      }
     },
     "price": {
       "amount": 184.90,

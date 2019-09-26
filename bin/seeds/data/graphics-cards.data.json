@@ -1,8 +1,8 @@
 [
   {
     "productInfo": {
-      "brand": "GEFORCE",
-      "model": "RTX 2080 Super Ventus XS OC 8GB",
+      "brand": "NVIDIA",
+      "model": "GEFORCE RTX 2080 Super Ventus XS OC 8GB",
       "productFamily": "Graphic card",
       "type": "Component",
       "category": "On sale"
@@ -11,21 +11,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-geforce-rtx-2080-super-ventus-xs-oc-8gb-gddr6/galeria/tarjeta-grafica-msi-rtx-2080-super-ventus-xs-oc-8gb-gddr6-5.jpg",
-          "name": "Gefore RTX 2080 Super Ventus XS OC 8GB Presentation View"
+          "name": "NVIDIA Gefore RTX 2080 Super Ventus XS OC 8GB Presentation View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-geforce-rtx-2080-super-ventus-xs-oc-8gb-gddr6/galeria/tarjeta-grafica-msi-rtx-2080-super-ventus-xs-oc-8gb-gddr6-2.jpg",
-          "name": "Gefore RTX 2080 Super Ventus XS OC 8GB Top View"
+          "name": "NVIDIA Gefore RTX 2080 Super Ventus XS OC 8GB Top View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-geforce-rtx-2080-super-ventus-xs-oc-8gb-gddr6/galeria/tarjeta-grafica-msi-rtx-2080-super-ventus-xs-oc-8gb-gddr6-3.jpg",
-          "name": "Gefore RTX 2080 Super Ventus XS OC 8GB Bottom View"
+          "name": "NVIDIA Gefore RTX 2080 Super Ventus XS OC 8GB Bottom View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-geforce-rtx-2080-super-ventus-xs-oc-8gb-gddr6/galeria/tarjeta-grafica-msi-rtx-2080-super-ventus-xs-oc-8gb-gddr6-4.jpg",
-          "name": "Gefore RTX 2080 Super Ventus XS OC 8GB Outputs View"
+          "name": "NVIDIA Gefore RTX 2080 Super Ventus XS OC 8GB Outputs View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://static.wixstatic.com/media/9dd556_db6617262d524c288a2c004479ee800f.jpg",
+        "name": "GEFORCE Logo"
+      }
     },
     "price": {
       "amount": 759.9,
@@ -48,7 +52,7 @@
       "memory": {
         "capacity": 8,
         "type": "DDR6",
-        "velociy": 1550
+        "velocity": 1550
       },
       "typeAndPorts": {
         "type": "PCI Express x16 3.0",
@@ -74,8 +78,8 @@
   },
   {
     "productInfo": {
-      "brand": "RADEON",
-      "model": "RX590 ARMOR OC 8GB GDDR5",
+      "brand": "MSI",
+      "model": "RADEON RX590 ARMOR OC 8GB GDDR5",
       "productFamily": "Graphic card",
       "type": "Component",
       "category": "Featured"
@@ -84,21 +88,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5-main.jpg",
-          "name": "RX590 ARMOR OC 8GB GDDR5 Presentation View"
+          "name": "MSI RADEON RX590 ARMOR OC 8GB GDDR5 Presentation View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5/galeria/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5-1.jpg",
-          "name": "RX590 ARMOR OC 8GB GDDR5 Top View"
+          "name": "MSI RADEON RX590 ARMOR OC 8GB GDDR5 Top View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5/galeria/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5-3.jpg",
-          "name": "RX590 ARMOR OC 8GB GDDR5 Three Quarter View"
+          "name": "MSI RADEON RX590 ARMOR OC 8GB GDDR5 Three Quarter View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/msi/tarjetas-graficas/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5/galeria/tarjeta-grafica-msi-rx590-armor-oc-8gb-gddr5-4.jpg",
-          "name": "RX590 ARMOR OC 8GB GDDR5 Outputs View"
+          "name": "MSI RADEON RX590 ARMOR OC 8GB GDDR5 Outputs View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://www.fortress.com.hk/medias/MSI.png?context=bWFzdGVyfHJvb3R8NjMzOTF8aW1hZ2UvcG5nfGgyOS9oOTkvODkyNzUwMzcxMjI4Ni5wbmd8YTU2YTZmNTI0ZGE5ZWI1NzM0YjNiZjFkMTI5M2UxYWMwYjNlZTI4MDk0Zjk3YzJkMDBmOTYzMDI1MzZjZmUzOA",
+        "name": "MSI Logo"
+      }
     },
     "price": {
       "amount": 239.9,
@@ -125,7 +133,7 @@
       "memory": {
         "capacity": 8,
         "type": "DDR5",
-        "velociy": 8000
+        "velocity": 8000
       },
       "typeAndPorts": {
         "type": "PCI Express x16 3.0",

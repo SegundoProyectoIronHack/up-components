@@ -5,42 +5,41 @@
 {{/if}}
 
 {{#if product.powerSupply}}
-  <h2>Power supply</h2>
+  {{> powerSupplyDetail powerSupply=product}}
 {{/if}}
 
 {{#if product.processor}}
-  <h2>Processor</h2>
+  {{> processorDetail processor=product}}
 {{/if}}
 
-
 {{#if product.graphicCard}}
-  <h2>Graphic card</h2>
+  {{> graphicsCardDetail graphicCard=product}}
 {{/if}}
 
 {{#if product.case}}
-  <h2>Case</h2>
+  {{> caseDetail case=product}}
 {{/if}}
 
 {{#if product.motherBoard}}
-  <h2>Motherboard</h2>
+  {{> motherBoardDetail motherBoard=product}}
 {{/if}}
 
 {{#if product.coolingSystem}}
-  <h2>Cooling system</h2>
+  {{> coolingSystemDetail coolingSystem=product}}
 {{/if}}
 
 {{#if product.hardDrive}}
-  <h2>Hard drive</h2>
+  {{> hardDriveDetail hardDrive=product}}
 {{/if}}
 
 {{#if product.monitor}}
-  <h2>Monitor</h2>
+  {{> monitorDetail monitor=product}}
 {{/if}}
 
 {{#if product.mouse}}
-  <h2>Mouse</h2>
+  {{> mouseDetails mouse=product}}
 {{/if}}
 
 {{#if product.keyboard}}
-  <h2>Keyboard</h2>
+  {{> keyboardDetail keyboard=product}}
 {{/if}}

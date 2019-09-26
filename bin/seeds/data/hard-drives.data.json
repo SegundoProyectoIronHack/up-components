@@ -25,7 +25,11 @@
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/samsung/discos-duros/ssd-samsung-860-qvo-1tb-sata-iii/galeria/ssd-samsung-860-qvo-1tb-sata-iii-6.jpeg",
           "name": "Samsung 860 QVO 1TB SATA III Box Bottom View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://www.geraldgiles.co.uk/wp-content/uploads/2017/06/samsung.png",
+        "name": "SAMSUNG Logo"
+      }
     },
     "price": {
       "amount": 124.90,
@@ -84,7 +88,11 @@
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/samsung/discos-duros/ssd-samsung-970-evo-plus-250gb-mz-v7s250bw-nvme/galeria/ssd-samsung-970-evo-plus-250gb-mz-v7s250bw-nvme-5.jpg",
           "name": "Samsung 8970 EVO PLUS NVME M.2 250GB Box Bottom View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://www.geraldgiles.co.uk/wp-content/uploads/2017/06/samsung.png",
+        "name": "SAMSUNG Logo"
+      }
     },
     "price": {
       "amount": 81.90,

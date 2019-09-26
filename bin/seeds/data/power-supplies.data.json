@@ -11,21 +11,25 @@
       "gallery": [
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/6-FUENTE/rmi-850-80-plus-gold/galeria/fuente-corsair-rmi-850-80-plus.gold-modular-galeria-1.jpg",
-          "name": "Series RM850i Three Quarter View"
+          "name": "CORSAIR Series RM850i Three Quarter View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/6-FUENTE/rmi-650-80-plus-gold/galeria/fuente-corsair-rmi-80-plus-gold-modular-3-galeria.jpg",
-          "name": "Series RM850i Top View"
+          "name": "CORSAIR Series RM850i Top View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/6-FUENTE/rmi-850-80-plus-gold/galeria/fuente-corsair-rmi-850-80-plus.gold-modular-galeria-4.jpg",
-          "name": "Series RM850i Outputs View"
+          "name": "CORSAIR Series RM850i Outputs View"
         },
         {
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/corsair/6-FUENTE/rmi-850-80-plus-gold/galeria/fuente-corsair-rmi-850-80-plus.gold-modular-galeria-5.jpg",
-          "name": "Series RM850i Front View"
+          "name": "CORSAIR Series RM850i Front View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://i.ebayimg.com/images/g/v8wAAOSwZula31D5/s-l300.jpg",
+        "name": "CORSAIR Logo"
+      }
     },
     "price": {
       "amount": 146.90,
@@ -80,7 +84,11 @@
           "path": "https://www.vsgamers.es/thumbnails/product_gallery_medium/uploads/products/enermax/fuentes-de-alimentacion/fuente-de-alimentacion-atx-700w-enermax-revobron-erb700awt/galeria/fuente-alimentacion-atx-700w-enermax-revobron-galeria2.jpg",
           "name": "Enermax 700W Revobron Unboxed View"
         }
-      ]
+      ],
+      "brand": {
+        "path": "https://seeklogo.com/images/E/enermax-logo-5ECA33ABA6-seeklogo.com.gif",
+        "name": "ENERMAX Logo"
+      }
     },
     "price": {
       "amount": 81.90,
