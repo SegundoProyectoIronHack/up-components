@@ -4,8 +4,11 @@ const Users = require("./../models/Users.model")
 
 controller.listChart = (req, res, next) => {
   Users.findById(req.user._id).populate("chart").then(chartProducts => {
-    console.log(chartProducts.chart)
-    res.render("auth/chart/index", {products: chartProducts.chart})
+    // let totalProductPrice = chartProducts.chart.reduce((prevProduct, currentProduct) => prevProduct.price.amount + currentProduct.price.amount)
+    let totalChartPrice = 0
+    chartProducts.chart.forEach(product => totalChartPrice += product.price.amount)
+    console.log("TOTAL", totalChartPrice)
+    res.render("auth/chart/index", {products: chartProducts.chart, totalChartPrice})
   })
 }
 
