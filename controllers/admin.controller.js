@@ -348,7 +348,7 @@ controller.updateProduct = (req, res, next) => {
 
           break;
         }
-        
+
         case "Monitor": {
           let {
             resolution,
@@ -364,7 +364,7 @@ controller.updateProduct = (req, res, next) => {
             vga,
             dvi,
             vesa,
-            vesaSize  
+            vesaSize
           } = req.body;
 
           updatedProduct = {
@@ -388,7 +388,7 @@ controller.updateProduct = (req, res, next) => {
 
           break;
         }
-        
+
         case "Mouse": {
           let {
             mouseType,
@@ -396,34 +396,68 @@ controller.updateProduct = (req, res, next) => {
             numberOfButtons,
             movementResolution,
             wireless,
+            formFactor,
             ilumination,
             iluminationRGB,
             cableLength,
             buttonResistance,
-            displayPort,
-            vga,
-            dvi,
-            vesa,
-            vesaSize  
+            width,
+            height,
+            depth,
+            weight
           } = req.body;
 
           updatedProduct = {
-            "mouse.characteristics.mouseType": mouseType,
+            "mouse.characteristics.type": mouseType,
             "mouse.characteristics.interface": interface,
             "mouse.characteristics.numberOfButtons": numberOfButtons,
             "mouse.characteristics.movementResolution": movementResolution,
-
             "mouse.characteristics.wireless": wireless,
-            "mouse.design.ilumination": ilumination,
 
+            "mouse.design.formFactor": formFactor,
+            "mouse.design.ilumination": ilumination,
             "mouse.design.iluminationRGB": iluminationRGB,
+
             "mouse.ergonomics.cableLength": cableLength,
-            "mouse.portsAndInterfaces.buttonResistance": buttonResistance,
-            "mouse.portsAndInterfaces.displayPort": displayPort,
-            "mouse.portsAndInterfaces.vga": vga,
-            "mouse.portsAndInterfaces.dvi": dvi,
-            "mouse.ergonomics.vesa": vesa,
-            "mouse.ergonomics.vesaSize": vesaSize
+            "mouse.ergonomics.buttonResistance": buttonResistance,
+
+            "mouse.weightAndDimensions.width": width,
+            "mouse.weightAndDimensions.height": height,
+            "mouse.weightAndDimensions.depth": depth,
+            "mouse.weightAndDimensions.weight": weight
+          };
+
+          break;
+        }
+
+        case "Keyboard": {
+          let {
+            keyboardType,
+            numberOfButtons,
+            typeOfSwitch,
+            layout,
+            iluminationRGB,
+            cableLength,
+            width,
+            height,
+            depth,
+            weight
+          } = req.body;
+
+          updatedProduct = {
+            "keyboard.characteristics.type": keyboardType,
+            "keyboard.characteristics.numberOfButtons": numberOfButtons,
+            "keyboard.characteristics.typeOfSwitch": typeOfSwitch,
+
+            "keyboard.design.layout": layout,
+            "keyboard.design.iluminationRGB": iluminationRGB,
+
+            "keyboard.ergonomics.cableLength": cableLength,
+
+            "keyboard.weightAndDimensions.width": width,
+            "keyboard.weightAndDimensions.height": height,
+            "keyboard.weightAndDimensions.depth": depth,
+            "keyboard.weightAndDimensions.weight": weight
           };
 
           break;
