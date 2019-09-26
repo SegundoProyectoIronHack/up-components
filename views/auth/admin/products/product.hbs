@@ -18,6 +18,10 @@
   {{> editProcessor processor=product.processor}}
 {{/if}}
 
+{{#if product.case}}
+  {{> editCase case=product.case}}
+{{/if}}
+
     <div class="form-actions">
       <input type="submit" value="Update" class="button submit-button">
     </div>

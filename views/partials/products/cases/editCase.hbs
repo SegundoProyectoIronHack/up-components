@@ -1,0 +1,72 @@
+{{#with case}}
+<div class="form-section">
+  <h2 class="form-title">Design</h2>
+  <div class="form-field">
+    <input type="text" name="designType" id="design-type" placeholder="Empty" value="{{this.design.type}}">
+    <label for="design-type">Design</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">Ilumination</label>
+    <input type="radio" name="ilumination" {{{isCheckedBoolean this.design.ilumination true}}} id="ilumination-yes" value="true" class="form-radio">
+    <label for="ilumination-yes">Yes</label>
+    <input type="radio" name="ilumination" {{{isCheckedBoolean this.design.ilumination false}}} id="ilumination-no" value="false" class="form-radio">
+    <label for="ilumination-no">No</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="numberOfPorts35" id="number-of-ports-35" placeholder="Empty" value="{{this.design.numberOfPorts35}}">
+    <label for="number-of-ports-35">Ports 3.5</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="numberOfPorts25" id="number-of-ports-25" placeholder="Empty" value="{{this.design.numberOfPorts25}}">
+    <label for="number-of-ports-25">Ports 2.5</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="numberOfPortsUSB3" id="number-of-ports-USB-3" placeholder="Empty" value="{{this.design.numberOfPortsUSB3}}">
+    <label for="number-of-ports-USB-3">Ports USB 3</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="numberOfPortsUSB2" id="number-of-ports-USB-2" placeholder="Empty" value="{{this.design.numberOfPortsUSB2}}">
+    <label for="number-of-ports-USB-2">Ports USB 2</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">Side window</label>
+    <input type="radio" name="sideWindow" {{{isCheckedBoolean this.design.sideWindow true}}} id="side-window-yes" value="true" class="form-radio">
+    <label for="side-window-yes">Yes</label>
+    <input type="radio" name="sideWindow" {{{isCheckedBoolean this.design.sideWindow false}}} id="side-window-no" value="false" class="form-radio">
+    <label for="side-window-no">No</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Cooling system</h2>
+  <div class="form-field">
+    <input type="text" name="numberOfFans" id="number-of-fans" placeholder="Empty" value="{{this.cooling.numberOfFans}}">
+    <label for="number-of-fans">Number of fans</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">Water cooling</label>
+    <input type="radio" name="waterCooling" {{{isCheckedBoolean this.cooling.waterCooling true}}} id="water-cooling-yes" value="true" class="form-radio">
+    <label for="water-cooling-yes">Yes</label>
+    <input type="radio" name="waterCooling" {{{isCheckedBoolean this.cooling.waterCooling false}}} id="water-cooling-no" value="false" class="form-radio">
+    <label for="water-cooling-no">No</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Weight and dimensions</h2>
+  <div class="form-field">
+    <input type="text" name="width" id="width" placeholder="Empty" value="{{this.weightAndDimensions.width}}">
+    <label for="width">Width</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="height" id="height" placeholder="Empty" value="{{this.weightAndDimensions.height}}">
+    <label for="height">Hidth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="depth" id="depth" placeholder="Empty" value="{{this.weightAndDimensions.depth}}">
+    <label for="depth">Depth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="weight" id="weight" placeholder="Empty" value="{{this.weightAndDimensions.weight}}">
+    <label for="weight">Weight</label>
+  </div>
+</div>
+{{/with}}

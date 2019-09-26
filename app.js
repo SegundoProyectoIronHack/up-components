@@ -74,6 +74,7 @@ hbs.registerHelper('calculateTaxes', require("./helpers/calculate-taxes.helper")
 hbs.registerHelper('ifNot', require("./helpers/if-not.helper"))
 hbs.registerHelper('isAdmin', require("./helpers/is-admin.helper"))
 hbs.registerHelper('isChecked', require("./helpers/is-checked.helper"))
+hbs.registerHelper('isCheckedBoolean', require("./helpers/is-checked-booean.helper"))
 hbs.registerHelper('ramTypeIsChecked', require("./helpers/ram-type-is-checked"))
 
 // default value for title local
