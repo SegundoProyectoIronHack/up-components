@@ -19,7 +19,116 @@ controller.listProducts = (req, res, next) => {
 }
 
 controller.updateProduct = (req, res, next) => {
-  console.log(req.body)
+  let id = req.body.id
+
+  let {
+    productFamily, model, brand,
+    category, price, discount,
+    taxes, quantity, minQuantity
+  } = req.body
+
+  let {
+    family, graphicProcessor, maximumResolution,
+    capacity, type, velocity,
+    portType, hdmi, displayPort,
+    vga, dvi, fanSize,
+    coolingType, voltage, width,
+    height, depth, weight
+  } = req.body
+
+  let updatedProduct = {}
+
+  let commonProductInfo = {
+    "productInfo.characteristics.family": family,
+    "productInfo.brand": brand,
+    "productInfo.model": model,
+    "productInfo.productFamily": productFamily,
+    "productInfo.category": category,
+
+    "price.amount": price,
+    "price.taxes": taxes,
+
+    "price.discountInfo.discount": discount,
+
+    "stock.quantity": quantity,
+    "stock.minQuantity": minQuantity,
+  }
+
+  Products.findById(id).lean().then(product => {
+    switch (req.body.productFamily) {
+      case 'Graphic card':
+        let {
+          family, graphicProcessor, maximumResolution,
+          capacity, type, velocity,
+          portType, hdmi, displayPort,
+          vga, dvi, fanSize,
+          coolingType, voltage, width,
+          height, depth, weight
+        } = req.body
+
+        updatedProduct = {
+          "graphicCard.characteristics.family": family,
+          "graphicCard.characteristics.graphicProcessor": graphicProcessor,
+          "graphicCard.characteristics.maximumResolution": maximumResolution,
+      
+          "graphicCard.memory.capacity": capacity,
+          "graphicCard.memory.type": type,
+          "graphicCard.memory.velocity": velocity,
+      
+          "graphicCard.typeAndPorts.type": portType,
+          "graphicCard.typeAndPorts.hdmi": hdmi,
+          "graphicCard.typeAndPorts.displayPort": displayPort,
+          "graphicCard.typeAndPorts.vga": vga,
+          "graphicCard.typeAndPorts.dvi": dvi,
+      
+          "graphicCard.cooling.fanSize": fanSize,
+          "graphicCard.cooling.type": coolingType,
+      
+          "graphicCard.energy.voltage": voltage,
+      
+          "graphicCard.weightAndDimensions.width": width,
+          "graphicCard.weightAndDimensions.height": height,
+          "graphicCard.weightAndDimensions.depth": depth,
+          "graphicCard.weightAndDimensions.weight": weight
+        }
+
+        break;
+
+      // case 'RAM': {
+      //   updatedProduct = {
+      //     "ram.characteristics.family": family,
+      //     "ram.characteristics.graphicProcessor": graphicProcessor,
+      //     "ram.characteristics.maximumResolution": maximumResolution,
+      
+      //     "ram.memory.capacity": capacity,
+      //     "ram.memory.type": type,
+      //     "ram.memory.velocity": velocity,
+      
+      //     "ram.typeAndPorts.type": portType,
+      //     "ram.typeAndPorts.hdmi": hdmi,
+      //     "ram.typeAndPorts.displayPort": displayPort,
+      //     "ram.typeAndPorts.vga": vga,
+      //     "ram.typeAndPorts.dvi": dvi,
+      
+      //     "ram.cooling.fanSize": fanSize,
+      //     "ram.cooling.type": coolingType,
+      
+      //     "ram.energy.voltage": voltage,
+      
+      //     "ram.weightAndDimensions.width": width,
+      //     "ram.weightAndDimensions.height": height,
+      //     "ram.weightAndDimensions.depth": depth,
+      //     "ram.weightAndDimensions.weight": weight
+      //   }
+      // }
+    }
+
+    let totalProductUpdated = Object.assign(commonProductInfo, updatedProduct)
+
+    Products.findByIdAndUpdate(req.body.id, totalProductUpdated).then(productUpdated => {
+      res.redirect(`/admin/products/${id}`)
+    })
+  })
 }
 
 controller.editProduct = (req, res, next) => {
