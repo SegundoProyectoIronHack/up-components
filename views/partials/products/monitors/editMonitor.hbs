@@ -1,0 +1,84 @@
+{{#with monitor}}
+<div class="form-section">
+  <h2 class="form-title">Screen</h2>
+  <div class="form-field">
+    <input type="text" name="resolution" id="resolution" placeholder="Empty" value="{{this.screen.resolution}}">
+    <label for="resolution">Resolution</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="refreshRate" id="refresh-rate" placeholder="Empty" value="{{this.screen.refreshRate}}">
+    <label for="refresh-rate">Refresh rate</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">3D</label>
+    <input type="radio" name="threeD" {{{isCheckedBoolean this.screen.threeD true}}} id="threed-yes" value="true" class="form-radio">
+    <label for="threed-yes">Yes</label>
+    <input type="radio" name="threeD" {{{isCheckedBoolean this.screen.threeD false}}} id="threed-no" value="false" class="form-radio">
+    <label for="threed-no">No</label>
+  </div>
+  <label class="form-label" for="technology">Technology</label>
+  <select name="technology" id="technology">
+    <option {{{isSelected this.screen.technology "LED"}}} value="LED">LED</option>
+    <option {{{isSelected this.screen.technology "LCD"}}} value="LCD">LCD</option>
+    <option {{{isSelected this.screen.technology "OLED"}}} value="OLED">OLED</option>
+    <option {{{isSelected this.screen.technology "QLED"}}} value="QLED">QLED</option>
+    <option {{{isSelected this.screen.technology "IPS"}}} value="IPS">IPS</option>
+    <option {{{isSelected this.screen.technology "TN"}}} value="TN">TN</option>
+  </select>
+  <div class="form-field">
+    <input type="text" name="inches" id="inches" placeholder="Empty" value="{{this.screen.inches}}">
+    <label for="inches">Inches</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="screenType" id="screen-type" placeholder="Empty" value="{{this.screen.screenType}}">
+    <label for="screen-type">Screen type</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">Speakers</label>
+    <input type="radio" name="speakers" {{{isCheckedBoolean this.screen.speakers true}}} id="speakers-yes" value="true" class="form-radio">
+    <label for="speakers-yes">Yes</label>
+    <input type="radio" name="speakers" {{{isCheckedBoolean this.screen.speakers false}}} id="speakers-no" value="false" class="form-radio">
+    <label for="speakers-no">No</label>
+  </div>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">Camera</label>
+    <input type="radio" name="camera" {{{isCheckedBoolean this.screen.camera true}}} id="camera-yes" value="true" class="form-radio">
+    <label for="camera-yes">Yes</label>
+    <input type="radio" name="camera" {{{isCheckedBoolean this.screen.camera false}}} id="camera-no" value="false" class="form-radio">
+    <label for="camera-no">No</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Ports and interfaces</h2>
+  <div class="form-field">
+    <input type="text" name="hdmi" id="hdmi" placeholder="Empty" value="{{this.portsAndInterfaces.hdmi}}">
+    <label for="hdmi">HDMI</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="displayPort" id="display-port" placeholder="Empty" value="{{this.portsAndInterfaces.displayPort}}">
+    <label for="display-port">Display port</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="vga" id="vga" placeholder="Empty" value="{{this.portsAndInterfaces.vga}}">
+    <label for="vga">VGA</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="dvi" id="dvi" placeholder="Empty" value="{{this.portsAndInterfaces.dvi}}">
+    <label for="dvi">DVI</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Ergonomics</h2>
+  <div class="form-field-radio">
+    <label for="type" class="form-label">VESA</label>
+    <input type="radio" name="vesa" {{{isCheckedBoolean this.ergonomics.vesa true}}} id="vesa-yes" value="true" class="form-radio">
+    <label for="vesa-yes">Yes</label>
+    <input type="radio" name="vesa" {{{isCheckedBoolean this.ergonomics.vesa false}}} id="vesa-no" value="false" class="form-radio">
+    <label for="vesa-no">No</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="vesaSize" id="vesa-size" placeholder="Empty" value="{{this.ergonomics.vesaSize}}">
+    <label for="vesa-size">Vesa size</label>
+  </div>
+</div>
+{{/with}}
