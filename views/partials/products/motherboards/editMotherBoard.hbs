@@ -1,0 +1,99 @@
+{{#with motherBoard}}
+<div class="form-section">
+  <h2 class="form-title">Processor</h2>
+  <div class="form-field">
+    <input type="text" name="socket" id="socket" placeholder="Empty" value="{{this.processor.socket}}">
+    <label for="socket">Socket</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="maxProcessors" id="max-processors" placeholder="Empty" value="{{this.processor.maxProcessors}}">
+    <label for="max-processors">Maximum processors</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Memory</h2>
+  <div class="form-field">
+    <input type="text" name="maxCapacity" id="max-capacity" placeholder="Empty" value="{{this.memory.maxCapacity}}">
+    <label for="max-capacity">Maximum capacity</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="numberOfSlots" id="number-of-slots" placeholder="Empty" value="{{this.memory.numberOfSlots}}">
+    <label for="number-of-slots">Number of slots</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Internal connectors</h2>
+  <div class="form-field">
+    <input type="text" name="usb2" id="usb-2" placeholder="Empty" value="{{this.internalConnectors.usb2}}">
+    <label for="usb-2">USB 2</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="usb3" id="usb-3" placeholder="Empty" value="{{this.internalConnectors.usb3}}">
+    <label for="usb-3">USB 3</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="sata" id="sata" placeholder="Empty" value="{{this.internalConnectors.sata}}">
+    <label for="sata">Sata III</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Energy</h2>
+  <div class="form-field">
+    <input type="text" name="numberOfPins" id="number-of-pins" placeholder="Empty" value="{{this.energy.numberOfPins}}">
+    <label for="number-of-pins">Number of pins</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Backports</h2>
+  <div class="form-field">
+    <input type="text" name="backportsUsb2" id="backports-usb-2" placeholder="Empty" value="{{this.backports.usb2}}">
+    <label for="backports-usb-2">USB 2</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="backportsUsb3" id="backports-usb-3" placeholder="Empty" value="{{this.backports.usb3}}">
+    <label for="backports-usb-3">USB 3</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="ethernet" id="ethernet" placeholder="Empty" value="{{this.backports.ethernet}}">
+    <label for="ethernet">Ethernet</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="hdmi" id="hdmi" placeholder="Empty" value="{{this.backports.hdmi}}">
+    <label for="hdmi">HDMI</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Characteristics</h2>
+  <div class="form-field">
+    <input type="text" name="motherBoardType" id="mother-board-type" placeholder="Empty" value="{{this.characteristics.type}}">
+    <label for="mother-board-type">Type</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="chipset" id="chipset" placeholder="Empty" value="{{this.characteristics.chipset}}">
+    <label for="chipset">Chipset</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="m2Slots" id="m2-slots" placeholder="Empty" value="{{this.characteristics.m2Slots}}">
+    <label for="m2-slots">M2 slots</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="pciExpress3Slots" id="pci-express-3-slots" placeholder="Empty" value="{{this.characteristics.pciExpress3Slots}}">
+    <label for="pci-express-3-slots">PCI Express 3</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="pciExpress2Slots" id="pci-express-2-slots" placeholder="Empty" value="{{this.characteristics.pciExpress2Slots}}">
+    <label for="pci-express-2-slots">PCI Express 2</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Weight and dimensions</h2>
+  <div class="form-field">
+    <input type="text" name="width" id="width" placeholder="Empty" value="{{this.weightAndDimensions.width}}">
+    <label for="width">Width</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="depth" id="depth" placeholder="Empty" value="{{this.weightAndDimensions.depth}}">
+    <label for="depth">Depth</label>
+  </div>
+</div>
+{{/with}}

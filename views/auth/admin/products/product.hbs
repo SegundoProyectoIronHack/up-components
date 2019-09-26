@@ -26,6 +26,10 @@
   {{> editCooling cooling=product.coolingSystem}}
 {{/if}}
 
+{{#if product.motherBoard}}
+  {{> editMotherBoard motherBoard=product.motherBoard}}
+{{/if}}
+
     <div class="form-actions">
       <input type="submit" value="Update" class="button submit-button">
     </div>
