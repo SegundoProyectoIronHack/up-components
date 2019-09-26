@@ -1,0 +1,51 @@
+{{#with cooling}}
+<div class="form-section">
+  <h2 class="form-title">Characteristics</h2>
+  <div class="form-field">
+    <input type="text" name="coolingType" id="cooling-type" placeholder="Empty" value="{{this.characteristics.type}}">
+    <label for="cooling-type">Type</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="speed" id="speed" placeholder="Empty" value="{{this.characteristics.speed}}">
+    <label for="speed">Speed</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="airflow" id="airflow" placeholder="Empty" value="{{this.characteristics.airflow}}">
+    <label for="airflow">Airflow</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="spl" id="spl" placeholder="Empty" value="{{this.characteristics.spl}}">
+    <label for="spl">SPL</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Energy</h2>
+  <div class="form-field">
+    <input type="text" name="voltage" id="voltage" placeholder="Empty" value="{{this.energy.voltage}}">
+    <label for="voltage">Voltage</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="numberOfPins" id="number-of-pins" placeholder="Empty" value="{{this.energy.numberOfPins}}">
+    <label for="number-of-pins">Number of pins</label>
+  </div>
+</div>
+<div class="form-section">
+  <h2 class="form-title">Weight and dimensions</h2>
+  <div class="form-field">
+    <input type="text" name="width" id="width" placeholder="Empty" value="{{this.weightAndDimensions.width}}">
+    <label for="width">Width</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="height" id="height" placeholder="Empty" value="{{this.weightAndDimensions.height}}">
+    <label for="height">Hidth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="depth" id="depth" placeholder="Empty" value="{{this.weightAndDimensions.depth}}">
+    <label for="depth">Depth</label>
+  </div>
+  <div class="form-field">
+    <input type="text" name="weight" id="weight" placeholder="Empty" value="{{this.weightAndDimensions.weight}}">
+    <label for="weight">Weight</label>
+  </div>
+</div>
+{{/with}}
