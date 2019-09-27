@@ -2,8 +2,10 @@
 <li class="product-list-li">
   <div class="product-list-item">
     <h2 class="product-list-item-title">{{this.productInfo.model}}</h2>
+    <p class="product-list-item-brand">{{this.productInfo.brand}}</p>
     <img src="{{this.images.gallery.[0].path}}"
       alt="{{this.productInfo.model}}" class="product-list-item-image">
+    <span class="product-list-item-price">{{this.price.amount}}€</span>
     {{#isAdmin ../user}}
     <a href="/admin/products/{{this._id}}" class="button primary-button">Edit</a>
     <a href="/admin/products/delete/{{this._id}}" class="button primary-button">Delete</a>

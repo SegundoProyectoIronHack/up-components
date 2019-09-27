@@ -11,19 +11,17 @@
 
     {{!-- Product gallery. The first image will be displayed in the preview-image element --}}
     <div class="gallery">
-      <img src="{{images.gallery.[0].path}}" alt="{{productInfo.model}} image" class="gallery-image-preview">
-
-      {{!-- Container with all the images of the product --}}
-      <ul class="gallery-images">
-      {{#each images.gallery}}
-        <img src="{{this.path}}" alt="{{../productInfo.model}} image" class="gallery-image">
-      {{/each}}
-      </ul>
-    </div>
-
-    {{!-- General information of the product --}}
-    <section class="product-section product-info">
-      <img src="{{images.brand.path}}" alt="{{images.brand.name}} image" class="brand">
+      <div class="gallery-content">
+        <img src="{{images.gallery.[0].path}}" alt="{{productInfo.model}} image" class="gallery-image-preview">
+        {{!-- Container with all the images of the product --}}
+        <ul class="gallery-images">
+        {{#each images.gallery}}
+          <img src="{{this.path}}" alt="{{../productInfo.model}} image" class="gallery-image">
+        {{/each}}
+        </ul>
+      </div>
+      <div class="gallery-buy">
+        <img src="{{images.brand.path}}" alt="{{images.brand.name}} image" class="brand">
       <ul class="product-info-list">
         <li class="product-info-list-item"><strong>Model:</strong> {{productInfo.model}}</li>
         <li class="product-info-list-item"><strong>Family:</strong> {{productInfo.productFamily}}</li>
@@ -39,6 +37,11 @@
       {{else}}
         <p>You must be logged in to add this product to the chart</p>
       {{/if}}
+      </div>
+    </div>
+
+    {{!-- General information of the product --}}
+    <section class="product-section product-info">
     </section>
 
   </div>

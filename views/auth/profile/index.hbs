@@ -2,94 +2,88 @@
   <header class="profile-header">
     <h1 class="profile-username">{{user.profile.username}}</h1>
   </header>
-  <div class="tabs">
-    <div class="tabs-links">
-      <a href="#" class="tabs-link">Profile</a>
-      <a href="#" class="tabs-link">Purchases</a>
-    </div>
-    <div class="tabs-content">
-      <form class="profile-content" action="/profile/edit/{{user.id}}" method="post" id="profile">
-        <div class="profile-section">
-          <div class="profile-section-content">
-            <div class="profile-label">
-              <input type="text" name="name" id="name" value="{{user.profile.name}}" placeholder="Empty">
-              <label for="name">Name</label>
-            </div>
-            <div class="profile-label">
-              <input type="text" name="surname" id="surname" value="{{user.profile.surname}}" placeholder="Empty">
-              <label for="surname">Surname</label>
-            </div>
-            <div class="profile-label">
-              <input type="text" name="status" id="status" value="{{user.profile.status}}" disabled placeholder="Empty"></dd>       
-              <label for="status">Status</label>
-            </div>
+    <form class="profile-content" action="/profile/edit/{{user.id}}" method="post" id="profile">
+      <h2 class="profile-title">Profile</h2>
+      <div class="profile-section">
+        <div class="profile-section-content">
+          <div class="profile-label">
+            <input type="text" name="name" id="name" value="{{user.profile.name}}" placeholder="Empty">
+            <label for="name">Name</label>
+          </div>
+          <div class="profile-label">
+            <input type="text" name="surname" id="surname" value="{{user.profile.surname}}" placeholder="Empty">
+            <label for="surname">Surname</label>
+          </div>
+          <div class="profile-label">
+            <input type="text" name="status" id="status" value="{{user.profile.status}}" disabled placeholder="Empty"></dd>       
+            <label for="status">Status</label>
           </div>
         </div>
-        <div class="profile-section">
-          <h2 class="profile-section-title">Contact</h2>
-          <dl class="profile-section-content">
-            <div class="profile-label">
-              <input type="email" name="email" id="email" value="{{user.contact.email}}" placeholder="Empty"></dd>       
-              <label for="email">Email</label>
-            </div>
-            <div class="profile-label">
-              <input type="text" name="phone" id="phone" value="{{user.contact.phone}}" placeholder="Empty"></dd>       
-              <label for="phone">Phone</label>
-            </div>
-          </dl>
-        </div>
-        <div class="profile-section">
-          <h2 class="profile-section-title">Addresses</h2>
-          <div class="profile-section-content profile-address-content">
-            <div class="profile-label">
-              <input type="text" name="address" id="address" value="{{user.address.address}}" placeholder="Empty"></dd>       
-              <label for="address">Address</label>
-            </div>
-            <div class="profile-label">
-              <input type="number" name="buildingNumber" id="building-number" value="{{user.address.buildingNumber}}" placeholder="Empty"></dd>       
-              <label for="building-number">Building number</label>
-            </div>
-            <div class="profile-label">
-              <input type="number" name="zipCode" id="zip-code" value="{{user.address.zipCode}}" placeholder="Empty"></dd>       
-              <label for="zip-code">ZIP code</label>
-            </div>
-            <div class="profile-label">
-              <input type="number" name="suiteNumber" id="suite-number" value="{{user.address.suiteNumber}}" placeholder="Empty"></dd>       
-              <label for="suite-number">Suite number</label>
-            </div>
-            <div class="profile-label">
-              <input type="text" name="country" id="country" value="{{user.address.country}}" placeholder="Empty"></dd>       
-              <label for="country">Country</label>
-            </div>
-            <div class="profile-label">
-              <input type="text" name="stateProvince" id="state-province" value="{{user.address.stateProvince}}" placeholder="Empty"></dd>       
-              <label for="state-province">State / province</label>
-            </div>
-            <div class="profile-label">
-              <input type="text" name="city" id="city" value="{{user.address.city}}" placeholder="Empty"></dd>       
-              <label for="city">City</label>
-            </div>
-          </div>
-        </div>
-        <div class="form-actions">
-          <input type="submit" value="Update" class="button submit-button">
-        </div>
-      </form>
-      <div class="profile-purchases">
-        <ul class="purchases">
-        {{#each userProfile.purchases}}
-          <li class="purchases-item">
-            <div class="purchase">
-              <div class="purchase-info">
-                <img src="{{this.images.gallery.[0].path}}" alt="{{this.productInfo.model}} image">
-                <span class="purchase-model">{{this.productInfo.model}}</span>
-              </div>
-              <a href="/products/detail/{{this._id}}" class="button primary-button">View</a>
-            </div>
-          </li>
-        {{/each}}
-        </ul>
       </div>
+      <div class="profile-section">
+        <h2 class="profile-section-title">Contact</h2>
+        <dl class="profile-section-content">
+          <div class="profile-label">
+            <input type="email" name="email" id="email" value="{{user.contact.email}}" placeholder="Empty"></dd>       
+            <label for="email">Email</label>
+          </div>
+          <div class="profile-label">
+            <input type="text" name="phone" id="phone" value="{{user.contact.phone}}" placeholder="Empty"></dd>       
+            <label for="phone">Phone</label>
+          </div>
+        </dl>
+      </div>
+      <div class="profile-section">
+        <h2 class="profile-section-title">Addresses</h2>
+        <div class="profile-section-content profile-address-content">
+          <div class="profile-label">
+            <input type="text" name="address" id="address" value="{{user.address.address}}" placeholder="Empty"></dd>       
+            <label for="address">Address</label>
+          </div>
+          <div class="profile-label">
+            <input type="number" name="buildingNumber" id="building-number" value="{{user.address.buildingNumber}}" placeholder="Empty"></dd>       
+            <label for="building-number">Building number</label>
+          </div>
+          <div class="profile-label">
+            <input type="number" name="zipCode" id="zip-code" value="{{user.address.zipCode}}" placeholder="Empty"></dd>       
+            <label for="zip-code">ZIP code</label>
+          </div>
+          <div class="profile-label">
+            <input type="number" name="suiteNumber" id="suite-number" value="{{user.address.suiteNumber}}" placeholder="Empty"></dd>       
+            <label for="suite-number">Suite number</label>
+          </div>
+          <div class="profile-label">
+            <input type="text" name="country" id="country" value="{{user.address.country}}" placeholder="Empty"></dd>       
+            <label for="country">Country</label>
+          </div>
+          <div class="profile-label">
+            <input type="text" name="stateProvince" id="state-province" value="{{user.address.stateProvince}}" placeholder="Empty"></dd>       
+            <label for="state-province">State / province</label>
+          </div>
+          <div class="profile-label">
+            <input type="text" name="city" id="city" value="{{user.address.city}}" placeholder="Empty"></dd>       
+            <label for="city">City</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-actions">
+        <input type="submit" value="Update" class="button primary-button">
+      </div>
+    </form>
+    <div class="profile-purchases">
+      <h2 class="profile-title">Purchases</h2>
+      <ul class="purchases">
+      {{#each userProfile.purchases}}
+        <li class="purchases-item">
+          <div class="purchase">
+            <div class="purchase-info"></div>
+              <img src="{{this.images.gallery.[0].path}}" alt="{{this.productInfo.model}} image">
+              <span class="purchase-model">{{this.productInfo.model}}</span>
+            </div>
+            <a href="/products/detail/{{this._id}}" class="button primary-button">View</a>
+          </div>
+        </li>
+      {{/each}}
+      </ul>
     </div>
-  </div>
 </div>

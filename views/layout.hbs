@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{title}}</title>
-  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="/stylesheets/main.css"/>
 </head>
 
 {{#isAdmin user}}
@@ -49,9 +49,10 @@
     </aside>
     {{else}}
       <nav class="nav">
+        <h1 class="brand">UP Components</h1>
         <ul class="main-menu">
           <li class="main-menu-item"><a href="/">Home</a></li>
-          <li class="main-menu-item"><a href="#">Components</a>
+          <li class="main-menu-item main-menu-submenu-container"><a href="#" data-submenu-toggle>Components</a>
             <ul class="sub-menu">
               <li class="sub-menu-item"><a href="/products/components" class="sub-menu-link">All components</a></li>
               <li class="sub-menu-item"><a href="/products/cases" class="sub-menu-link">Cases</a></li>
@@ -64,7 +65,7 @@
               <li class="sub-menu-item"><a href="/products/graphics-cards" class="sub-menu-link">Graphics cards</a></li>
             </ul>
           </li>
-          <li class="main-menu-item"><a href="#">Peripherials</a>
+          <li class="main-menu-item main-menu-submenu-container"><a href="#">Peripherals</a>
             <ul class="sub-menu">
               <li class="sub-menu-item"><a href="/products/peripherals" class="sub-menu-link">All peripherals</a></li>
               <li class="sub-menu-item"><a href="/products/monitors" class="sub-menu-link">Monitors</a></li>
@@ -75,7 +76,7 @@
 
           {{#if user}}
           <li class="main-menu-item"><a href="/profile/{{user.id}}">Profile</a></li>
-          <li class="main-menu-item"><a href="/chart">Chart</a></li>
+          <li class="main-menu-item"><a href="/chart">Cart</a></li>
           <li class="main-menu-item"><a href="/auth/logout">Logout</a></li>
           {{else}}
           <li class="main-menu-item"><a href="#">Login</a></li>
@@ -85,19 +86,14 @@
       </nav>
 
       <div id="search-container" class="search-container">
-        <header class="search-container-header">
-          <h2 class="search-title">Search</h2>
-        </header>
-        <div class="search-container-content">
           <form action="/search" method="post">
             <div class="search-field">
               <input type="search" name="search" id="search" placeholder="Brand, peripherals, components..." class="search-input">
             </div>
             <div class="search-actions">
-              <input type="submit" value="Search" class="button search-button">
+              <input type="submit" value="Search" class="button primary-button">
             </div>
           </form>
-        </div>
       </div>
       
       {{#unless user}}
@@ -167,7 +163,9 @@
       {{/unless}}
     {{/isAdmin}}
 
-  {{{body}}}
+  <div class="container">
+    {{{body}}}
+  </div>
 
   <script src="/javascripts/script.js"></script>
 </body>
