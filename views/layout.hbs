@@ -22,11 +22,11 @@
   {{/if}}
 
     {{#isAdmin user}}
-    <nav class="admin-nav">
+    {{!-- <nav class="admin-nav">
       <span class="toggle-admin-sidebar" id="toggle-admin-sidebar">🍔</span>
       <h1 class="logo">UPC</h1>
       <a href="/auth/logout">⌽</a>
-    </nav>
+    </nav> --}}
     <aside class="sidebar">
       <ul class="admin-menu">
         <li class="admin-menu-item"><a href="#" class="admin-menu-link">Products</a>
@@ -45,6 +45,7 @@
             <li class="admin-sub-menu-item"><a href="/admin/products/list?category=Mouse" class="admin-sub-menu-link">Mouses</a></li>
           </ul>
         </li>
+        <li class="admin-menu-item"><a href="/auth/logout" class="admin-menu-link">Logout</a></li>
       </ul>
     </aside>
     {{else}}
@@ -79,8 +80,8 @@
           <li class="main-menu-item"><a href="/chart">Cart</a></li>
           <li class="main-menu-item"><a href="/auth/logout">Logout</a></li>
           {{else}}
-          <li class="main-menu-item"><a href="#">Login</a></li>
-          <li class="main-menu-item"><a href="#">Signup</a></li>
+          <li class="main-menu-item"><a href="#" id="login-link">Login</a></li>
+          <li class="main-menu-item"><a href="#" id="signup-link">Signup</a></li>
           {{/if}}
         </ul>
       </nav>
@@ -119,8 +120,8 @@
                 </div>
               </div>
               <div class="form-actions">
-                <input type="submit" value="Login" class="button submit-button">
                 <a href="/auth/google" class="button google-button">Login with Google</a>
+                <input type="submit" value="Login" class="button primary-button">
               </div>
             </form>
           </div>
@@ -153,8 +154,8 @@
                 </div>
               </div>
               <div class="form-actions">
-                <input type="submit" value="Signup" class="button submit-button">
                 <a href="/auth/google" class="button google-button">Signup with Google</a>
+                <input type="submit" value="Signup" class="button primary-button">
               </div>
             </form>
           </div>

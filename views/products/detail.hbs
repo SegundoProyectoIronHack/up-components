@@ -61,15 +61,18 @@
     <p>You must be logged in to comment</p>
   </div>
   {{/if}}
+  <h2 class="comments-title">Comments</h2>
   <ul class="comments-list">
   {{#each product.comments}}
   <li>
     <div class="comment">
       <p class="comment-author"><strong>Author:</strong> {{this.author.profile.username}}</p>
       <p class="comment-creation-date"><strong>Created at:</strong> {{this.createdAt}}</p>
-      <p>{{this.content}}</p>
+      <p class="comment-content">{{this.content}}</p>
     </div>
   </li>
+  {{else}}
+  <p>No comments yet</p>
   {{/each}}
   </ul>
 </section>

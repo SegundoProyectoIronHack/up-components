@@ -1,5 +1,7 @@
 .gallery {
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
 }
 
 .gallery-image-preview {
@@ -20,5 +22,14 @@
 
   &:not(:last-child) {
     margin-right: 1rem;
+  }
+}
+
+.gallery-buy {
+
+  .brand {
+    height: 200px;
+    margin: 0 auto 2rem auto;
+    display: block;
   }
 }

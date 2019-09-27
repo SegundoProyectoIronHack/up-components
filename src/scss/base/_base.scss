@@ -1,5 +1,6 @@
 body {
   padding-top: 10rem;
+  padding-bottom: 4rem;
   background-color: $background;
   color: $on-background;
 }
@@ -42,7 +43,15 @@ textarea {
   &:focus {
     outline: none;
     border-color: $primary;
+
+    & + label {
+      color: $primary;
+    }
   }
+}
+
+label {
+  font-weight: $text-bold;
 }
 
 p, input, select, ul {

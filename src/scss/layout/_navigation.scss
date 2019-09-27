@@ -61,3 +61,48 @@
 .sub-menu a {
   color: $on-sub-menu-background;
 }
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  width: 300px;
+  top: 0;
+  height: 100vh;
+  overflow: auto;
+  background-color: #232323;
+  padding: 2rem;
+}
+
+.admin-menu {
+  list-style-type: none;
+}
+
+.admin-menu-item {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+.admin-menu-link {
+  color: #FFFFFF;
+}
+
+.admin-sub-menu {
+  padding-left: 1rem;
+  list-style-type: none;
+}
+
+.admin-sub-menu-item {
+
+  &:first-child {
+    margin-top: 1rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.admin-sub-menu-link {
+  color: $primary;
+}
