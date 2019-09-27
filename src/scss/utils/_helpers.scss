@@ -9,3 +9,15 @@
   padding: 1rem 0;
   margin-bottom: 0;
 }
+
+.identify {
+  margin-bottom: 1rem;
+  background-color: #FFFF00AA;
+  padding: 1rem;
+  border-left: 4px solid #AAAA00;
+  
+  p {
+    color: #000000;
+    font-weight: $text-bold;
+  }
+}
