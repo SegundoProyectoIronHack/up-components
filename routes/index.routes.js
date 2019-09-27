@@ -2,6 +2,7 @@ const appCodes = require("./../app-codes/app-codes");
 const express = require("express");
 const router = express.Router();
 const controller = require("./../controllers/index.controller");
+const Products = require("./../models/Products.model");
 
 router.use("/auth", require("./auth.routes"));
 router.use("/products", require("./products.routes"));
@@ -9,7 +10,6 @@ router.use("/profile", require("./profile.routes"));
 router.use("/admin", require("./admin.routes"));
 router.use("/chart", require("./chart.routes"));
 router.use("/comments", require("./comments.routes"));
-const Products = require("./../models/Products.model");
 
 /* GET home page */
 router.get("/", (req, res, next) => {
