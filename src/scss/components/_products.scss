@@ -66,3 +66,29 @@
   background-color: #fff;
   padding: 2rem;
 }
+
+.product-info-list {
+  // list-style-type: none;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.product-info-list-item {
+  margin-bottom: 0.5rem;
+}
+
+.product-specs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.product-specs-title {
+  font-size: 1.25rem;
+  color: $primary;
+  margin-bottom: 1rem;
+}
+
+.product-specs-list {
+  padding-left: 2rem;
+}

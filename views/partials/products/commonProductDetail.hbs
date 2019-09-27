@@ -30,9 +30,9 @@
       {{#if ../user}}
         {{!-- Check if the product has discount --}}
         {{#if price.discountInfo}}
-          <a href="/chart/add/{{_id}}" class="button button-primary">Add to chart<span><strike>{{price.amount}}€</strike>{{{calculateDiscount price.amount price.discountInfo.discount}}}€</span></a>
+          <a href="/chart/add/{{_id}}" class="button add-to-chart-button">Add to chart<span><strike>{{price.amount}}€</strike>{{{calculateDiscount price.amount price.discountInfo.discount}}}€</span></a>
         {{else}}
-          <a href="/chart/add/{{_id}}" class="button button-primary">Add to chart<span>{{{calculateTaxes price.amount price.taxes}}}€</span></a>
+          <a href="/chart/add/{{_id}}" class="button add-to-chart-button">Add to chart<span>{{{calculateTaxes price.amount price.taxes}}}€</span></a>
         {{/if}}
       {{else}}
         <p>You must be logged in to add this product to the chart</p>

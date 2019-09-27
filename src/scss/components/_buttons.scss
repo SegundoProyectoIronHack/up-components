@@ -21,3 +21,18 @@
     box-shadow: 0 3px 6px darken($primary, 3);
   }
 }
+
+.add-to-chart-button {
+  @extend .primary-button;
+  text-align: center;
+  display: block;
+  padding: .75rem;
+
+  span {
+    display: block;
+  }
+
+  &:hover {
+    background-color: darken($primary, 5);
+  }
+}
