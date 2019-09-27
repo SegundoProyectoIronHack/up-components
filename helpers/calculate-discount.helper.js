@@ -1,3 +1,3 @@
 module.exports = function (price, discount) {
-  return (price - (price * discount)).toFixed(2)
+  return Number.parseFloat(price - (price * discount)).toFixed(2)
 }
