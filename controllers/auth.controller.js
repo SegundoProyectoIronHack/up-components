@@ -82,7 +82,7 @@ controller.postSignup = (req, res, next) => {
                   color: #FFFFFF;
                   text-decoration: none;
                   text-transform: uppercase;
-                  font-size: 14px;" href="http://localhost:3000/profile/confirm/${token}">Activate account</a>
+                  font-size: 14px;" href="${process.env.LOCAL_URL}profile/confirm/${token}">Activate account</a>
               </div>
               `
           })
