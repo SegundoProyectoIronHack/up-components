@@ -13,4 +13,20 @@ router.get("/remove/:productId", (req, res, next) => {
   controller.removeProduct(req, res, next)
 })
 
+router.get("/success", (req, res, next) => {
+  controller.success(req, res, next)
+})
+
+router.get("/error", (req, res, next) => {
+  controller.error(req, res, next)
+})
+
+router.get("/error", (req, res, next) => {
+  controller.error(req, res, next)
+})
+
+router.get("/buy", (req, res, next) => {
+  controller.buy(req, res, next)
+})
+
 module.exports = router

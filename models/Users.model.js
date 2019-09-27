@@ -52,6 +52,10 @@ const userSchema = new Schema({
   chart: [{
     type: Schema.Types.ObjectId,
     ref: "Products"
+  }],
+  purchases: [{
+    type: Schema.Types.ObjectId,
+    ref: "Products"
   }]
 }, {
   timestamps: true,
