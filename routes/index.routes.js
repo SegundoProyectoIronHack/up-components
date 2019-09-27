@@ -8,6 +8,7 @@ router.use("/products", require("./products.routes"))
 router.use("/profile", require("./profile.routes"))
 router.use("/admin", require("./admin.routes"))
 router.use("/chart", require("./chart.routes"))
+router.use("/comments", require("./comments.routes"))
 
 /* GET home page */
 router.get('/', (req, res, next) => {

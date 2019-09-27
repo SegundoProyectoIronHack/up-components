@@ -43,3 +43,33 @@
 {{#if product.keyboard}}
   {{> keyboardDetail keyboard=product}}
 {{/if}}
+
+<section class="comments" id="comments">
+  {{#if user}}
+  <form action="/comments/add" method="POST" class="comments-form">
+    <input type="hidden" name="productId" value="{{product._id}}">
+    <div class="comments-form-field">
+      <textarea name="content" id="content" class="comments-form-textarea" placeholder="Comment content"></textarea>
+      <label for="content" class="comments-form-label">Comment</label>
+    </div>
+    <div class="comments-form-actions">
+      <input type="submit" value="Comment" class="button primary-button">
+    </div>
+  </form>
+  {{else}}
+  <div class="identify">
+    <p>You must be logged in to comment</p>
+  </div>
+  {{/if}}
+  <ul class="comments-list">
+  {{#each product.comments}}
+  <li>
+    <div class="comment">
+      <p class="comment-author"><strong>Author:</strong> {{this.author.profile.username}}</p>
+      <p class="comment-creation-date"><strong>Created at:</strong> {{this.createdAt}}</p>
+      <p>{{this.content}}</p>
+    </div>
+  </li>
+  {{/each}}
+  </ul>
+</section>

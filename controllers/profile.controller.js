@@ -3,9 +3,10 @@ const Users = require("./../models/Users.model");
 const appCodes = require("./../app-codes/app-codes");
 
 controller.getProfile = (req, res, next) => {
-  Users.findById(req.params.userId).then(userFound => {
+  Users.findById(req.params.userId).populate("purchases").then(userFound => {
     if (userFound) {
       res.render("auth/profile/index", {
+        userProfile: userFound,
         message: appCodes[`${req.query.message}`]
       });
     }
