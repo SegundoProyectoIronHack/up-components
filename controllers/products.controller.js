@@ -12,6 +12,7 @@ controller.getProductDetail = (req, res, next) => {
     .lean()
     .then(product => {
       let productEditable = JSON.parse(JSON.stringify(product))
+      productEditable.price.amount = productEditable.price.amount.toFixed(2)
       productEditable.comments = productEditable.comments.map(comment => {
         return {
           ...comment,
