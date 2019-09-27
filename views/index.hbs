@@ -1,2 +1,30 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+
+<h2 class="home-title">Recommended</h2>
+<ul class="product-list">
+  {{#each recommended}}
+  {{> commonProductListDetail product=this}}
+  {{/each}}
+</ul>
+
+<h2 class="home-title">Featured</h2>
+<ul class="product-list">
+  {{#each featured}}
+  {{> commonProductListDetail product=this}}
+  {{/each}}
+</ul>
+
+<h2 class="home-title">Just in</h2>
+<ul class="product-list">
+  {{#each justIn}}
+  {{> commonProductListDetail product=this}}
+  {{/each}}
+</ul>
+
+<h2 class="home-title">On sale</h2>
+<ul class="product-list">
+  {{#each onSale}}
+  {{> commonProductListDetail product=this}}
+  {{/each}}
+</ul>
