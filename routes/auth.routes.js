@@ -13,8 +13,8 @@ router.post(
   [
     userMid.isAccountActivated,
     passport.authenticate("local", {
-    successRedirect: "/?message=6",
-    failureRedirect: "/?message=2",
+    successRedirect: "/",
+    failureRedirect: "/",
     failureFlash: true,
     passReqToCallback: true
   })

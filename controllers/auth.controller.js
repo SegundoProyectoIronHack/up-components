@@ -102,7 +102,7 @@ controller.postSignup = (req, res, next) => {
 
 controller.getLogout = (req, res, next) => {
   req.logout();
-  res.redirect("/?message=4");
+  res.redirect("/");
 };
 
 module.exports = controller;
