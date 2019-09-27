@@ -1,0 +1,34 @@
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(darken($primary, 20), .5);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+.lightbox-visible {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
+
+.modal-title {
+  color: $primary;
+  margin-bottom: 2rem;
+}
+
+

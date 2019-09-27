@@ -26,6 +26,20 @@
 
 .form-field {
   display: flex;
+  flex-direction: column-reverse;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    margin-bottom: 0.5rem;
+    color: #000000;
+  }
+}
+
+.form-actions {
+  padding: 2rem 0 0;
 }
 
 .comments-form{

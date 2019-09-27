@@ -21,3 +21,8 @@
     font-weight: $text-bold;
   }
 }
+
+body.admin {
+  padding-top: 3rem;
+  padding-left: calc(300px + 3rem);
+}
