@@ -23,13 +23,13 @@ controller.postSignup = (req, res, next) => {
   let { username, password, email } = req.body;
 
   if (!username || !password || !email) {
-    res.redirect("/?message=3");
+    res.redirect("/");
     return;
   }
 
   Users.findOne({ "profile.username": username }, (err, user) => {
     if (user) {
-      res.redirect("/?message=1");
+      res.redirect("/");
       return;
     }
 
@@ -87,7 +87,7 @@ controller.postSignup = (req, res, next) => {
               `
           })
           .then(emailSent => {
-            res.redirect("/?message=5");
+            res.redirect("/");
           })
           .catch(err => {
             console.log(err);

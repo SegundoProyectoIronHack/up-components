@@ -26,3 +26,11 @@ body.admin {
   padding-top: 3rem;
   padding-left: calc(300px + 3rem);
 }
+
+.home-title {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  color: darken($primary, 5);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $primary;
+}

@@ -1,3 +1,4 @@
+require("dotenv").config()
 const controller = {};
 const Products = require("./../models/Products.model");
 const Users = require("./../models/Users.model");
@@ -46,8 +47,8 @@ controller.buy = (req, res, next) => {
           payment_method: "paypal"
         },
         redirect_urls: {
-          return_url: "http://localhost:3000/chart/success",
-          cancel_url: "http://localhost:3000/chart/error"
+          return_url: `${process.env.LOCAL_URL}chart/success`,
+          cancel_url: `${process.env.LOCAL_URL}chart/error`
         },
         transactions: [{
           amount: {

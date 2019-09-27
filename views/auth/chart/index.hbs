@@ -3,6 +3,8 @@
 {{#each products}}
   {{> commonProductListDetailChart product=this}}
 {{/each}}
-<h1>Total price: {{totalChartPrice}}€</h1>
-<a href="/chart/buy">Buy</a>
 </ul>
+<div class="total-price">
+  <span>{{totalChartPrice}}€</span>
+  <a href="/chart/buy">Buy</a>
+</div>
