@@ -1,0 +1,23 @@
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+  transition: background-color $transition-delay;
+  text-transform: uppercase;
+  font-weight: $text-bold;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.primary-button {
+  box-shadow: 0 3px 6px $primary;
+  background-color: $primary;
+  color: #FFFFFF;
+
+  &:hover {
+    background-color: darken($primary, 3);
+    box-shadow: 0 3px 6px darken($primary, 3);
+  }
+}

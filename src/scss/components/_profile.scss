@@ -1,0 +1,77 @@
+.profile {
+  background-color: #FFFFFF;
+  padding: 2rem;
+  border-radius: $border-radius;
+}
+
+.profile-username {
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid $primary;
+  padding-bottom: 1rem;
+}
+
+.profile-title {
+  color: #000000;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  padding-left: 1rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 0.5rem;
+    height: 100%;
+    background-color: $primary;
+  }
+}
+
+.profile-section {
+  margin-bottom: 2rem;
+}
+
+.profile-section-title {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #232323;
+}
+
+.profile-content {
+  margin-bottom: 4rem;
+}
+
+.profile-label {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: flex-end;
+
+  label {
+    border: 1px solid darken($primary, 5);
+    color: darken($primary, 5);
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: $text-bold;
+    transition: background-color $transition-delay, color $transition-delay;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  input {
+    border-radius: 0 $border-radius $border-radius 0;
+    flex-grow: 1;
+  }
+  
+  input:focus + label {
+    background-color: darken($primary, 5);
+    color: $on-primary;
+  }
+}

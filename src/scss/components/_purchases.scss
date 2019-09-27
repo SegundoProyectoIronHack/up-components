@@ -1,0 +1,31 @@
+.purchases {
+  list-style: none;
+}
+
+.purchases-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #CCCCCC;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.purchase {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 50px;
+    margin-right: 1rem;
+  }
+}
+
+.purchase-model {
+  font-weight: $text-bold;
+}
+
+.purchase-info {
+  display: flex;
+  align-items: center;
+}

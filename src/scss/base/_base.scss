@@ -1,0 +1,50 @@
+body {
+  padding-top: 10rem;
+  background-color: $background;
+  color: $on-background;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  margin-bottom: 2rem;
+  color: #000000;
+}
+
+h2 {
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+input, select {
+  border: 1px solid $gray-1;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+select,
+button,
+textarea {
+  appearance: none;
+  padding: 0.5rem;
+  border-radius: $border-radius;
+  font-size: $text-font-size;
+
+  &:focus {
+    outline: none;
+    border-color: $primary;
+  }
+}
+
+p, input, select, ul {
+  color: $text-color;
+}
